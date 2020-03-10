@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/pages/home.dart';
+import 'package:o1_widgets_you_can_see/pages/welcome.dart';
 
 void main() => runApp(WidgetsYouCanSee());
 
@@ -11,7 +11,7 @@ class WidgetsYouCanSee extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Home(),
+      home: const Welcome(),
     );
   }
 }

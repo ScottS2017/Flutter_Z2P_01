@@ -1,5 +1,5 @@
 class AppImages{
-	static const String flutterLogo = 'assets/images/Flutter-Mark-square-1200.png';
+	static const String flutterLogo = 'assets/images/F.png';
 	static const String blueprint = 'assets/images/blueprint.jpg';
 	static const String dive = 'assets/images/dive CC-0.jpg';
 	static const String keyboardHelp = 'assets/images/help_on_keyboard.jpg';
