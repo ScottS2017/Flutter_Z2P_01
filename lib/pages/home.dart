@@ -5,6 +5,7 @@ import 'package:o1_widgets_you_can_see/widgets/examples/c_text_examples.dart';
 import 'package:o1_widgets_you_can_see/widgets/examples/d_image_examples.dart';
 import 'package:o1_widgets_you_can_see/widgets/examples/e_icon_examples.dart';
 import 'package:o1_widgets_you_can_see/widgets/exercises/a_container_exercises.dart';
+import 'package:o1_widgets_you_can_see/widgets/exercises/b_box_decorations_exercises.dart';
 import 'package:o1_widgets_you_can_see/widgets/solutions/a_container_solution.dart';
 import 'package:o1_widgets_you_can_see/widgets/solutions/b_box_decorations_solution.dart';
 import 'package:o1_widgets_you_can_see/widgets/solutions/c_text_examples_solution.dart';
@@ -30,8 +31,8 @@ class _HomeState extends State<Home>{
 
     ///
     const BoxDecorations(),
+    const BoxDecorationExercises(),
     const BoxDecorationSolution(),
-    const BoxDecorations(),
     const BoxDecorations(),
 
     ///
