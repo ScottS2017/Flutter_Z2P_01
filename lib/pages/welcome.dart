@@ -8,13 +8,12 @@ import 'package:o1_widgets_you_can_see/pages/home.dart';
 class Welcome extends StatefulWidget {
   const Welcome({
     Key key,
-}) : super(key: key);
+  }) : super(key: key);
   @override
   _WelcomeState createState() => _WelcomeState();
 }
 
-class _WelcomeState extends State<Welcome>   with SingleTickerProviderStateMixin{
-
+class _WelcomeState extends State<Welcome> with SingleTickerProviderStateMixin {
   bool _splashScreenIsOnstage = true;
   bool _startFade = false;
 
@@ -28,8 +27,8 @@ class _WelcomeState extends State<Welcome>   with SingleTickerProviderStateMixin
   Future<Timer> fadeTimer() async {
     return Timer(
       const Duration(seconds: 2),
-        () => setState(
-          () {
+      () => setState(
+        () {
           _startFade = true;
         },
       ),
@@ -39,8 +38,8 @@ class _WelcomeState extends State<Welcome>   with SingleTickerProviderStateMixin
   Future<Timer> offstageTimer() async {
     return Timer(
       const Duration(seconds: 4),
-        () => setState(
-          () {
+      () => setState(
+        () {
           _splashScreenIsOnstage = false;
         },
       ),
@@ -49,37 +48,45 @@ class _WelcomeState extends State<Welcome>   with SingleTickerProviderStateMixin
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Stack(
-        children: <Widget>[
-          GestureDetector(
-            onTap: () => Navigator.push<Route>(
+    return Material(
+      child: SafeArea(
+        child: Stack(
+          children: <Widget>[
+            GestureDetector(
+              onTap: () => Navigator.push<Route>(
                 context,
-                MaterialPageRoute(builder:
-                    (context) => const Home(),
+                MaterialPageRoute(
+                  builder: (context) => const Home(),
                 ),
-            ),
-            child: Container(
-              height: double.infinity,
-              width: double.infinity,
-              color: Colors.yellow,
-            ),
-          ),
-          Positioned(
-            top: _splashScreenIsOnstage == true ? 0 : MediaQuery.of(context).size.height,
-            child: AnimatedOpacity(
-              opacity: _startFade == true ? 0: 1.0,
-
-              duration: const Duration(milliseconds: 3000),
+              ),
               child: Container(
-                height: MediaQuery.of(context).size.height,
-                width: MediaQuery.of(context).size.width,
-                color: AppColors.darkThemeNoElevation,
-                child: Image.asset(AppImages.flutterLogo),
+                height: double.infinity,
+                width: double.infinity,
+                color: Colors.white,
+                alignment: Alignment.center,
+                child: const Text(
+                  'Sample Text',
+                  style: TextStyle(
+                    fontSize: 64,
+                  ),
+                ),
               ),
             ),
-          ),
-        ],
+            Positioned(
+              top: _splashScreenIsOnstage == true ? 0 : MediaQuery.of(context).size.height,
+              child: AnimatedOpacity(
+                opacity: _startFade == true ? 0 : 1.0,
+                duration: const Duration(milliseconds: 3000),
+                child: Container(
+                  height: MediaQuery.of(context).size.height,
+                  width: MediaQuery.of(context).size.width,
+                  color: AppColors.darkThemeNoElevation,
+                  child: Image.asset(AppImages.flutterLogo),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

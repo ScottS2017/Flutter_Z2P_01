@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:o1_widgets_you_can_see/app/app_colors.dart';
 import 'package:o1_widgets_you_can_see/app/app_strings.dart';
+import 'package:o1_widgets_you_can_see/app/app_textstyles.dart';
 
 class TextExampleSolution extends StatelessWidget {
 
   const TextExampleSolution({
     Key key,
   }) : super(key: key);
+
+  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height:16);
 
   /// Text: "A run of text with a single style."
 
@@ -19,442 +22,138 @@ class TextExampleSolution extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  ///
-                  /// After this, all strings will use the AppStrings class
-                  'Text',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                  ),
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              // *************** Make the days of the week. * Use semantics for everything! *
+              //
+              //TODO 1) Mon: Text, centered, red (pick one), w600, size 18 and italic
+              const Text(
+                AppStrings.mon,
+                semanticsLabel: AppStrings.mon,
+                textAlign: TextAlign.center,
+                style: TextStyle(              color: AppColors.primaryDarkRed,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 18,
+                  fontStyle: FontStyle.italic,
                 ),
               ),
-              const SizedBox(height: 32,),
-
-
-              ///
-              /// Examples of textAlign
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              //
+              //TODO 2) Tues: In a Container that has a color of "AppColors.darkTheme24dpElevationOverlay", with padding all around of 16 you want text that is right aligned, blue, bold, size 18 and with a letter spacing of 12 and a background color of dark theme light yellow
               Container(
+                padding: const EdgeInsets.all(16),
+                color: AppColors.darkTheme24dpElevationOverlay,
                 child: const Text(
-                  AppStrings.textAlign,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.notAlignedDefault,
-                ),
-              ),
-              const SizedBox(height: 32,),
-              Container(
-                alignment: Alignment.centerRight,
-                child: const Text(
-                  AppStrings.notAlignedCenterRight,
-                ),
-              ),
-              const SizedBox(height: 32,),
-              Container(
-                child: const Text(
-                  AppStrings.leftAligned,
-                  textAlign: TextAlign.left,
-                ),
-              ),
-              const SizedBox(height: 32,),
-              Container(
-                child: const Text(
-                  AppStrings.centerAlign,
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              const SizedBox(height: 32,),
-              Container(
-                child: const Text(
-                  AppStrings.rightAlign,
+                  AppStrings.tu,
+                  semanticsLabel: AppStrings.tu,
                   textAlign: TextAlign.right,
-                ),
-              ),
-              const SizedBox(height: 32,),
-
-              ///
-              /// softWrap
-              Container(
-                child: const Text(
-                  AppStrings.softWrap,
                   style: TextStyle(
+                    color: AppColors.primaryDarkBlue,
                     fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.ifSoftwrapIsNotSpecified,
-                ),
-              ),
-              const SizedBox(height: 32,),
-
-              ///
-              /// overflow
-              Container(
-                child: const Text(
-                  AppStrings.overflow,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.overflowElipsisTestText,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.overflowClipTestText,
-                  softWrap: false,
-                  overflow: TextOverflow.clip,
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.overflowFadeTestText,
-                  softWrap: false,
-                  overflow: TextOverflow.fade,
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.overflowDiscuss,
-                  maxLines: 1,
-                  overflow: TextOverflow.fade,
-                  style: TextStyle(
-                    fontSize: 12,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 32,),
-
-              ///
-              /// TextScaleFactor
-              Container(
-                child: const Text(
-                  AppStrings.textScaleFactor,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.textScaleFactorTestText,
-                  textScaleFactor: 0.75,
-                ),
-              ),
-              const SizedBox(height: 32,),
-
-              ///
-              /// TextStyle
-              Container(
-                child: const Text(
-                  AppStrings.textStyle,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                ),
-              ),
-              const SizedBox(height: 32,),
-
-              ///
-              /// fontWeights
-              Container(
-                child: const Text(
-                  AppStrings.fontWeight,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.w100,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w100,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.w200,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.w300,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w300,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.w400,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.w500,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.w600,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.w700,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.w700IsBold,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.w800,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.w900,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 32,),
-
-              ///
-              /// fontStyles
-              Container(
-                child: const Text(
-                  AppStrings.fontStyle,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.italic,
-                  style: TextStyle(fontStyle: FontStyle.italic),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.normal,
-                  style: TextStyle(fontStyle: FontStyle.normal),
-                ),
-              ),
-              const SizedBox(height: 32,),
-
-              ///
-              /// fontSizes
-              Container(
-                child: const Text(
-                  AppStrings.fontSize,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.fs10,
-                  style: TextStyle(
-                    fontSize: 10,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.fs12,
-                  style: TextStyle(
-                    fontSize: 12,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.fs14,
-                  style: TextStyle(
-                    fontSize: 14,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.fs18,
-                  style: TextStyle(
                     fontSize: 18,
+                    letterSpacing: 12,
+                    backgroundColor: AppColors.primaryDarkLightYellow,
                   ),
                 ),
               ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.fs20,
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 32,),
-
-              ///
-              /// Drop Shadows
-              Container(
-                child: const Text(
-                  AppStrings.shadowsTakesList,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16,),
-              Container(
-                child: const Text(
-                  AppStrings.shadowsEx1,
-                  style: TextStyle(
-                    shadows: [
-                      Shadow(
-                        blurRadius: 2,
-                        color: AppColors.darkTheme2dpElevationOverlay,
-                        offset: Offset(1, 1),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.shadowsEx2,
-                  style: TextStyle(shadows: [
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              //
+              //TODO 3) Wed: Text, centered, size 24 with a drop shadow color of dark theme 3dp elevation overlay, blur radius of 2 and an offset of 3, 3
+              Text(
+                AppStrings.wed,
+                semanticsLabel: AppStrings.wed,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 24,
+                  shadows: [
                     Shadow(
-                      blurRadius: 5,
-                      color: AppColors.primaryDarkPurple,
-                      offset: Offset(0, 0),
-                    )
-                  ]),
+                      color: AppColors.darkTheme3dpElevationOverlay,
+                      blurRadius: 2,
+                      offset: const Offset(3, 3),
+                    ),
+                  ],
                 ),
               ),
-              const SizedBox(height: 8,),
-              Container(
-                child: const Text(
-                  AppStrings.multipleShadows,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    shadows: [
-                      Shadow(
-                        blurRadius: 1,
-                        color: AppColors.primaryDarkRed,
-                        offset: Offset(5, 5),
-                      ),
-                      Shadow(
-                        blurRadius: 1,
-                        color: AppColors.primaryDarkBlue,
-                        offset: Offset(-5, -5),
-                      ),
-                    ],
-                  ),
+              //
+              // TODO 4) Less hand holding, figure out things that aren't spelled out... Thurs: green w200, size 48
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              Text(
+                AppStrings.th,
+                semanticsLabel: AppStrings.th,
+                style: TextStyle(
+                  color: AppColors.primaryDarkGreen,
+                  fontWeight: FontWeight.w200,
+                  fontSize: 48,
                 ),
               ),
-              const SizedBox(height: 32,),
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              //
+              // TODO 5) Fri: bold italic with a drop shadow color of dropShadowColor(?!), blur 1 offset 2-2
+              Text(
+                AppStrings.fr,
+                semanticsLabel: AppStrings.fr,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                  shadows: [
+                    Shadow(
+                      color: AppColors.dropShadowColor,
+                      blurRadius: 1,
+                      offset: Offset(2, 2),
+                    ),
+                  ],
+                ),
+              ),
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              //
+              //TODO 6) Sat: ***NEW!!! Use AppTextStyles.dart to implement a bold italic 36 font
+              Text(
+                AppStrings.sat,
+                semanticsLabel: AppStrings.sat,
+                style: AppTextStyles.boldItalic36,
+              ),
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              //
+              //TODO 7) Sun Align the text right and use AppTextStyles.dart and "copyWith" to implement a bold italic 24 font in primaryRed
+              Text(
+                AppStrings.sun,
+                semanticsLabel: AppStrings.sun,
+                textAlign: TextAlign.right,
+                style: AppTextStyles.boldItalic24.copyWith(color: AppColors.primaryRed),
+              ),
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              //
+              // TODO 8) Make examples of fade right, fade bottom and ellipsis overflows using the first line of the Gettysburg address (it's in AppStrings.getAd) and use AppTextStyles to set the font to normal and 18
+              Text(
+                AppStrings.getAd,
+                semanticsLabel: AppStrings.getAd,
 
-              ///
-              /// font color
-              Container(
-                child: const Text(
-                  AppStrings.colorRed,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: AppColors.primaryDarkRed,
-                  ),
-                ),
+                /// To fade right, softWrap has to be false
+                softWrap: false,
+                overflow: TextOverflow.fade,
+                style: AppTextStyles.normal18,
               ),
-              const SizedBox(height: 32,),
-              Container(
-                child: const Text(
-                  AppStrings.bgBlue,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: AppColors.darkThemeWhite,
-                    backgroundColor: AppColors.primaryDarkBlue,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 32,),
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              Text(
+                AppStrings.getAd,
+                semanticsLabel: AppStrings.getAd,
+                style: AppTextStyles.normal18,
 
-              ///
-              /// letter spacing
-              Container(
-                child: const Text(
-                  AppStrings.letterSpacingExample,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 10,
-                  ),
-                ),
+                /// It's true by default but this is just here to remind you that to fade bottom you need softWrap to be true.
+                softWrap: true,
+                overflow: TextOverflow.fade,
+                maxLines: 1,
               ),
-              const SizedBox(height: 16,),
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              Text(
+                AppStrings.getAd,
+                semanticsLabel: AppStrings.getAd,
+
+                /// Again, to use TextOverflow.ellipsis, softWrap has to be false
+                softWrap: false,
+                overflow: TextOverflow.ellipsis,
+                style: AppTextStyles.normal18,
+              ),
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ],
           ),
         ),
