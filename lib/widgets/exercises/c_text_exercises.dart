@@ -24,26 +24,28 @@ class TextExampleExercises extends StatelessWidget {
           children: <Widget>[
 
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO **** Delete this placeholder
-            const Placeholder(
-              fallbackHeight: 550,
-              fallbackWidth: 500,
+
+            // TODO Delete the placeholder
+            Placeholder(
+              fallbackHeight: 750,
+              fallbackWidth: double.infinity,
             ),
 
-
-            //TODO 1) Mon: Text, centered, red (pick one), w600, size 18 and italic
-
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            //
-            //TODO 2) Tues: In a Container that has a color of "AppColors.darkTheme24dpElevationOverlay", with padding all around of 16 you want text that is right aligned, blue, bold, size 18 and with a letter spacing of 12 and a background color of dark theme light yellow
+            /// Remember the way we're organizing a Flutter App, we're
+            /// using an AppStrings class to hold all of our Strings
+            //TODO 1) Mon: Text, the app string is mon, centered, FF3780, w600, size 18 and italic
 
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
-            //TODO 3) Wed: Text, centered, size 24 with a drop shadow color of dark theme 3dp elevation overlay, blur radius of 2 and an offset of 3, 3
+            //TODO 2) Tues: In a Container that has a color of "AppColors.darkTheme24dpElevationOverlay", with padding all around of 16 you want text that uses, the app string of tu. Make it right aligned, color 0185D0, bold, size 18 and with a letter spacing of 12 and a background color of FB7EE4
 
-            //
-            // TODO 4) Less hand holding, figure out things that aren't spelled out... Thurs: green w200, size 48
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            //
+            //TODO 3) Wed: Text, the app string is wed, make it centered, size 24 with a drop shadow color of dark theme 3dp elevation overlay, blur radius of 2 and an offset of 3, 3
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            //
+            // TODO 4) Less hand holding, figure out things that aren't spelled out... Thurs: color 0185D0, w200, size 48
+
 
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
@@ -59,11 +61,17 @@ class TextExampleExercises extends StatelessWidget {
 
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
-            // TODO 8) Make examples of fade right, fade bottom and ellipsis overflows using the first line of the Gettysburg address (it's in AppStrings.getAd) and use AppTextStyles to set the font to normal and 18
+            // TODO 8) Make 3 examples: Fade right, fade bottom and ellipsis overflows using the first line of the Gettysburg address (it's in AppStrings.getAd) and use AppTextStyles to set the font to normal and 18
+
+              /// To fade right, softWrap has to be false!
 
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
+              /// softWrap is true by default but this is just here to remind you that to fade bottom you need softWrap to be **true**
+
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              /// Again, to use TextOverflow.ellipsis, softWrap has to be false
 
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
           ],

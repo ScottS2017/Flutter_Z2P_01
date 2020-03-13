@@ -24,10 +24,10 @@ class BoxDecorations extends StatelessWidget {
               height: double.infinity,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: const Color(0xFF0185D0),
                 border: Border.all(
                   style: BorderStyle.solid,
-                  color: Colors.red,
+                  color: const Color(0xFFFF3780),
                   width: 3,
                 ),
                 borderRadius: BorderRadius.circular(10),
@@ -44,14 +44,14 @@ class BoxDecorations extends StatelessWidget {
               height: double.infinity,
               width: double.infinity,
               decoration: const BoxDecoration(
-                color: Colors.green,
+                color: Color(0xFF0185D0),
                 border: Border(
                   top: BorderSide.none,
                   bottom: BorderSide.none,
                   left: BorderSide.none,
                   right: BorderSide(
                     style: BorderStyle.solid,
-                    color: Colors.red,
+                    color: Color(0xFFFF3780),
                     width: 3,
                   ),
                 ),
@@ -126,7 +126,7 @@ class BoxDecorations extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border.all(
                 style: BorderStyle.solid,
-                color: const Color(0xFF990099),
+                color: const Color(0xFFB7459C),
                 width: 3,
               ),
               boxShadow: [
@@ -150,8 +150,8 @@ class BoxDecorations extends StatelessWidget {
               ),
               gradient: LinearGradient(
                 colors: [
-                  Colors.green,
-                  Colors.red,
+                  const Color(0xFFB7459C),
+                  const Color(0xFF0185D0),
                 ],
                 stops: [0.0, 1.0],
                 begin: Alignment.topLeft,
@@ -167,8 +167,8 @@ class BoxDecorations extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Colors.green,
-                  Colors.red,
+                  const Color(0xFFB7459C),
+                  const Color(0xFF0185D0),
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomRight,
@@ -200,7 +200,13 @@ class BoxDecorations extends StatelessWidget {
                 ),
               ],
               gradient: const SweepGradient(
-                colors: [Colors.red, Colors.purple, Colors.green, Colors.blue, Colors.red],
+                colors: [
+                  Color(0xFFFB7EE4),
+                  Color(0xFFB7459C),
+                  Color(0xFF01D9FE),
+                  Color(0xFF0185D0),
+                  Color(0xFFFB7EE4),
+                ],
                 stops: [0.0, 0.25, 0.5, 0.75, 1],
               ),
             ),
@@ -228,13 +234,13 @@ class BoxDecorations extends StatelessWidget {
               gradient: const RadialGradient(
                 colors: [
                   Colors.white,
-                  Colors.purple,
+                  Color(0xFFB7459C),
                   Colors.white,
-                  Colors.purple,
+                  Color(0xFFB7459C),
                   Colors.white,
-                  Colors.purple,
+                  Color(0xFFB7459C),
                   Colors.white,
-                  Colors.purple,
+                  Color(0xFFB7459C),
                 ],
                 stops: [0.0, 0.2, 0.2, 0.5, 0.5, 0.75, 0.75, 1.0],
                 radius: .5,
@@ -260,14 +266,12 @@ class BoxDecorations extends StatelessWidget {
                   offset: Offset(4, 6),
                 ),
               ],
-              gradient: RadialGradient(
+              gradient: const RadialGradient(
                 colors: [
-                  Colors.blueGrey,
-                  Colors.blue[700],
-                  Colors.purple,
-                  const Color(
-                    0xFF883399,
-                  ),
+                  Color(0xFF01D9FE),
+                  Color(0xFF0185D0),
+                  Color(0xFFFB7EE4),
+                  Color(0xFFB7459C),
                 ],
                 stops: [
                   0.3,

@@ -60,19 +60,22 @@ class _HomeState extends State<Home>{
   );
 
   String titleString = 'Container Examples';
+  Color appBarColor = const Color(0xFFB7459C);
 
   void setTitle(int page) {
     if (page == 0) {
       setState(() {
         titleString = 'Container Examples';
+        appBarColor = const Color(0xFFB7459C);
       });
     } else if (page == 1) {
       setState(() {
         titleString = 'Container Exercises';
+        appBarColor = const Color(0xFFB7459C);
       });
     } else if (page == 2) {
       setState(() {
-        titleString = 'Container Solutions';
+        titleString = 'Container Solutions';appBarColor = const Color(0xFFB7459C);
       });
   //  } else if (page == 3) {
   //    setState(() {
@@ -81,14 +84,17 @@ class _HomeState extends State<Home>{
     } else if (page == 3) {
       setState(() {
         titleString = 'BoxDecoration Examples';
+        appBarColor = const Color(0xFF0185D0);
       });
     } else if (page == 4) {
       setState(() {
         titleString = 'BoxDecoration Exercises';
+        appBarColor = const Color(0xFF0185D0);
       });
     } else if (page == 5) {
       setState(() {
         titleString = 'BoxDecoration Solutions';
+        appBarColor = const Color(0xFF0185D0);
       });
    // } else if (page == 7) {
    //   setState(() {
@@ -97,14 +103,17 @@ class _HomeState extends State<Home>{
     } else if (page == 6) {
       setState(() {
         titleString = 'Text & Styles Examples';
+        appBarColor = const Color(0xFF444444);
       });
     } else if (page == 7) {
       setState(() {
         titleString = 'Text & Styles Exercises';
+        appBarColor = const Color(0xFF444444);
       });
     } else if (page == 8) {
       setState(() {
         titleString = 'Text & Styles Solutions';
+        appBarColor = const Color(0xFF444444);
       });
   //     } else if (page == 11) {
   //       setState(() {
@@ -138,6 +147,7 @@ class _HomeState extends State<Home>{
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: appBarColor,
           title: Text(titleString),
         ),
         body: Padding(
