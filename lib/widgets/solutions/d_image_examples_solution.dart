@@ -46,69 +46,189 @@ class ImageSolution extends StatelessWidget {
               ),
             ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Owl
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.owl,
+                fit: BoxFit.fill,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Jenny
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.invertedJenny,
+                fit: BoxFit.fill,
+              ),
+            ),
 
             ///
             /// BoxFit.contain
             ///
 
-            // TODO Jumping
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.asset(
+                AppImages.jumping,
+                fit: BoxFit.contain,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Owl
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.owl,
+                fit: BoxFit.contain,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Jenny
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.invertedJenny,
+                fit: BoxFit.contain,
+              ),
+            ),
 
             ///
             /// BoxFit.cover
             ///
 
-            // TODO Jumping
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.asset(
+                AppImages.jumping,
+                fit: BoxFit.cover,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Owl
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.owl,
+                fit: BoxFit.cover,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Jenny
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.invertedJenny,
+                fit: BoxFit.cover,
+              ),
+            ),
 
             ///
             /// BoxFit.fitHeight
             ///
 
-            // TODO Jumping
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.asset(
+                AppImages.jumping,
+                fit: BoxFit.fitHeight,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Owl
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.owl,
+                fit: BoxFit.fitHeight,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Jenny
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.invertedJenny,
+                fit: BoxFit.fitHeight,
+              ),
+            ),
 
             ///
             /// BoxFit.fitWidth
             ///
 
-            // TODO Jumping
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.asset(
+                AppImages.jumping,
+                fit: BoxFit.fitWidth,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Owl
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.owl,
+                fit: BoxFit.fitWidth,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Jenny
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.invertedJenny,
+                fit: BoxFit.fitWidth,
+              ),
+            ),
 
             ///
             /// BoxFit.none
             ///
 
-            // TODO Jumping
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.asset(
+                AppImages.jumping,
+                fit: BoxFit.none,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Owl
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.owl,
+                fit: BoxFit.none,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Jenny
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.invertedJenny,
+                fit: BoxFit.none,
+              ),
+            ),
 
             ///
             /// BoxFit.scaleDown
             ///
 
-            // TODO Jumping
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.asset(
+                AppImages.jumping,
+                fit: BoxFit.scaleDown,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Owl
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.owl,
+                fit: BoxFit.scaleDown,
+              ),
+            ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-            // TODO Jenny
+            ImageHolder(
+              heightAndWidth: heightAndWidth,
+              image: Image.network(
+                AppImages.invertedJenny,
+                fit: BoxFit.scaleDown,
+              ),
+            ),
           ],
         ),
       ),
