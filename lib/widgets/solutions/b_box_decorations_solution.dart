@@ -18,8 +18,6 @@ class BoxDecorationSolution extends StatelessWidget {
         children: <Widget>[
           _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
-          /// Exercise #1
-
           // TODO 1) Create a grey container, 200x200, 30 padding all around
           // TODO 2) Give it a child Container with max height and width
           Container(
@@ -49,8 +47,8 @@ class BoxDecorationSolution extends StatelessWidget {
                     width: 3,
                   ),
                 ),
-               // TODO 5) Now we're going to break it. Round the corners by 10 and see what happens to the borders.
-               borderRadius: BorderRadius.circular(10),
+                // TODO 5) Now we're going to break it. Round the corners by 10 and see what happens to the borders.
+                borderRadius: BorderRadius.circular(10),
               ),
 
               /// **********************************************
@@ -73,27 +71,23 @@ class BoxDecorationSolution extends StatelessWidget {
               /// different sizes, "none", or different colors. If they're not all
               /// uniform in any way, the BorderRadius will work but the Borders
               /// and any children will not render
-
             ),
           ),
-
-          /// Exercise 2
-
 
           // TODO 6) Create a Container, 200x200 with 30 top margin and 30 padding all around.
           // TODO 7) Use its decoration to make it grey
           // TODO 8) Give it an image that is a DecorationImage, the fit is "BoxFit.contain" and the image is "AssetImage('assets/images/F.png'),"
-        Container(
+          Container(
             height: 200,
             width: 200,
             margin: const EdgeInsets.only(top: 30),
             padding: const EdgeInsets.all(30),
             decoration: const BoxDecoration(
               color: Colors.grey,
-            image: DecorationImage(
-              fit: BoxFit.contain,
-              image: AssetImage('assets/images/F.png'),
-            ),
+              image: DecorationImage(
+                fit: BoxFit.contain,
+                image: AssetImage('assets/images/F.png'),
+              ),
               // TODO 9) Make two BoxShadows in the list. The first is Color(0xFFFF3780), blurRadius 5 with offset of -8, 8 and the second is Color(0xFF0185D0), BoxShadow with blurRadius 5 and Offset 8, -8
               boxShadow: [
                 BoxShadow(

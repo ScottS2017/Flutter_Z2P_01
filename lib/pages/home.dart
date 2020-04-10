@@ -20,45 +20,38 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 
-class _HomeState extends State<Home>{
-
-
-  List<Widget> pages = [
-    ///
-    const Containers(),
-    const ContainerExercises(),
-    const ContainerSolution(),
-    //  const Containers(),
-
-    ///
-    const BoxDecorations(),
-    const BoxDecorationExercises(),
-    const BoxDecorationSolution(),
-    // const BoxDecorations(),
-
-    ///
-    const TextExamples(),
-    const TextExampleExercises(),
-    const TextExampleSolution(),
-    // const TextExamples(),
-
-  //                   ///
-  //                   const Image_Examples(),
-  //                   const ImageSolution(),
-  //                   const Image_Examples(),
-  //                   // const Image_Examples(),
-
-  //                   ///
-  //                   const IconExamples(),
-  //                   const IconSolution(),
-  //                   const IconExamples(),
-  //                   // const IconExamples(),
-  ];
-
+class _HomeState extends State<Home> {
+  /// Create a page controller and set the first page to whatever is in the
+  /// [0] element of the list of children
   PageController controller = PageController(
-    initialPage: 1,
+    initialPage: 0,
   );
 
+  List<Widget> pages = [
+    /// As the PageView is scrolled right or left, the page content shown
+    /// is determined by this list. Each page number, from 0 to whatever,
+    /// has a corresponding element in this List (think of it as an array element)
+    const Containers(),
+    const IconExamples(),
+    const Image_Examples(),
+    const TextExamples(),
+    const BoxDecorations(),
+
+    const ContainerExercises(),
+    const ContainerExercises(), // Icons Exercises
+    const ContainerExercises(), // Images Exercises
+    const TextExampleExercises(),
+    const BoxDecorationExercises(),
+
+    const ContainerSolution(),
+    const IconSolution(), // Icons Solution
+    const ImageSolution(), // Images Solution
+    const TextExampleSolution(),
+    const BoxDecorationSolution(),
+  ];
+
+  /// This code is completely optional, and is used to change the color &
+  /// text of the AppBar each time you swipe
   String titleString = 'Container Examples';
   Color appBarColor = const Color(0xFFB7459C);
 
@@ -70,93 +63,91 @@ class _HomeState extends State<Home>{
       });
     } else if (page == 1) {
       setState(() {
-        titleString = 'Container Exercises';
-        appBarColor = const Color(0xFFB7459C);
+        titleString = 'Icons Examples';
+        appBarColor = const Color(0xFF0185D0);
       });
     } else if (page == 2) {
       setState(() {
-        titleString = 'Container Solutions';appBarColor = const Color(0xFFB7459C);
+        titleString = 'Image Examples';
+        appBarColor = Colors.teal;
       });
-  //  } else if (page == 3) {
-  //    setState(() {
-  //      titleString = 'Container Homework';
-  //    });
     } else if (page == 3) {
-      setState(() {
-        titleString = 'BoxDecoration Examples';
-        appBarColor = const Color(0xFF0185D0);
-      });
-    } else if (page == 4) {
-      setState(() {
-        titleString = 'BoxDecoration Exercises';
-        appBarColor = const Color(0xFF0185D0);
-      });
-    } else if (page == 5) {
-      setState(() {
-        titleString = 'BoxDecoration Solutions';
-        appBarColor = const Color(0xFF0185D0);
-      });
-   // } else if (page == 7) {
-   //   setState(() {
-   //     titleString = 'BoxDecoration Homework';
-   //   });
-    } else if (page == 6) {
       setState(() {
         titleString = 'Text & Styles Examples';
         appBarColor = const Color(0xFF444444);
       });
+    } else if (page == 4) {
+      setState(() {
+        titleString = 'BoxDecoration Examples';
+        appBarColor = const Color(0xFF0185D0);
+      });
+    } else if (page == 5) {
+      setState(() {
+        titleString = 'Container Exercises';
+        appBarColor = const Color(0xFFB7459C);
+      });
+    } else if (page == 6) {
+      setState(() {
+        titleString = 'Icons Exercises';
+        appBarColor = const Color(0xFF0185D0);
+      });
     } else if (page == 7) {
+      setState(() {
+        titleString = 'Image Exercises';
+        appBarColor = Colors.teal;
+      });
+    } else if (page == 8) {
       setState(() {
         titleString = 'Text & Styles Exercises';
         appBarColor = const Color(0xFF444444);
       });
-    } else if (page == 8) {
+    } else if (page == 9) {
+      setState(() {
+        titleString = 'BoxDecoration Exercises';
+        appBarColor = const Color(0xFF0185D0);
+      });
+    } else if (page == 10) {
+      setState(() {
+        titleString = 'Container Solutions';
+        appBarColor = const Color(0xFFB7459C);
+      });
+    } else if (page == 11) {
+      setState(() {
+        titleString = 'Icons Solutions';
+        appBarColor = const Color(0xFF0185D0);
+      });
+    } else if (page == 12) {
+      setState(() {
+        titleString = 'Image Solutions';
+        appBarColor = Colors.teal;
+      });
+    } else if (page == 13) {
       setState(() {
         titleString = 'Text & Styles Solutions';
         appBarColor = const Color(0xFF444444);
       });
-  //     } else if (page == 11) {
-  //       setState(() {
-  //         titleString = 'Text & Styles Homework';
-  //       });
- //        } else if (page == 9) {
- //          setState(() {
- //            titleString = 'Image Examples';
- //          });
- //        } else if (page == 10) {
- //          setState(() {
- //            titleString = 'Image Exercises';
- //          });
- //        } else if (page == 11) {
- //          setState(() {
- //            titleString = 'Image Solutions';
- //          });
- //      // } else if (page == 15) {
- //      //   setState(() {
- //      //     titleString = 'Image Homework';
- //      //   });
- //        } else if (page == 12) {
- //          setState(() {
- //            titleString = 'Icon Examples';
- //      //    });
+    } else if (page == 14) {
+      setState(() {
+        titleString = 'BoxDecoration Solutions';
+        appBarColor = const Color(0xFF0185D0);
+      });
     }
   }
 
+  /// This is where the UI is laid out. It's the "Blueprint", if you will.
+  /// This just creates a Scaffold with an AppBar and the rest of the
+  /// screen area is used for content. The content is determined
+  /// by which element has been chosen in the "pages" list
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: appBarColor,
-          title: Text(titleString),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8),
-          child: PageView(
-            onPageChanged: setTitle,
-            children: pages,
-          ),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: appBarColor,
+        title: Text(titleString),
+      ),
+      body: PageView(
+        onPageChanged: setTitle,
+        children: pages,
       ),
     );
   }

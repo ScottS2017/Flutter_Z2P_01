@@ -12,68 +12,71 @@ class IconExamples extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-          ExampleIconCustomWidget(
-            color: const Color(0xFF777777),
-            //----------------------------------------------
-            //----------------------------------------------
-            icon: Icon(
-              Icons.g_translate,
-              semanticLabel: 'Google Translate',
-              size: 80,
-              color: Colors.white54,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            ExampleIconCustomWidget(
+              color: const Color(0xFF777777),
+              //----------------------------------------------
+              //----------------------------------------------
+              icon: Icon(
+                Icons.g_translate,
+                semanticLabel: 'Google Translate',
+                size: 80,
+                color: Colors.white54,
+              ),
+              //----------------------------------------------
+              //----------------------------------------------
             ),
-            //----------------------------------------------
-            //----------------------------------------------
-          ),
-          _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-          ExampleIconCustomWidget(
-            color: Colors.purple,
-            //----------------------------------------------
-            //----------------------------------------------
-            icon: Icon(
-              Icons.assistant,
-              semanticLabel: 'Google Assistant',
-              size: 120,
-              color: Colors.white54,
+            _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            ExampleIconCustomWidget(
+              color: Colors.purple,
+              //----------------------------------------------
+              //----------------------------------------------
+              icon: Icon(
+                Icons.assistant,
+                semanticLabel: 'Google Assistant',
+                size: 120,
+                color: Colors.white54,
+              ),
+              //----------------------------------------------
+              //----------------------------------------------
             ),
-            //----------------------------------------------
-            //----------------------------------------------
-          ),
-          _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-          ExampleIconCustomWidget(
-            color: Colors.white,
-            //----------------------------------------------
-            //----------------------------------------------
-            icon: Icon(
-              Icons.alarm,
-              semanticLabel: 'Red Alarm',
-              size: 80,
-              color: Colors.red,
-            ),
-            //----------------------------------------------
-            //----------------------------------------------
-          ),
-          _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-          ExampleIconCustomWidget(
-            color: Colors.red,
-            //----------------------------------------------
-            //----------------------------------------------
-            icon: Icon(
-              Icons.power_settings_new,
-              semanticLabel: 'Power Button',
-              size: 80,
+            _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            ExampleIconCustomWidget(
               color: Colors.white,
+              //----------------------------------------------
+              //----------------------------------------------
+              icon: Icon(
+                Icons.alarm,
+                semanticLabel: 'Red Alarm',
+                size: 80,
+                color: Colors.red,
+              ),
+              //----------------------------------------------
+              //----------------------------------------------
             ),
-            //----------------------------------------------
-            //----------------------------------------------
-          ),
-          _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-        ],
+            _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            ExampleIconCustomWidget(
+              color: Colors.red,
+              //----------------------------------------------
+              //----------------------------------------------
+              icon: Icon(
+                Icons.power_settings_new,
+                semanticLabel: 'Power Button',
+                size: 80,
+                color: Colors.white,
+              ),
+              //----------------------------------------------
+              //----------------------------------------------
+            ),
+            _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+          ],
+        ),
       ),
     );
   }
