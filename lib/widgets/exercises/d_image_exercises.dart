@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:o1_widgets_you_can_see/app/app_colors.dart';
 import 'package:o1_widgets_you_can_see/app/app_images.dart';
 
-class ImageSolution extends StatelessWidget {
-  const ImageSolution({
+class ImageExercise extends StatelessWidget {
+  const ImageExercise({
     Key key,
   }) : super(key: key);
 
