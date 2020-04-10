@@ -4,12 +4,11 @@ import 'package:o1_widgets_you_can_see/app/app_strings.dart';
 import 'package:o1_widgets_you_can_see/app/app_textstyles.dart';
 
 class TextExampleExercises extends StatelessWidget {
-
   const TextExampleExercises({
     Key key,
   }) : super(key: key);
 
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height:16);
+  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
 
   /// Text: "A run of text with a single style."
 
@@ -22,14 +21,7 @@ class TextExampleExercises extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-            // TODO Delete the placeholder
-            Placeholder(
-              fallbackHeight: 750,
-              fallbackWidth: double.infinity,
-            ),
 
             /// Remember the way we're organizing a Flutter App, we're
             /// using an AppStrings class to hold all of our Strings
@@ -45,7 +37,6 @@ class TextExampleExercises extends StatelessWidget {
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
             // TODO 4) Less hand holding, figure out things that aren't spelled out... Thurs: color 0185D0, w200, size 48
-
 
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
@@ -63,15 +54,15 @@ class TextExampleExercises extends StatelessWidget {
             //
             // TODO 8) Make 3 examples: Fade right, fade bottom and ellipsis overflows using the first line of the Gettysburg address (it's in AppStrings.getAd) and use AppTextStyles to set the font to normal and 18
 
-              /// To fade right, softWrap has to be false!
+            /// To fade right, softWrap has to be false!
 
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
-              /// softWrap is true by default but this is just here to remind you that to fade bottom you need softWrap to be **true**
+            /// softWrap is true by default but this is just here to remind you that to fade bottom you need softWrap to be **true**
 
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
-              /// Again, to use TextOverflow.ellipsis, softWrap has to be false
+            /// Again, to use TextOverflow.ellipsis, softWrap has to be false
 
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
           ],

@@ -19,58 +19,22 @@ class IconExercise extends StatelessWidget {
           _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
           ExampleIconCustomWidget(
             color: const Color(0xFF777777),
-            //----------------------------------------------
-            //----------------------------------------------
-            icon: Icon(
-              Icons.g_translate,
-              semanticLabel: 'Google Translate',
-              size: 80,
-              color: Colors.white54,
-            ),
-            //----------------------------------------------
-            //----------------------------------------------
+            // TODO 1) Add the icon parameter: Google Translate icon, size is 80 and color is white 54
           ),
           _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
           ExampleIconCustomWidget(
             color: Colors.purple,
-            //----------------------------------------------
-            //----------------------------------------------
-            icon: Icon(
-              Icons.assistant,
-              semanticLabel: 'Google Assistant',
-              size: 120,
-              color: Colors.white54,
-            ),
-            //----------------------------------------------
-            //----------------------------------------------
+            // TODO 2) Add the icon parameter: Google Assistant icon, size 120 and color is white 54
           ),
           _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
           ExampleIconCustomWidget(
             color: Colors.white,
-            //----------------------------------------------
-            //----------------------------------------------
-            icon: Icon(
-              Icons.alarm,
-              semanticLabel: 'Red Alarm',
-              size: 80,
-              color: Colors.red,
-            ),
-            //----------------------------------------------
-            //----------------------------------------------
+            // TODO 3) Add the icon parameter: Alarm icon, size is 80 and color is red and add a semantics label that says Red Alarm
           ),
           _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
           ExampleIconCustomWidget(
             color: Colors.red,
-            //----------------------------------------------
-            //----------------------------------------------
-            icon: Icon(
-              Icons.power_settings_new,
-              semanticLabel: 'Power Button',
-              size: 80,
-              color: Colors.white,
-            ),
-            //----------------------------------------------
-            //----------------------------------------------
+            // TODO 4) Add the icon parameter: Power Settings icon, size is 80 and color is white
           ),
           _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
         ],

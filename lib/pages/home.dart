@@ -13,7 +13,7 @@ import 'package:o1_widgets_you_can_see/widgets/solutions/a_container_solution.da
 import 'package:o1_widgets_you_can_see/widgets/solutions/b_box_decorations_solution.dart';
 import 'package:o1_widgets_you_can_see/widgets/solutions/c_text_examples_solution.dart';
 import 'package:o1_widgets_you_can_see/widgets/solutions/d_image_examples_solution.dart';
-import 'package:o1_widgets_you_can_see/widgets/solutions/e_icon_examples_solution.dart';
+import 'package:o1_widgets_you_can_see/widgets/solutions/e_icon_solution.dart';
 
 class Home extends StatefulWidget {
   const Home({Key key}) : super(key: key);
@@ -34,21 +34,19 @@ class _HomeState extends State<Home> {
     /// is determined by this list. Each page number, from 0 to whatever,
     /// has a corresponding element in this List (think of it as an array element)
     const Containers(),
-    const IconExamples(),
-    const Image_Examples(),
-    const TextExamples(),
-    const BoxDecorations(),
-
     const ContainerExercises(),
-    const IconExercise(), // Icons Exercises
-    const ImageExercise(), // Images Exercises
-    const TextExampleExercises(),
-    const BoxDecorationExercises(),
-
     const ContainerSolution(),
-    const IconSolution(), // Icons Solution
-    const ImageSolution(), // Images Solution
+    const IconExamples(),
+    const IconExercise(),
+    const IconSolution(),
+    const Image_Examples(),
+    const ImageExercise(),
+    const ImageSolution(),
+    const TextExamples(),
+    const TextExampleExercises(),
     const TextExampleSolution(),
+    const BoxDecorations(),
+    const BoxDecorationExercises(),
     const BoxDecorationSolution(),
   ];
 
@@ -65,33 +63,33 @@ class _HomeState extends State<Home> {
       });
     } else if (page == 1) {
       setState(() {
-        titleString = 'Icons Examples';
-        appBarColor = const Color(0xFF0185D0);
+        titleString = 'Container Exercises';
+        appBarColor = const Color(0xFFB7459C);
       });
     } else if (page == 2) {
       setState(() {
-        titleString = 'Image Examples';
-        appBarColor = Colors.teal;
+        titleString = 'Container Solutions';
+        appBarColor = const Color(0xFFB7459C);
       });
     } else if (page == 3) {
       setState(() {
-        titleString = 'Text & Styles Examples';
-        appBarColor = const Color(0xFF444444);
+        titleString = 'Icons Examples';
+        appBarColor = const Color(0xFF0185D0);
       });
     } else if (page == 4) {
       setState(() {
-        titleString = 'BoxDecoration Examples';
+        titleString = 'Icons Exercises';
         appBarColor = const Color(0xFF0185D0);
       });
     } else if (page == 5) {
       setState(() {
-        titleString = 'Container Exercises';
-        appBarColor = const Color(0xFFB7459C);
+        titleString = 'Icons Solutions';
+        appBarColor = const Color(0xFF0185D0);
       });
     } else if (page == 6) {
       setState(() {
-        titleString = 'Icons Exercises';
-        appBarColor = const Color(0xFF0185D0);
+        titleString = 'Image Examples';
+        appBarColor = Colors.teal;
       });
     } else if (page == 7) {
       setState(() {
@@ -100,33 +98,33 @@ class _HomeState extends State<Home> {
       });
     } else if (page == 8) {
       setState(() {
-        titleString = 'Text & Styles Exercises';
-        appBarColor = const Color(0xFF444444);
-      });
-    } else if (page == 9) {
-      setState(() {
-        titleString = 'BoxDecoration Exercises';
-        appBarColor = const Color(0xFF0185D0);
-      });
-    } else if (page == 10) {
-      setState(() {
-        titleString = 'Container Solutions';
-        appBarColor = const Color(0xFFB7459C);
-      });
-    } else if (page == 11) {
-      setState(() {
-        titleString = 'Icons Solutions';
-        appBarColor = const Color(0xFF0185D0);
-      });
-    } else if (page == 12) {
-      setState(() {
         titleString = 'Image Solutions';
         appBarColor = Colors.teal;
       });
-    } else if (page == 13) {
+    } else if (page == 9) {
+      setState(() {
+        titleString = 'Text & Styles Examples';
+        appBarColor = const Color(0xFF444444);
+      });
+    } else if (page == 10) {
+      setState(() {
+        titleString = 'Text & Styles Exercises';
+        appBarColor = const Color(0xFF444444);
+      });
+    } else if (page == 11) {
       setState(() {
         titleString = 'Text & Styles Solutions';
         appBarColor = const Color(0xFF444444);
+      });
+    } else if (page == 12) {
+      setState(() {
+        titleString = 'BoxDecoration Examples';
+        appBarColor = const Color(0xFF0185D0);
+      });
+    } else if (page == 13) {
+      setState(() {
+        titleString = 'BoxDecoration Exercises';
+        appBarColor = const Color(0xFF0185D0);
       });
     } else if (page == 14) {
       setState(() {
