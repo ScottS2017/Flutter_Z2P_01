@@ -38,6 +38,7 @@ class ImageSolution extends StatelessWidget {
             /// BoxFit.fill
             ///
             // Example:
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
@@ -65,7 +66,7 @@ class ImageSolution extends StatelessWidget {
             ///
             /// BoxFit.contain
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
@@ -93,7 +94,7 @@ class ImageSolution extends StatelessWidget {
             ///
             /// BoxFit.cover
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
@@ -121,7 +122,7 @@ class ImageSolution extends StatelessWidget {
             ///
             /// BoxFit.fitHeight
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
@@ -149,7 +150,7 @@ class ImageSolution extends StatelessWidget {
             ///
             /// BoxFit.fitWidth
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
@@ -177,7 +178,7 @@ class ImageSolution extends StatelessWidget {
             ///
             /// BoxFit.none
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
@@ -205,7 +206,7 @@ class ImageSolution extends StatelessWidget {
             ///
             /// BoxFit.scaleDown
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(

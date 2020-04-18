@@ -402,7 +402,7 @@ class Image_Examples extends StatelessWidget {
               color: Colors.teal,
               child: Image.asset(
                 AppImages.jumping,
-                fit: BoxFit.fitHeight,
+                fit: BoxFit.fitWidth,
               ),
             ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
@@ -412,7 +412,7 @@ class Image_Examples extends StatelessWidget {
               color: Colors.teal,
               child: Image.network(
                 AppImages.owl,
-                fit: BoxFit.fitHeight,
+                fit: BoxFit.fitWidth,
               ),
             ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
@@ -422,7 +422,7 @@ class Image_Examples extends StatelessWidget {
               color: Colors.teal,
               child: Image.network(
                 AppImages.invertedJenny,
-                fit: BoxFit.fitHeight,
+                fit: BoxFit.fitWidth,
               ),
             ),
 

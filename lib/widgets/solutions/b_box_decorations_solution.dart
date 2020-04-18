@@ -29,11 +29,11 @@ class BoxDecorationSolution extends StatelessWidget {
               height: double.infinity,
               width: double.infinity,
               // TODO 3) Create BoxDecoration with Color(0xFFFF3780). Test it
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: const Color(0xFFFF3780),
 
                 // TODO 4) Give it a Border with 2 BorderSides: top and right: solid, black 3; bottom and left: none. Test it again.
-                border: const Border(
+                border: Border(
                   top: BorderSide(
                     style: BorderStyle.solid,
                     color: Colors.black,
@@ -47,8 +47,7 @@ class BoxDecorationSolution extends StatelessWidget {
                     width: 3,
                   ),
                 ),
-                // TODO 5) Now we're going to break it. Round the corners by 10 and see what happens to the borders.
-                borderRadius: BorderRadius.circular(10),
+                // TODO 5) Now we're going to break it. Round the corners by 10 and see what happens to the borders.  When you're done delete that line so it won't keep causing that error.
               ),
 
               /// **********************************************

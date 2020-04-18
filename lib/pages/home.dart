@@ -12,7 +12,7 @@ import 'package:o1_widgets_you_can_see/widgets/exercises/e_icon_exercises.dart';
 import 'package:o1_widgets_you_can_see/widgets/solutions/a_container_solution.dart';
 import 'package:o1_widgets_you_can_see/widgets/solutions/b_box_decorations_solution.dart';
 import 'package:o1_widgets_you_can_see/widgets/solutions/c_text_examples_solution.dart';
-import 'package:o1_widgets_you_can_see/widgets/solutions/d_image_examples_solution.dart';
+import 'package:o1_widgets_you_can_see/widgets/solutions/d_image_solution.dart';
 import 'package:o1_widgets_you_can_see/widgets/solutions/e_icon_solution.dart';
 
 class Home extends StatefulWidget {

@@ -38,6 +38,7 @@ class ImageExercise extends StatelessWidget {
             /// BoxFit.fill
             ///
             // Example:
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
@@ -53,7 +54,7 @@ class ImageExercise extends StatelessWidget {
             ///
             /// BoxFit.contain
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Jumping
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Owl
@@ -63,7 +64,7 @@ class ImageExercise extends StatelessWidget {
             ///
             /// BoxFit.cover
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Jumping
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Owl
@@ -73,7 +74,7 @@ class ImageExercise extends StatelessWidget {
             ///
             /// BoxFit.fitHeight
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Jumping
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Owl
@@ -83,7 +84,7 @@ class ImageExercise extends StatelessWidget {
             ///
             /// BoxFit.fitWidth
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Jumping
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Owl
@@ -93,7 +94,7 @@ class ImageExercise extends StatelessWidget {
             ///
             /// BoxFit.none
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Jumping
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Owl
@@ -103,7 +104,7 @@ class ImageExercise extends StatelessWidget {
             ///
             /// BoxFit.scaleDown
             ///
-
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Jumping
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             // TODO Owl
