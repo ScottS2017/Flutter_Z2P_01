@@ -3,7 +3,7 @@ import 'package:o1_widgets_you_can_see/pages/welcome.dart';
 
 void main() => runApp(WidgetsYouCanSee());
 
-/// Github URL:  https://tinyurl.com/Z2P-Widgets-You-Can-See
+/// Repo URL:  bit.ly/Z2P-1
 
 class WidgetsYouCanSee extends StatelessWidget {
   @override
