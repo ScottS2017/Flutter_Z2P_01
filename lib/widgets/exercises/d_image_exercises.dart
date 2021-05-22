@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/app/app_colors.dart';
-import 'package:o1_widgets_you_can_see/app/app_images.dart';
+import 'package:o1_widgets_you_can_see/res/res_colors.dart';
+import 'package:o1_widgets_you_can_see/res/res_images.dart';
 
 class ImageExercise extends StatelessWidget {
   const ImageExercise({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 32);
@@ -14,7 +14,7 @@ class ImageExercise extends StatelessWidget {
     final double heightAndWidth = MediaQuery.of(context).size.width - 32;
     return SingleChildScrollView(
       child: Container(
-        color: AppColors.darkThemeTealPrimary,
+        color: Theme.of(context).cardColor,
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -42,7 +42,7 @@ class ImageExercise extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.fill,
               ),
             ),
@@ -119,9 +119,9 @@ class ImageExercise extends StatelessWidget {
 
 class ImageHolder extends StatelessWidget {
   const ImageHolder({
-    Key key,
-    @required this.heightAndWidth,
-    @required this.image,
+    Key? key,
+    required this.heightAndWidth,
+    required this.image,
   }) : super(key: key);
 
   final double heightAndWidth;

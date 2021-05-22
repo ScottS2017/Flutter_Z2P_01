@@ -16,7 +16,7 @@ import 'package:o1_widgets_you_can_see/widgets/solutions/d_image_solution.dart';
 import 'package:o1_widgets_you_can_see/widgets/solutions/e_icon_solution.dart';
 
 class Home extends StatefulWidget {
-  const Home({Key key}) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   _HomeState createState() => _HomeState();

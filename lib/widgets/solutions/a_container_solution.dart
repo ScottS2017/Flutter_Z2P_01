@@ -5,7 +5,7 @@ class ContainerSolution extends StatelessWidget {
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
 
   const ContainerSolution({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

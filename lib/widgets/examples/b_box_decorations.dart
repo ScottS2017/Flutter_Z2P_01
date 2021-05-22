@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class BoxDecorations extends StatelessWidget {
   const BoxDecorations({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

@@ -1,4 +1,4 @@
-class AppStrings {
+class ResStrings {
 
   // AppBar Titles
   static const textAlign  = 'textAlign:';

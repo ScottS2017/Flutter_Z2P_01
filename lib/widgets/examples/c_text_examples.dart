@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/app/app_colors.dart';
-import 'package:o1_widgets_you_can_see/app/app_strings.dart';
+import 'package:o1_widgets_you_can_see/res/res_colors.dart';
+import 'package:o1_widgets_you_can_see/res/res_strings.dart';
 
 class TextExamples extends StatelessWidget {
   const TextExamples({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   /// Text: "A run of text with a single style."
@@ -41,7 +41,7 @@ class TextExamples extends StatelessWidget {
             /// Examples of textAlign
             Container(
               child: const Text(
-                AppStrings.textAlign,
+                ResStrings.textAlign,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -52,7 +52,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.notAlignedDefault,
+                ResStrings.notAlignedDefault,
               ),
             ),
             const SizedBox(
@@ -61,7 +61,7 @@ class TextExamples extends StatelessWidget {
             Container(
               alignment: Alignment.centerRight,
               child: const Text(
-                AppStrings.notAlignedCenterRight,
+                ResStrings.notAlignedCenterRight,
               ),
             ),
             const SizedBox(
@@ -69,7 +69,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.leftAligned,
+                ResStrings.leftAligned,
                 textAlign: TextAlign.left,
               ),
             ),
@@ -78,7 +78,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.centerAlign,
+                ResStrings.centerAlign,
                 textAlign: TextAlign.center,
               ),
             ),
@@ -87,7 +87,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.rightAlign,
+                ResStrings.rightAlign,
                 textAlign: TextAlign.right,
               ),
             ),
@@ -99,7 +99,7 @@ class TextExamples extends StatelessWidget {
             /// softWrap
             Container(
               child: const Text(
-                AppStrings.softWrap,
+                ResStrings.softWrap,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -110,7 +110,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.ifSoftwrapIsNotSpecified,
+                ResStrings.ifSoftwrapIsNotSpecified,
               ),
             ),
             const SizedBox(
@@ -121,7 +121,7 @@ class TextExamples extends StatelessWidget {
             /// overflow
             Container(
               child: const Text(
-                AppStrings.overflow,
+                ResStrings.overflow,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -132,7 +132,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.overflowElipsisTestText,
+                ResStrings.overflowElipsisTestText,
                 overflow: TextOverflow.ellipsis,
               ),
             ),
@@ -141,7 +141,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.overflowClipTestText,
+                ResStrings.overflowClipTestText,
                 softWrap: false,
                 overflow: TextOverflow.clip,
               ),
@@ -151,7 +151,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.overflowFadeTestText,
+                ResStrings.overflowFadeTestText,
                 softWrap: false,
                 overflow: TextOverflow.fade,
               ),
@@ -161,7 +161,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.overflowDiscuss,
+                ResStrings.overflowDiscuss,
                 maxLines: 1,
                 overflow: TextOverflow.fade,
                 style: TextStyle(
@@ -177,7 +177,7 @@ class TextExamples extends StatelessWidget {
             /// TextScaleFactor
             Container(
               child: const Text(
-                AppStrings.textScaleFactor,
+                ResStrings.textScaleFactor,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -188,7 +188,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.textScaleFactorTestText,
+                ResStrings.textScaleFactorTestText,
                 textScaleFactor: 0.75,
               ),
             ),
@@ -200,7 +200,7 @@ class TextExamples extends StatelessWidget {
             /// TextStyle
             Container(
               child: const Text(
-                AppStrings.textStyle,
+                ResStrings.textStyle,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
             ),
@@ -212,7 +212,7 @@ class TextExamples extends StatelessWidget {
             /// fontWeights
             Container(
               child: const Text(
-                AppStrings.fontWeight,
+                ResStrings.fontWeight,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -223,7 +223,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.w100,
+                ResStrings.w100,
                 style: TextStyle(
                   fontWeight: FontWeight.w100,
                 ),
@@ -234,7 +234,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.w200,
+                ResStrings.w200,
                 style: TextStyle(
                   fontWeight: FontWeight.w200,
                 ),
@@ -245,7 +245,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.w300,
+                ResStrings.w300,
                 style: TextStyle(
                   fontWeight: FontWeight.w300,
                 ),
@@ -256,7 +256,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.w400,
+                ResStrings.w400,
                 style: TextStyle(
                   fontWeight: FontWeight.w400,
                 ),
@@ -267,7 +267,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.w500,
+                ResStrings.w500,
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                 ),
@@ -278,7 +278,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.w600,
+                ResStrings.w600,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                 ),
@@ -289,7 +289,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.w700,
+                ResStrings.w700,
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
                 ),
@@ -300,7 +300,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.w700IsBold,
+                ResStrings.w700IsBold,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -311,7 +311,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.w800,
+                ResStrings.w800,
                 style: TextStyle(
                   fontWeight: FontWeight.w800,
                 ),
@@ -322,7 +322,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.w900,
+                ResStrings.w900,
                 style: TextStyle(
                   fontWeight: FontWeight.w900,
                 ),
@@ -336,7 +336,7 @@ class TextExamples extends StatelessWidget {
             /// fontStyles
             Container(
               child: const Text(
-                AppStrings.fontStyle,
+                ResStrings.fontStyle,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -347,7 +347,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.italic,
+                ResStrings.italic,
                 style: TextStyle(fontStyle: FontStyle.italic),
               ),
             ),
@@ -356,7 +356,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.normal,
+                ResStrings.normal,
                 style: TextStyle(fontStyle: FontStyle.normal),
               ),
             ),
@@ -368,7 +368,7 @@ class TextExamples extends StatelessWidget {
             /// fontSizes
             Container(
               child: const Text(
-                AppStrings.fontSize,
+                ResStrings.fontSize,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -379,7 +379,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.fs10,
+                ResStrings.fs10,
                 style: TextStyle(
                   fontSize: 10,
                 ),
@@ -390,7 +390,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.fs12,
+                ResStrings.fs12,
                 style: TextStyle(
                   fontSize: 12,
                 ),
@@ -401,7 +401,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.fs14,
+                ResStrings.fs14,
                 style: TextStyle(
                   fontSize: 14,
                 ),
@@ -412,7 +412,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.fs18,
+                ResStrings.fs18,
                 style: TextStyle(
                   fontSize: 18,
                 ),
@@ -423,7 +423,7 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.fs20,
+                ResStrings.fs20,
                 style: TextStyle(
                   fontSize: 20,
                 ),
@@ -437,7 +437,7 @@ class TextExamples extends StatelessWidget {
             /// Drop Shadows
             Container(
               child: const Text(
-                AppStrings.shadowsTakesList,
+                ResStrings.shadowsTakesList,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -448,12 +448,12 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.shadowsEx1,
+                ResStrings.shadowsEx1,
                 style: TextStyle(
                   shadows: [
                     Shadow(
                       blurRadius: 2,
-                      color: AppColors.darkTheme2dpElevationOverlay,
+                      color: Colors.black87,
                       offset: Offset(1, 1),
                     ),
                   ],
@@ -465,11 +465,11 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.shadowsEx2,
+                ResStrings.shadowsEx2,
                 style: TextStyle(shadows: [
                   Shadow(
                     blurRadius: 5,
-                    color: AppColors.primaryDarkPurple,
+                    color: ResColors.primaryDarkPurple,
                     offset: Offset(0, 0),
                   )
                 ]),
@@ -480,18 +480,18 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.multipleShadows,
+                ResStrings.multipleShadows,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   shadows: [
                     Shadow(
                       blurRadius: 1,
-                      color: AppColors.primaryDarkRed,
+                      color: ResColors.primaryDarkRed,
                       offset: Offset(5, 5),
                     ),
                     Shadow(
                       blurRadius: 1,
-                      color: AppColors.primaryDarkBlue,
+                      color: ResColors.primaryDarkBlue,
                       offset: Offset(-5, -5),
                     ),
                   ],
@@ -506,10 +506,10 @@ class TextExamples extends StatelessWidget {
             /// font color
             Container(
               child: const Text(
-                AppStrings.colorRed,
+                ResStrings.colorRed,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  color: AppColors.primaryDarkRed,
+                  color: ResColors.primaryDarkRed,
                 ),
               ),
             ),
@@ -518,11 +518,11 @@ class TextExamples extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                AppStrings.bgBlue,
+                ResStrings.bgBlue,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  color: AppColors.darkThemeWhite,
-                  backgroundColor: AppColors.primaryDarkBlue,
+                  color: ResColors.whiteTextColor,
+                  backgroundColor: ResColors.primaryDarkBlue,
                 ),
               ),
             ),
@@ -534,7 +534,7 @@ class TextExamples extends StatelessWidget {
             /// letter spacing
             Container(
               child: const Text(
-                AppStrings.letterSpacingExample,
+                ResStrings.letterSpacingExample,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   letterSpacing: 10,

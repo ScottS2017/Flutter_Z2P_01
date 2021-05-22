@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/app/app_colors.dart';
-import 'package:o1_widgets_you_can_see/app/app_strings.dart';
-import 'package:o1_widgets_you_can_see/app/app_textstyles.dart';
 
 class TextExampleExercises extends StatelessWidget {
   const TextExampleExercises({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);

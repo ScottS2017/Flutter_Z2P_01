@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class IconExercise extends StatelessWidget {
   const IconExercise({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   final SizedBox _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
@@ -44,11 +44,11 @@ class IconExercise extends StatelessWidget {
 }
 
 class ExampleIconCustomWidget extends StatelessWidget {
-  final Icon icon;
-  final Color color;
+  final Icon? icon;
+  final Color? color;
 
   const ExampleIconCustomWidget({
-    Key key,
+    Key? key,
     this.icon,
     this.color,
   }) : super(key: key);

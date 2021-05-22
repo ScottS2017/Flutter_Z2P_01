@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/app/app_colors.dart';
-import 'package:o1_widgets_you_can_see/app/app_images.dart';
+import 'package:o1_widgets_you_can_see/res/res_colors.dart';
+import 'package:o1_widgets_you_can_see/res/res_images.dart';
 
 class ImageSolution extends StatelessWidget {
   const ImageSolution({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 32);
@@ -14,7 +14,7 @@ class ImageSolution extends StatelessWidget {
     final double heightAndWidth = MediaQuery.of(context).size.width - 32;
     return SingleChildScrollView(
       child: Container(
-        color: AppColors.darkThemeTealPrimary,
+        color: ResColors.darkThemeTealPrimary,
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -42,7 +42,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.fill,
               ),
             ),
@@ -50,7 +50,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.fill,
               ),
             ),
@@ -58,7 +58,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.fill,
               ),
             ),
@@ -70,7 +70,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.contain,
               ),
             ),
@@ -78,7 +78,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.contain,
               ),
             ),
@@ -86,7 +86,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.contain,
               ),
             ),
@@ -98,7 +98,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.cover,
               ),
             ),
@@ -106,7 +106,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.cover,
               ),
             ),
@@ -114,7 +114,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.cover,
               ),
             ),
@@ -126,7 +126,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.fitHeight,
               ),
             ),
@@ -134,7 +134,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.fitHeight,
               ),
             ),
@@ -142,7 +142,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.fitHeight,
               ),
             ),
@@ -154,7 +154,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.fitWidth,
               ),
             ),
@@ -162,7 +162,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.fitWidth,
               ),
             ),
@@ -170,7 +170,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.fitWidth,
               ),
             ),
@@ -182,7 +182,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.none,
               ),
             ),
@@ -190,7 +190,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.none,
               ),
             ),
@@ -198,7 +198,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.none,
               ),
             ),
@@ -210,7 +210,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.scaleDown,
               ),
             ),
@@ -218,7 +218,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.scaleDown,
               ),
             ),
@@ -226,7 +226,7 @@ class ImageSolution extends StatelessWidget {
             ImageHolder(
               heightAndWidth: heightAndWidth,
               image: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.scaleDown,
               ),
             ),
@@ -239,9 +239,9 @@ class ImageSolution extends StatelessWidget {
 
 class ImageHolder extends StatelessWidget {
   const ImageHolder({
-    Key key,
-    @required this.heightAndWidth,
-    @required this.image,
+    Key? key,
+    required this.heightAndWidth,
+    required this.image,
   }) : super(key: key);
 
   final double heightAndWidth;

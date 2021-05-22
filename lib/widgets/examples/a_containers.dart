@@ -6,7 +6,7 @@ class Containers extends StatelessWidget {
   final String test = 'test';
 
   const Containers({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

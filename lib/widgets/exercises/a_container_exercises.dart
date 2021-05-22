@@ -5,7 +5,7 @@ class ContainerExercises extends StatelessWidget {
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
 
   const ContainerExercises({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

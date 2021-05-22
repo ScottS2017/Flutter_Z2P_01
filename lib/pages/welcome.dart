@@ -8,7 +8,7 @@ import 'package:o1_widgets_you_can_see/pages/home.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({
-    Key key,
+    Key? key,
   }) : super(key: key);
   @override
   _WelcomeState createState() => _WelcomeState();
@@ -123,7 +123,7 @@ class _WelcomeState extends State<Welcome> with SingleTickerProviderStateMixin {
                 child: Container(
                   height: MediaQuery.of(context).size.height,
                   width: MediaQuery.of(context).size.width,
-                  color: AppColors.darkThemeNoElevation,
+                  color: ResColors.darkThemeNoElevation,
                   child: Column(
                     children: <Widget>[
                       const Spacer(
@@ -141,7 +141,7 @@ class _WelcomeState extends State<Welcome> with SingleTickerProviderStateMixin {
                         flex: 1,
                       ),
                       Image.asset(
-                        AppImages.flutterLogo,
+                        ResImages.flutterLogo,
                         semanticLabel: 'Flutter, zero to productive',
                       ),
                       const Spacer(

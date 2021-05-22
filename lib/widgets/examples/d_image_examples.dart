@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/app/app_colors.dart';
-import 'package:o1_widgets_you_can_see/app/app_images.dart';
-import 'package:o1_widgets_you_can_see/app/app_textstyles.dart';
+import 'package:o1_widgets_you_can_see/res/res_themes.dart';
+import 'package:o1_widgets_you_can_see/res/res_images.dart';
 
 class Image_Examples extends StatelessWidget {
   const Image_Examples({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 32);
@@ -15,7 +14,7 @@ class Image_Examples extends StatelessWidget {
     final double heightAndWidth = MediaQuery.of(context).size.width - 32;
     return SingleChildScrollView(
       child: Container(
-        color: AppColors.darkThemeTealPrimary,
+        color: Theme.of(context).cardColor,
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -48,7 +47,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
               ),
             ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
@@ -57,7 +56,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.owl,
+                ResImages.owl,
               ),
             ),
             divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
@@ -66,7 +65,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
               ),
             ),
 
@@ -117,7 +116,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.fill,
               ),
             ),
@@ -127,7 +126,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.fill,
               ),
             ),
@@ -137,7 +136,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.fill,
               ),
             ),
@@ -188,7 +187,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.contain,
               ),
             ),
@@ -198,7 +197,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.contain,
               ),
             ),
@@ -208,7 +207,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.contain,
               ),
             ),
@@ -259,7 +258,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.cover,
               ),
             ),
@@ -269,7 +268,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.cover,
               ),
             ),
@@ -279,7 +278,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.cover,
               ),
             ),
@@ -330,7 +329,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.fitHeight,
               ),
             ),
@@ -340,7 +339,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.fitHeight,
               ),
             ),
@@ -350,7 +349,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.fitHeight,
               ),
             ),
@@ -401,7 +400,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.fitWidth,
               ),
             ),
@@ -411,7 +410,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.fitWidth,
               ),
             ),
@@ -421,7 +420,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.fitWidth,
               ),
             ),
@@ -473,7 +472,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.none,
               ),
             ),
@@ -483,7 +482,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.none,
               ),
             ),
@@ -493,7 +492,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.none,
               ),
             ),
@@ -545,7 +544,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.asset(
-                AppImages.jumping,
+                ResImages.jumping,
                 fit: BoxFit.scaleDown,
               ),
             ),
@@ -555,7 +554,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.owl,
+                ResImages.owl,
                 fit: BoxFit.scaleDown,
               ),
             ),
@@ -565,7 +564,7 @@ class Image_Examples extends StatelessWidget {
               width: heightAndWidth,
               color: Colors.teal,
               child: Image.network(
-                AppImages.invertedJenny,
+                ResImages.invertedJenny,
                 fit: BoxFit.scaleDown,
               ),
             ),

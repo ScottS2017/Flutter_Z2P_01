@@ -1,4 +1,4 @@
-class AppImages{
+class ResImages{
 	static const String flutterLogo = 'assets/images/F.png';
 	static const String blueprint = 'assets/images/blueprint.jpg';
 	static const String dive = 'assets/images/dive CC-0.jpg';

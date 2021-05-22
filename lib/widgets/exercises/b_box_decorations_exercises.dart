@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class BoxDecorationExercises extends StatelessWidget {
   const BoxDecorationExercises({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   final SizedBox _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(

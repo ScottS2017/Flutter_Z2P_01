@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/app/app_colors.dart';
+import 'package:o1_widgets_you_can_see/res/res_colors.dart';
 
 
 /// Text Styles
@@ -7,10 +7,10 @@ class AppTextStyles {
   const AppTextStyles._();
 
   static const TextStyle appBarTextStyle = TextStyle(
-    color: AppColors.whiteTextColor,
+    color: ResColors.whiteTextColor,
     shadows: [
       Shadow(
-        color: AppColors.dropShadowColor,
+        color: ResColors.dropShadowColor,
         offset: Offset(2, 2),
         blurRadius: 1,
       ),

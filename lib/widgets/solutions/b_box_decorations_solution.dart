@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class BoxDecorationSolution extends StatelessWidget {
   const BoxDecorationSolution({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   final SizedBox _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
@@ -174,12 +174,12 @@ class BoxDecorationSolution extends StatelessWidget {
                   offset: Offset(4, 6),
                 ),
               ],
-              // TODO 17) It's a bright, sunshiny day! Add a RadialGradient, yellow, orange and blue[300]. The stops are 0.3, 0.6 and 0.8
+              // TODO 17) It's a bright, sunshiny day! Add a RadialGradient, yellow, orange and blue[300]. The stops are 0.3, 0.6 and 0.8 (Beware the null safety trap!)
               gradient: RadialGradient(
                 colors: [
                   Colors.yellow,
                   Colors.orange,
-                  Colors.blue[300],
+                  Colors.blue[300]!,
                 ],
                 stops: [
                   0.3,
