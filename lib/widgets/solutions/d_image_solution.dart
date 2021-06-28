@@ -14,7 +14,7 @@ class ImageSolution extends StatelessWidget {
     final double heightAndWidth = MediaQuery.of(context).size.width - 32;
     return SingleChildScrollView(
       child: Container(
-        color: ResColors.darkThemeTealPrimary,
+        color: ResColors.primaryDarkGreen,
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/app/app_colors.dart';
-import 'package:o1_widgets_you_can_see/app/app_images.dart';
 import 'package:o1_widgets_you_can_see/pages/home.dart';
+import 'package:o1_widgets_you_can_see/res/res_colors.dart';
+import 'package:o1_widgets_you_can_see/res/res_images.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({
@@ -123,7 +123,7 @@ class _WelcomeState extends State<Welcome> with SingleTickerProviderStateMixin {
                 child: Container(
                   height: MediaQuery.of(context).size.height,
                   width: MediaQuery.of(context).size.width,
-                  color: ResColors.darkThemeNoElevation,
+                  color: ResColors.blackTextColor,
                   child: Column(
                     children: <Widget>[
                       const Spacer(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/pages/welcome.dart';
+import 'package:o1_widgets_you_can_see/pages/home2.dart';
 import 'package:o1_widgets_you_can_see/res/res_themes.dart';
 
 void main() => runApp(WidgetsYouCanSee());
@@ -12,8 +12,9 @@ class WidgetsYouCanSee extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Z2P Widgets You Can See',
-      theme: ResThemes.tealTheme,
-      home: const Welcome(),
+      // theme: ResThemes.tealTheme,
+      home: const Home2(title:'Zero to Productive'),
+      // home: const Welcome(),
     );
   }
 }

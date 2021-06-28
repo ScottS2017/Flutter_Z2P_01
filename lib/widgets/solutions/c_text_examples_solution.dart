@@ -8,7 +8,7 @@ class TextExampleSolution extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
+  final SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
 
   /// Text: "A run of text with a single style."
 
@@ -22,7 +22,7 @@ class TextExampleSolution extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
             /// Remember the way we're organizing a Flutter App, we're
             /// using an AppStrings class to hold all of our Strings
@@ -38,12 +38,12 @@ class TextExampleSolution extends StatelessWidget {
                 fontStyle: FontStyle.italic,
               ),
             ),
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
             //TODO 2) Tues: In a Container that has a color of "AppColors.darkTheme24dpElevationOverlay", with padding all around of 16 you want text that uses, the app string of tu. Make it right aligned, color 0185D0, bold, size 18 and with a letter spacing of 12 and a background color of FB7EE4
             Container(
               padding: const EdgeInsets.all(16),
-              color: ResColors.darkTheme24dpElevationOverlay,
+              color: ResColors.blackScrim,
               child: const Text(
                 ResStrings.tu,
                 semanticsLabel: ResStrings.tu,
@@ -57,7 +57,7 @@ class TextExampleSolution extends StatelessWidget {
                 ),
               ),
             ),
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
             //TODO 3) Wed: Text, the app string is wed, make it centered, size 24 with a drop shadow color of dark theme 3dp elevation overlay, blur radius of 2 and an offset of 3, 3
             Text(
@@ -68,7 +68,7 @@ class TextExampleSolution extends StatelessWidget {
                 fontSize: 24,
                 shadows: [
                   Shadow(
-                    color: ResColors.darkTheme3dpElevationOverlay,
+                    color: ResColors.blackScrim,
                     blurRadius: 2,
                     offset: const Offset(3, 3),
                   ),
@@ -77,7 +77,7 @@ class TextExampleSolution extends StatelessWidget {
             ),
             //
             // TODO 4) Less hand holding, figure out things that aren't spelled out... Thurs: color 0185D0, w200, size 48
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             Text(
               ResStrings.th,
               semanticsLabel: ResStrings.th,
@@ -87,7 +87,7 @@ class TextExampleSolution extends StatelessWidget {
                 fontSize: 48,
               ),
             ),
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
             // TODO 5) Fri: bold italic with a drop shadow color of dropShadowColor(?!), blur 1 offset 2-2
             Text(
@@ -105,7 +105,7 @@ class TextExampleSolution extends StatelessWidget {
                 ],
               ),
             ),
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
             //TODO 6) Sat: ***NEW!!! Use AppTextStyles.dart to implement a bold italic 36 font
             Text(
@@ -113,7 +113,7 @@ class TextExampleSolution extends StatelessWidget {
               semanticsLabel: ResStrings.sat,
               style: AppTextStyles.boldItalic36,
             ),
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
             //TODO 7) Sun Align the text right and use AppTextStyles.dart and "copyWith" to implement a bold italic 24 font in primaryRed
             Text(
@@ -124,7 +124,7 @@ class TextExampleSolution extends StatelessWidget {
                 color: const Color(0xFFFF3780),
               ),
             ),
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             //
             // TODO 8) Make examples of fade right, fade bottom and ellipsis overflows using the first line of the Gettysburg address (it's in AppStrings.getAd) and use AppTextStyles to set the font to normal and 18
             Text(
@@ -136,7 +136,7 @@ class TextExampleSolution extends StatelessWidget {
               overflow: TextOverflow.fade,
               style: AppTextStyles.normal18,
             ),
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             Text(
               ResStrings.getAd,
               semanticsLabel: ResStrings.getAd,
@@ -147,7 +147,7 @@ class TextExampleSolution extends StatelessWidget {
               overflow: TextOverflow.fade,
               maxLines: 1,
             ),
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             Text(
               ResStrings.getAd,
               semanticsLabel: ResStrings.getAd,
@@ -157,7 +157,7 @@ class TextExampleSolution extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: AppTextStyles.normal18,
             ),
-            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
           ],
         ),
       ),
