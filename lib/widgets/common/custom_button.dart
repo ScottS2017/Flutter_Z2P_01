@@ -5,25 +5,22 @@ class CustomButton extends StatelessWidget {
   const CustomButton({
     Key? key,
     required this.text,
-    required this.width,
+    required this.callback,
     this.height = 35,
     this.color = const Color(0xFFD3DCE4),
   }) : super(key: key);
 
   final String text;
-  final double width;
   final double height;
   final Color color;
+  final VoidCallback callback;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        print('Implement Me');
-      },
+      onTap: callback,
       child: Container(
         height: height,
-        width: width,
         alignment: Alignment.center,
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
