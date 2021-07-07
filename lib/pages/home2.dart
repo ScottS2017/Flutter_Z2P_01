@@ -1,5 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:o1_widgets_you_can_see/pages/button_section.dart';
+import 'package:o1_widgets_you_can_see/widgets/examples/a_containers.dart';
+import 'package:o1_widgets_you_can_see/widgets/examples/b_box_decorations.dart';
+import 'package:o1_widgets_you_can_see/widgets/examples/c_text_examples.dart';
+import 'package:o1_widgets_you_can_see/widgets/examples/d_image_examples.dart';
+import 'package:o1_widgets_you_can_see/widgets/examples/e_icon_examples.dart';
+import 'package:o1_widgets_you_can_see/widgets/exercises/a_container_exercises.dart';
+import 'package:o1_widgets_you_can_see/widgets/exercises/b_box_decorations_exercises.dart';
+import 'package:o1_widgets_you_can_see/widgets/exercises/c_text_exercises.dart';
+import 'package:o1_widgets_you_can_see/widgets/exercises/d_image_exercises.dart';
+import 'package:o1_widgets_you_can_see/widgets/exercises/e_icon_exercises.dart';
+import 'package:o1_widgets_you_can_see/widgets/solutions/a_container_solution.dart';
+import 'package:o1_widgets_you_can_see/widgets/solutions/b_box_decorations_solution.dart';
+import 'package:o1_widgets_you_can_see/widgets/solutions/c_text_examples_solution.dart';
+import 'package:o1_widgets_you_can_see/widgets/solutions/d_image_solution.dart';
+import 'package:o1_widgets_you_can_see/widgets/solutions/e_icon_solution.dart';
 
 class Home2 extends StatelessWidget {
   final String title;
@@ -22,82 +37,113 @@ class Home2 extends StatelessWidget {
         child: Column(
           children: [
             ButtonSection(
-              label: 'Container Basics',
-              callback1: () {
-                print('Callback 1-1');
-              },
-              callback2: () {
-                print('Callback 1-2');
-              },
-              callback3: () {
-                print('Callback 1-3');
-              },
+              label: 'Containers, Alignment, Padding and Margin',
+              callback1: () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Containers(),
+                ),
+              ),
+              callback2:() => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ContainerExercises(),
+                ),
+              ),
+              callback3: () => Navigator.push<Route>(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const ContainerSolution(),
+        ),
+      ),
             ),
             divider__________________________,
             ButtonSection(
-              label: 'Decorations',
-              callback1: () {
-                print('Callback 2-1');
-              },
-              callback2: () {
-                print('Callback 2-2');
-              },
-              callback3: () {
-                print('Callback 2-3');
-              },
-            ),
-            divider__________________________,
-            ButtonSection(
-              label: 'Gradients',
-              callback1: () {
-                print('Callback 3-1');
-              },
-              callback2: () {
-                print('Callback 3-2');
-              },
-              callback3: () {
-                print('Callback 3-3');
-              },
+              label: 'Decorations and Gradients',
+              callback1: () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const BoxDecorations(),
+                ),
+              ),
+              callback2:  () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const BoxDecorationExercises(),
+                ),
+              ),
+              callback3: () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const BoxDecorationSolution(),
+                ),
+              ),
             ),
             divider__________________________,
             ButtonSection(
               label: 'Icons',
-              callback1: () {
-                print('Callback 4-1');
-              },
-              callback2: () {
-                print('Callback 4-2');
-              },
-              callback3: () {
-                print('Callback 4-3');
-              },
+              callback1: () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const IconExamples(),
+                ),
+              ),
+              callback2: () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const IconExercise(),
+                ),
+              ),
+              callback3:() => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const IconSolution(),
+                ),
+              ),
             ),
             divider__________________________,
             ButtonSection(
-              label: 'Images',
-              callback1: () {
-                print('Callback 5-1');
-              },
-              callback2: () {
-                print('Callback 5-2');
-              },
-              callback3: () {
-                print('Callback 5-3');
-              },
+              label: 'Image Basics',
+              callback1: () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Image_Examples(),
+                ),
+              ),
+              callback2:  () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ImageExercise(),
+                ),
+              ),
+              callback3:  () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ImageSolution(),
+                ),
+              ),
             ),
             divider__________________________,
             ButtonSection(
-              label: 'TextStyle'
-                  '',
-              callback1: () {
-                print('Callback 6-1');
-              },
-              callback2: () {
-                print('Callback 6-2');
-              },
-              callback3: () {
-                print('Callback 6-3');
-              },
+              label: 'Text and TextStyle',
+              callback1: () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const TextExamples(),
+                ),
+              ),
+              callback2: () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const TextExampleExercises(),
+                ),
+              ),
+              callback3:  () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const TextExampleSolution(),
+                ),
+              ),
             ),
           ],
         ),

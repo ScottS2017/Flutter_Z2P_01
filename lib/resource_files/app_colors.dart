@@ -2,6 +2,15 @@ import 'package:flutter/material.dart';
 
 class AppColors {
 
+  static const Color appThemePrimaryDarkBlue = Color(0xFF303F9F);
+  static const Color appThemeLightPrimaryBlue = Color(0xFFC5CAE9);
+  static const Color appThemePrimaryBlue = Color(0xFF3F51B5);
+  static const Color appThemeTextAndIcons = Color(0xFFFFFFFF);
+  static const Color appThemeBlueAccentColor = Color(0xFF448AFF);
+  static const Color appThemePrimaryText = Color(0xFF212121);
+  static const Color appThemeSecondaryText = Color(0xFF757575);
+  static const Color appThemeDividerColor = Color(0xFFBDBDBD);
+
   // General Colors
   static const Color whiteTextColor = Color(0xB3FFFFFF);
   static const Color blackTextColor = Color(0xFF111111);

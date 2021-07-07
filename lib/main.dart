@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:o1_widgets_you_can_see/pages/home2.dart';
-import 'package:o1_widgets_you_can_see/res/res_themes.dart';
+import 'package:o1_widgets_you_can_see/resource_files/app_colors.dart';
 
 void main() => runApp(WidgetsYouCanSee());
 

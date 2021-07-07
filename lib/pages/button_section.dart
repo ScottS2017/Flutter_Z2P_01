@@ -35,7 +35,7 @@ class ButtonSection extends StatelessWidget {
             Expanded(
               child: CustomButton(
                 callback: callback1,
-                text: 'Sample',
+                text: 'Example',
                 color: Color(0xFFd8d8d8),
               ),
             ),

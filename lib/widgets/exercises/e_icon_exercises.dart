@@ -11,33 +11,40 @@ class IconExercise extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-          ExampleIconCustomWidget(
-            color: const Color(0xFF777777),
-            // TODO 1) Add the icon parameter: Google Translate icon, size is 80 and color is white 54
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Icon Exercises'),
+      ),
+      body: SizedBox.expand(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              ExampleIconCustomWidget(
+                color: const Color(0xFF777777),
+                // TODO 1) Add the icon parameter: Google Translate icon, size is 80 and color is white 54
+              ),
+              _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              ExampleIconCustomWidget(
+                color: Colors.purple,
+                // TODO 2) Add the icon parameter: Google Assistant icon, size 120 and color is white 54
+              ),
+              _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              ExampleIconCustomWidget(
+                color: Colors.white,
+                // TODO 3) Add the icon parameter: Alarm icon, size is 80 and color is red and add a semantics label that says Red Alarm
+              ),
+              _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              ExampleIconCustomWidget(
+                color: Colors.red,
+                // TODO 4) Add the icon parameter: Power Settings icon, size is 80 and color is white
+              ),
+              _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            ],
           ),
-          _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-          ExampleIconCustomWidget(
-            color: Colors.purple,
-            // TODO 2) Add the icon parameter: Google Assistant icon, size 120 and color is white 54
-          ),
-          _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-          ExampleIconCustomWidget(
-            color: Colors.white,
-            // TODO 3) Add the icon parameter: Alarm icon, size is 80 and color is red and add a semantics label that says Red Alarm
-          ),
-          _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-          ExampleIconCustomWidget(
-            color: Colors.red,
-            // TODO 4) Add the icon parameter: Power Settings icon, size is 80 and color is white
-          ),
-          _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-        ],
+        ),
       ),
     );
   }
