@@ -5,7 +5,7 @@ class IconExercise extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final SizedBox _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
+  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
     height: 32,
   );
 
@@ -21,27 +21,31 @@ class IconExercise extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ExampleIconCustomWidget(
                 color: const Color(0xFF777777),
                 // TODO 1) Add the icon parameter: Google Translate icon, size is 80 and color is white 54
+                // Your code here
               ),
-              _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ExampleIconCustomWidget(
                 color: Colors.purple,
                 // TODO 2) Add the icon parameter: Google Assistant icon, size 120 and color is white 54
+                // Your code here
               ),
-              _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ExampleIconCustomWidget(
                 color: Colors.white,
                 // TODO 3) Add the icon parameter: Alarm icon, size is 80 and color is red and add a semantics label that says Red Alarm
+                // Your code here
               ),
-              _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ExampleIconCustomWidget(
                 color: Colors.red,
                 // TODO 4) Add the icon parameter: Power Settings icon, size is 80 and color is white
+                // Your code here
               ),
-              _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ],
           ),
         ),
@@ -51,14 +55,14 @@ class IconExercise extends StatelessWidget {
 }
 
 class ExampleIconCustomWidget extends StatelessWidget {
-  final Icon? icon;
-  final Color? color;
-
   const ExampleIconCustomWidget({
     Key? key,
     this.icon,
     this.color,
   }) : super(key: key);
+
+  final Icon? icon;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {

@@ -5,7 +5,7 @@ class BoxDecorationSolution extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final SizedBox _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
+  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
     height: 30,
   );
 
@@ -20,7 +20,7 @@ class BoxDecorationSolution extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
 
 

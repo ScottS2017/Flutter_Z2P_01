@@ -5,7 +5,7 @@ class BoxDecorationExercises extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final SizedBox _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
+  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
     height: 30,
   );
 
@@ -20,7 +20,7 @@ class BoxDecorationExercises extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+            divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
             // TODO 1) Create a grey container, 200x200, 30 padding all around
             // TODO 2) Give it a child Container with max height and width

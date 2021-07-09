@@ -8,7 +8,7 @@ class TextExampleSolution extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
+  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
 
   /// Text: "A run of text with a single style."
 
@@ -26,11 +26,12 @@ class TextExampleSolution extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
               /// Remember the way we're organizing a Flutter App, we're
               /// using an AppStrings class to hold all of our Strings
-              //TODO 1) Mon: Text, the app string is mon, centered, FF3780, w600, size 18 and italic
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              //
+              // TODO 1) Make a Text, the string is AppStrings.mon. Center the text and make it FF3780, w600, size 18 and italic
               const Text(
                 AppStrings.mon,
                 semanticsLabel: AppStrings.mon,
@@ -42,12 +43,12 @@ class TextExampleSolution extends StatelessWidget {
                   fontStyle: FontStyle.italic,
                 ),
               ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
-              //TODO 2) Tues: In a Container that has a color of "AppColors.darkTheme24dpElevationOverlay", with padding all around of 16 you want text that uses, the app string of tu. Make it right aligned, color 0185D0, bold, size 18 and with a letter spacing of 12 and a background color of FB7EE4
+              //TODO 2) In a Container that has a color of "AppColors.appThemeSecondaryText", with padding all around of 16, you want text that uses the app string of tu. Make it right aligned, color 0185D0, bold, size 18 and with a letter spacing of 12 and a background color of FB7EE4
               Container(
                 padding: const EdgeInsets.all(16),
-                color: AppColors.blackScrim,
+                color: AppColors.appThemeSecondaryText,
                 child: const Text(
                   AppStrings.tu,
                   semanticsLabel: AppStrings.tu,
@@ -61,9 +62,9 @@ class TextExampleSolution extends StatelessWidget {
                   ),
                 ),
               ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
-              //TODO 3) Wed: Text, the app string is wed, make it centered, size 24 with a drop shadow color of dark theme 3dp elevation overlay, blur radius of 2 and an offset of 3, 3
+              //TODO 3) Make a text, the app string is wed, make it centered, size 24 with a drop shadow color of dropShadowColor, blur radius of 2 and an offset of 3, 3
               Text(
                 AppStrings.wed,
                 semanticsLabel: AppStrings.wed,
@@ -72,16 +73,16 @@ class TextExampleSolution extends StatelessWidget {
                   fontSize: 24,
                   shadows: [
                     Shadow(
-                      color: AppColors.blackScrim,
+                      color: AppColors.dropShadowColor,
                       blurRadius: 2,
                       offset: const Offset(3, 3),
                     ),
                   ],
                 ),
               ),
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
-              // TODO 4) Less hand holding, figure out things that aren't spelled out... Thurs: color 0185D0, w200, size 48
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              // TODO 4) Less hand holding here, figure out things that aren't expressly stated... Thurs: color 0185D0, w200, size 48
               Text(
                 AppStrings.th,
                 semanticsLabel: AppStrings.th,
@@ -91,9 +92,9 @@ class TextExampleSolution extends StatelessWidget {
                   fontSize: 48,
                 ),
               ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
-              // TODO 5) Fri: bold italic with a drop shadow color of dropShadowColor(?!), blur 1 offset 2-2
+              // TODO 5) Even less...AppStrings.fr, bold italic, add a drop shadow with blur 1 and offset 2-2
               Text(
                 AppStrings.fr,
                 semanticsLabel: AppStrings.fr,
@@ -109,59 +110,54 @@ class TextExampleSolution extends StatelessWidget {
                   ],
                 ),
               ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
-              //TODO 6) Sat: ***NEW!!! Use AppTextStyles.dart to implement a bold italic 36 font
+              //TODO 6) AppStrings.sat and use AppTextStyles.dart to implement a bold italic 36 font
               Text(
                 AppStrings.sat,
                 semanticsLabel: AppStrings.sat,
                 style: AppTextStyles.boldItalic36,
               ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
-              //TODO 7) Sun Align the text right and use AppTextStyles.dart and "copyWith" to implement a bold italic 24 font in primaryRed
+              //TODO 7) AppStrings.sun, align the text right and use AppTextStyles.dart and "copyWith" to implement a bold italic 24 font in primaryRed
               Text(
                 AppStrings.sun,
                 semanticsLabel: AppStrings.sun,
                 textAlign: TextAlign.right,
                 style: AppTextStyles.boldItalic24.copyWith(
-                  color: const Color(0xFFFF3780),
+                  color: AppColors.primaryRed,
                 ),
               ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
-              // TODO 8) Make examples of fade right, fade bottom and ellipsis overflows using the first line of the Gettysburg address (it's in AppStrings.getAd) and use AppTextStyles to set the font to normal and 18
+              // TODO 8) Make examples of fade right, fade bottom and ellipsis overflows using the first line of the Gettysburg address (it's in AppStrings.getAd) and use AppTextStyles to set the font to normal 18
               Text(
                 AppStrings.getAd,
                 semanticsLabel: AppStrings.getAd,
 
-                /// To fade right, softWrap has to be false
+                /// TIP: To fade or use ellipsis, softWrap has to be false. After all, you can't have overflow and wrap at the same time (unless you set maxLines)
                 softWrap: false,
                 overflow: TextOverflow.fade,
                 style: AppTextStyles.normal18,
               ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               Text(
                 AppStrings.getAd,
                 semanticsLabel: AppStrings.getAd,
                 style: AppTextStyles.normal18,
-
-                /// It's true by default but this is just here to remind you that to fade bottom you need softWrap to be true.
                 softWrap: true,
                 overflow: TextOverflow.fade,
                 maxLines: 1,
               ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               Text(
                 AppStrings.getAd,
                 semanticsLabel: AppStrings.getAd,
-
-                /// Again, to use TextOverflow.ellipsis, softWrap has to be false
                 softWrap: false,
                 overflow: TextOverflow.ellipsis,
                 style: AppTextStyles.normal18,
               ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ],
           ),
         ),
