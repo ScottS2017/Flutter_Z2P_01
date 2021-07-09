@@ -22,37 +22,7 @@ class BoxDecorationSolution extends StatelessWidget {
           children: <Widget>[
             _xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
-            // TODO 1) Create a grey container, 200x200, 30 padding all around
-            // TODO 2) Give it a child Container with max height and width
-            Container(
-              padding: const EdgeInsets.all(30),
-              height: 200,
-              width: 200,
-              color: Colors.grey,
-              child: Container(
-                height: double.infinity,
-                width: double.infinity,
-                // TODO 3) Create BoxDecoration with Color(0xFFFF3780). Test it
-                decoration: const BoxDecoration(
-                  color: const Color(0xFFFF3780),
 
-                  // TODO 4) Give it a Border with 2 BorderSides: top and right: solid, black 3; bottom and left: none. Test it again.
-                  border: Border(
-                    top: BorderSide(
-                      style: BorderStyle.solid,
-                      color: Colors.black,
-                      width: 3,
-                    ),
-                    bottom: BorderSide.none,
-                    left: BorderSide.none,
-                    right: BorderSide(
-                      style: BorderStyle.solid,
-                      color: Colors.black,
-                      width: 3,
-                    ),
-                  ),
-                  // TODO 5) Now we're going to break it. Round the corners by 10 and see what happens to the borders.  When you're done delete that line so it won't keep causing that error.
-                ),
 
                 /// **********************************************
                 /// A BorderRadius won't work if the borders aren't uniform. Since this
@@ -74,169 +44,51 @@ class BoxDecorationSolution extends StatelessWidget {
                 /// different sizes, "none", or different colors. If they're not all
                 /// uniform in any way, the BorderRadius will work but the Borders
                 /// and any children will not render
-              ),
-            ),
+
 
             // TODO 6) Create a Container, 200x200 with 30 top margin and 30 padding all around.
             // TODO 7) Use its decoration to make it grey
             // TODO 8) Give it an image that is a DecorationImage, the fit is "BoxFit.contain" and the image is "AssetImage('assets/images/F.png'),"
-            Container(
-              height: 200,
-              width: 200,
-              margin: const EdgeInsets.only(top: 30),
-              padding: const EdgeInsets.all(30),
-              decoration: const BoxDecoration(
-                color: Colors.grey,
-                image: DecorationImage(
-                  fit: BoxFit.contain,
-                  image: AssetImage('assets/images/F.png'),
-                ),
+
                 // TODO 9) Make two BoxShadows in the list. The first is Color(0xFFFF3780), blurRadius 5 with offset of -8, 8 and the second is Color(0xFF0185D0), BoxShadow with blurRadius 5 and Offset 8, -8
-                boxShadow: [
-                  BoxShadow(
-                    color: Color(0xFFFF3780),
-                    blurRadius: 5,
-                    offset: Offset(-8, 8),
-                  ),
-                  BoxShadow(
-                    color: Color(0xFF0185D0),
-                    blurRadius: 5,
-                    offset: Offset(8, -8),
-                  ),
-                ],
-              ),
-            ),
+
 
             /// Exercise 3)
 
             // TODO 10) Container, 200x200, top margin of 30, padding 30 all around
             // TODO 11) Add a Linear Gradient that has colors FFFB7EE4 and FFB7459C, is aligned topLeft to bottomRight and has stops of 0.35 and 0.65
-            Container(
-              height: 200,
-              width: 200,
-              margin: const EdgeInsets.only(top: 30),
-              padding: const EdgeInsets.all(30),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    const Color(0xFFFB7EE4),
-                    const Color(0xFFB7459C),
-                  ],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  stops: [0.35, 0.65],
-                ),
+
                 // TODO 12)  Give it an image that is a DecorationImage, the fit is "BoxFit.contain" and the image is "AssetImage('assets/images/F.png'),"
-                image: const DecorationImage(
-                  fit: BoxFit.contain,
-                  image: AssetImage('assets/images/F.png'),
-                ),
+
                 // TODO 13) Create a circular border all the way around that is solid, 3 wide, has a color of 0xFFDDDDDD and a border radius of 100.
-                border: Border.all(
-                  style: BorderStyle.solid,
-                  color: const Color(0xFFDDDDDD),
-                  width: 3,
-                ),
-                borderRadius: BorderRadius.circular(100),
+
                 // TODO 14) Give it a pair of BoxShadows (Hint: Both go in the same list). Their colors are 0xFF009900 and 0xFF990000, blurRadii of 15 and offsets of 4.0, 6.0 and -4.0, -6.0
-                boxShadow: [
-                  const BoxShadow(
-                    color: Color(0xFF0185D0),
-                    blurRadius: 5,
-                    offset: Offset(4, 6),
-                  ),
-                  const BoxShadow(
-                    color: Color(0xFF01D9FE),
-                    blurRadius: 5,
-                    offset: Offset(-4, -6),
-                  ),
-                ],
-              ),
-            ),
+
 
             /// Exercise 4)
 
             // TODO 15) Container, 200x200, top margin of 30, padding 30 all around
-            Container(
-              height: 200,
-              width: 200,
-              margin: const EdgeInsets.only(top: 30),
-              padding: const EdgeInsets.all(30),
-              decoration: BoxDecoration(
+
+
                 // TODO 16) Solid border all the way around that is 0xFFBBBBBB and circular with a radius of 70. Give it a shadow of black87 and blur 12, with an offset of  4, 6
-                border: Border.all(
-                  style: BorderStyle.solid,
-                  color: const Color(0xFFBBBBBB),
-                  width: 3,
-                ),
-                borderRadius: BorderRadius.circular(70),
-                boxShadow: [
-                  const BoxShadow(
-                    color: Colors.black54,
-                    blurRadius: 12,
-                    spreadRadius: 2,
-                    offset: Offset(4, 6),
-                  ),
-                ],
+
                 // TODO 17) It's a bright, sunshiny day! Add a RadialGradient, yellow, orange and blue[300]. The stops are 0.3, 0.6 and 0.8 (Beware the null safety trap!)
-                gradient: RadialGradient(
-                  colors: [
-                    Colors.yellow,
-                    Colors.orange,
-                    Colors.blue[300]!,
-                  ],
-                  stops: [
-                    0.3,
-                    0.6,
-                    0.8,
-                  ],
+
                   // TODO 18) What really makes this work: Set the center parameter to an Alignment of 0.8, -0.8
-                  center: const Alignment(0.8, -0.8),
-                ),
-              ),
-            ),
+
 
             /// Exercise 5)
 
             // TODO 19) Container, 400 high and 200 wide. Again, top margin of 30 and padding 30 all around
             // TODO 20) Solid border all around, 3 wide and the color is FFBBBBBB. Round the corners by 20
-            Container(
-              height: 400,
-              width: 200,
-              margin: const EdgeInsets.only(top: 30, bottom: 30),
-              padding: const EdgeInsets.all(30),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  style: BorderStyle.solid,
-                  color: const Color(0xFFBBBBBB),
-                  width: 3,
-                ),
-                borderRadius: BorderRadius.circular(20),
+
                 // TODO 21) Make a BoxShadow that's black 87, blurRadius of 12 and offset 4. 6
-                boxShadow: [
-                  const BoxShadow(
-                    color: Colors.black87,
-                    blurRadius: 12,
-                    offset: Offset(4, 6),
-                  ),
-                ],
+
                 // TODO 22) Let's turn this into a cool background for a phone app. Add a SweepGradient with colors: FF0185D0, FFB7459C, FFFF3780  with stops of 0.5, 0.75, and 1
-                gradient: const SweepGradient(
-                  colors: [
-                    Color(0xFF0185D0),
-                    Color(0xFFB7459C),
-                    Color(0xFFFF3780),
-                  ],
-                  stops: [
-                    0.5,
-                    0.75,
-                    1,
-                  ],
+
                   // TODO 23) Last but not least, make this look really cool by moving the center so the point of origin is centered horizontally and on the bottom edge of the screen. Figure that out yourself... by now, you can do it! Hint: Look at what the center parameter of the SweepGradient takes. If you're in an IDE you can link to the SweepGradient source code.
-                  center: Alignment(0.0, 1.0),
-                ),
-              ),
-            ),
+
+
           ],
         ),
       ),

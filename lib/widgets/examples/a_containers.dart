@@ -14,7 +14,7 @@ class Containers extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Containers and More'),
+        title: const Text('Container Examples'),
       ),
       body: SizedBox.expand(
         child: Padding(

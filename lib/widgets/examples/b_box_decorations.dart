@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:o1_widgets_you_can_see/resource_files/app_colors.dart';
 
 class BoxDecorations extends StatelessWidget {
   const BoxDecorations({
@@ -133,7 +134,7 @@ class BoxDecorations extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border.all(
                       style: BorderStyle.solid,
-                      color: const Color(0xFFB7459C),
+                      color: AppColors.appThemePrimaryDarkBlue,
                       width: 3,
                     ),
                     boxShadow: [
@@ -157,7 +158,7 @@ class BoxDecorations extends StatelessWidget {
                     ),
                     gradient: LinearGradient(
                       colors: [
-                        const Color(0xFFB7459C),
+                        AppColors.appThemePrimaryDarkBlue,
                         const Color(0xFF0185D0),
                       ],
                       stops: [0.0, 1.0],
@@ -174,7 +175,7 @@ class BoxDecorations extends StatelessWidget {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        const Color(0xFFB7459C),
+                        AppColors.appThemePrimaryDarkBlue,
                         const Color(0xFF0185D0),
                       ],
                       begin: Alignment.topCenter,
