@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:o1_widgets_you_can_see/resource_files/app_colors.dart';
 import 'package:o1_widgets_you_can_see/resource_files/app_images.dart';
 
 class Image_Examples extends StatelessWidget {
@@ -6,7 +7,8 @@ class Image_Examples extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 32);
+  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
+      const SizedBox(height: 32);
 
   @override
   Widget build(BuildContext context) {
@@ -27,48 +29,27 @@ class Image_Examples extends StatelessWidget {
                 /// Raw images without any fit
                 ///
 
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 32),
-                  child: Text(
-                    'These are the Raw Images',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      shadows: [
-                        Shadow(
-                          color: Colors.black,
-                          offset: const Offset(1.5, 1.5),
-                          blurRadius: 2,
-                        ),
-                      ],
-                    ),
-                  ),
+                TextLabel(
+                  text: 'These are the Raw Images',
                 ),
 
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.asset(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image: Image.asset(
                     AppImages.jumping,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image: Image.network(
                     AppImages.owl,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image: Image.network(
                     AppImages.invertedJenny,
                   ),
                 ),
@@ -77,69 +58,29 @@ class Image_Examples extends StatelessWidget {
                 /// BoxFit.fill
                 ///
 
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 32),
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        'BoxFit.fill',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Text(
-                        '(Aspect Ratio Not Maintained)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                TextLabel(
+                  text: 'BoxFit.fill\n(Aspect Ratio Not Maintained)',
                 ),
 
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.asset(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image: Image.asset(
                     AppImages.jumping,
                     fit: BoxFit.fill,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:  Image.network(
                     AppImages.owl,
                     fit: BoxFit.fill,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.network(
                     AppImages.invertedJenny,
                     fit: BoxFit.fill,
                   ),
@@ -148,140 +89,62 @@ class Image_Examples extends StatelessWidget {
                 ///
                 /// BoxFit.contain
                 ///
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 32),
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        'BoxFit.contain',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Text(
-                        '(Aspect Ratio Is Maintained)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                TextLabel(
+                  text: 'BoxFit.contain\n(Aspect Ratio Is Maintained)',
                 ),
 
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.asset(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image: Image.asset(
                     AppImages.jumping,
                     fit: BoxFit.contain,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:  Image.network(
                     AppImages.owl,
                     fit: BoxFit.contain,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image: Image.network(
                     AppImages.invertedJenny,
                     fit: BoxFit.contain,
                   ),
                 ),
 
+
                 ///
                 /// BoxFit.cover
                 ///
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 32),
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        'BoxFit.cover',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Text(
-                        '(It will cover the entire Contianer by fitting the smaller side and cropping the larger one)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                ///
+                TextLabel(
+                  text: 'BoxFit.cover',
                 ),
 
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.asset(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image: Image.asset(
                     AppImages.jumping,
                     fit: BoxFit.cover,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image: Image.network(
                     AppImages.owl,
                     fit: BoxFit.cover,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.network(
                     AppImages.invertedJenny,
                     fit: BoxFit.cover,
                   ),
@@ -290,69 +153,33 @@ class Image_Examples extends StatelessWidget {
                 ///
                 /// BoxFit.fitHeight
                 ///
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 32),
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        'BoxFit.fitHeight',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Text(
-                        '( It could crop the width)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                TextLabel(
+                  text: 'BoxFit.fitHeight\n(It could crop the width)'),
 
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.asset(
+
+
+
+
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image: Image.asset(
                     AppImages.jumping,
                     fit: BoxFit.fitHeight,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.network(
                     AppImages.owl,
                     fit: BoxFit.fitHeight,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.network(
                     AppImages.invertedJenny,
                     fit: BoxFit.fitHeight,
                   ),
@@ -361,222 +188,173 @@ class Image_Examples extends StatelessWidget {
                 ///
                 /// BoxFit.fitWidth
                 ///
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 32),
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        'BoxFit.fitWidth',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Text(
-                        '( It could crop the height)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                TextLabel(
+                    text: 'BoxFit.fitWidth\n( It could crop the height)'),
 
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.asset(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.asset(
                     AppImages.jumping,
                     fit: BoxFit.fitWidth,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.network(
                     AppImages.owl,
                     fit: BoxFit.fitWidth,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.network(
                     AppImages.invertedJenny,
                     fit: BoxFit.fitWidth,
                   ),
                 ),
+
 
                 ///
                 /// BoxFit.none
                 ///
 
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 32),
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        'BoxFit.none',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Text(
-                        '( Let it Overflow)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                TextLabel(
+                    text: 'BoxFit.none\n(Let It Overflow)'),
 
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.asset(
+
+
+
+
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.asset(
                     AppImages.jumping,
                     fit: BoxFit.none,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.network(
                     AppImages.owl,
                     fit: BoxFit.none,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.network(
                     AppImages.invertedJenny,
                     fit: BoxFit.none,
                   ),
                 ),
+
 
                 ///
                 /// BoxFit.scaleDown
                 ///
 
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 32),
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        'BoxFit.scaleDown',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Text(
-                        '(Shrink if too big, else do nothing)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black,
-                              offset: const Offset(1.5, 1.5),
-                              blurRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                TextLabel(text:  'BoxFit.scaleDown\n(Shrink if too big, else do nothing)',),
 
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.asset(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.asset(
                     AppImages.jumping,
                     fit: BoxFit.scaleDown,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.network(
                     AppImages.owl,
                     fit: BoxFit.scaleDown,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                Container(
-                  height: heightAndWidth,
-                  width: heightAndWidth,
-                  color: Colors.teal,
-                  child: Image.network(
+                ImageFrame(
+                  heightAndWidth: heightAndWidth,
+                  image:Image.network(
                     AppImages.invertedJenny,
                     fit: BoxFit.scaleDown,
                   ),
                 ),
+                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ],
             ),
           ),
         ),
       ),
+    );
+  }
+}
+
+class TextLabel extends StatelessWidget {
+  const TextLabel({
+    Key? key,
+    required this.text,
+  }) : super(key: key);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+      decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.secondary,
+          border: Border.all(
+            width: 2,
+            color: AppColors.appThemeDividerColor,
+          ),
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.dropShadowColor,
+              offset: const Offset(1, 1),
+              blurRadius: 1,
+            )
+          ]),
+      child: FittedBox(
+        child: Text(
+          text,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+            shadows: [
+              Shadow(
+                color: AppColors.dropShadowColor,
+                offset: const Offset(1, 1),
+                blurRadius: 1,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+class ImageFrame extends StatelessWidget {
+  const ImageFrame({
+    Key? key,
+    required this.image,
+    required this.heightAndWidth,
+  }) : super(key: key);
+
+  final Image image;
+  final double heightAndWidth;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: heightAndWidth,
+      width: heightAndWidth,
+      color: AppColors.primaryRed,
+      child: image
     );
   }
 }

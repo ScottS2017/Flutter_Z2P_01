@@ -40,7 +40,7 @@ class AppColors {
   static const Color primaryLightPurple = Color(0xffe254ff);
   static const Color primaryDarkPurple = Color(0xff7200ca);
 
-  static const Color primaryDarkYellow = Color(0xffffd600);
-  static const Color primaryDarkLightYellow = Color(0xffffff52);
-  static const Color primaryDarkDarkYellow = Color(0xffc7a500);
+  static const Color primaryYellow = Color(0xffffd600);
+  static const Color primaryLightYellow = Color(0xffffff52);
+  static const Color primaryDarkYellow = Color(0xffc7a500);
 }
