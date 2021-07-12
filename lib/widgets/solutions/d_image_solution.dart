@@ -7,7 +7,8 @@ class ImageSolution extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 32);
+  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
+      const SizedBox(height: 32);
 
   @override
   Widget build(BuildContext context) {
@@ -18,22 +19,22 @@ class ImageSolution extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: AppColors.primaryDarkGreen,
+          color: Theme.of(context).cardColor,
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              // TODO Recreate the examples file using the custom ImageHolder Widget provided
+              // TODO Recreate the examples file using the custom ImageFrame Widget provided
               //
               // The images to use are:
-              //        AppImages.jumping,
-              //        AppImages.owl,
-              //        AppImages.invertedJenny,
+              //        AppImages.jumping,     (It uses Image.asset)
+              //        AppImages.owl,     (It uses Image.network)
+              //        AppImages.invertedJenny,     (It uses Image.network)
               //
               // Be sure to check if you're dealing with an asset or network image
               //
               // Sample:
-              //                ImageHolder(
+              //                ImageFrame(
               //                  heightAndWidth: heightAndWidth,
               //                  image: <YOUR CODE HERE>
               //                ),
@@ -43,7 +44,7 @@ class ImageSolution extends StatelessWidget {
               ///
               // Example:
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
                   AppImages.jumping,
@@ -51,7 +52,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.owl,
@@ -59,7 +60,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.invertedJenny,
@@ -71,7 +72,7 @@ class ImageSolution extends StatelessWidget {
               /// BoxFit.contain
               ///
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
                   AppImages.jumping,
@@ -79,7 +80,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.owl,
@@ -87,7 +88,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.invertedJenny,
@@ -99,7 +100,7 @@ class ImageSolution extends StatelessWidget {
               /// BoxFit.cover
               ///
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
                   AppImages.jumping,
@@ -107,7 +108,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.owl,
@@ -115,7 +116,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.invertedJenny,
@@ -127,7 +128,7 @@ class ImageSolution extends StatelessWidget {
               /// BoxFit.fitHeight
               ///
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
                   AppImages.jumping,
@@ -135,7 +136,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.owl,
@@ -143,7 +144,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.invertedJenny,
@@ -155,7 +156,7 @@ class ImageSolution extends StatelessWidget {
               /// BoxFit.fitWidth
               ///
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
                   AppImages.jumping,
@@ -163,7 +164,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.owl,
@@ -171,7 +172,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.invertedJenny,
@@ -183,7 +184,7 @@ class ImageSolution extends StatelessWidget {
               /// BoxFit.none
               ///
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
                   AppImages.jumping,
@@ -191,7 +192,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.owl,
@@ -199,7 +200,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.invertedJenny,
@@ -211,7 +212,7 @@ class ImageSolution extends StatelessWidget {
               /// BoxFit.scaleDown
               ///
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
                   AppImages.jumping,
@@ -219,7 +220,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.owl,
@@ -227,7 +228,7 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
                   AppImages.invertedJenny,
@@ -242,18 +243,23 @@ class ImageSolution extends StatelessWidget {
   }
 }
 
-class ImageHolder extends StatelessWidget {
-  const ImageHolder({
+class ImageFrame extends StatelessWidget {
+  const ImageFrame({
     Key? key,
-    required this.heightAndWidth,
     required this.image,
+    required this.heightAndWidth,
   }) : super(key: key);
 
-  final double heightAndWidth;
   final Image image;
+  final double heightAndWidth;
 
   @override
   Widget build(BuildContext context) {
-    return Container(height: heightAndWidth, width: heightAndWidth, color: Colors.teal, child: image);
+    return Container(
+        height: heightAndWidth,
+        width: heightAndWidth,
+        color: AppColors.primaryRed,
+        child: image
+    );
   }
 }

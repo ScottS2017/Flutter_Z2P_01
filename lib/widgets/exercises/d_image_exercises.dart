@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:o1_widgets_you_can_see/resource_files/app_colors.dart';
 import 'package:o1_widgets_you_can_see/resource_files/app_images.dart';
 
 class ImageExercise extends StatelessWidget {
@@ -22,17 +23,17 @@ class ImageExercise extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              // TODO Recreate the examples file using the custom ImageHolder Widget provided
+              // TODO Recreate the examples file using the custom ImageFrame Widget provided
               //
               // The images to use are:
-              //        AppImages.jumping,
-              //        AppImages.owl,
-              //        AppImages.invertedJenny,
+              //        AppImages.jumping,     (It uses Image.asset)
+              //        AppImages.owl,     (It uses Image.network)
+              //        AppImages.invertedJenny,     (It uses Image.network)
               //
               // Be sure to check if you're dealing with an asset or network image
               //
               // Sample:
-              //                ImageHolder(
+              //                ImageFrame(
               //                  heightAndWidth: heightAndWidth,
               //                  image: <YOUR CODE HERE>
               //                ),
@@ -40,9 +41,9 @@ class ImageExercise extends StatelessWidget {
               ///
               /// BoxFit.fill
               ///
-              // Example:
               divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageHolder(
+              // Example:
+              ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
                   AppImages.jumping,
@@ -121,18 +122,23 @@ class ImageExercise extends StatelessWidget {
   }
 }
 
-class ImageHolder extends StatelessWidget {
-  const ImageHolder({
+class ImageFrame extends StatelessWidget {
+  const ImageFrame({
     Key? key,
-    required this.heightAndWidth,
     required this.image,
+    required this.heightAndWidth,
   }) : super(key: key);
 
-  final double heightAndWidth;
   final Image image;
+  final double heightAndWidth;
 
   @override
   Widget build(BuildContext context) {
-    return Container(height: heightAndWidth, width: heightAndWidth, color: Colors.teal, child: image);
+    return Container(
+        height: heightAndWidth,
+        width: heightAndWidth,
+        color: AppColors.primaryRed,
+        child: image
+    );
   }
 }

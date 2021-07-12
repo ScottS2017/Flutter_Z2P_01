@@ -338,6 +338,7 @@ class TextLabel extends StatelessWidget {
     );
   }
 }
+
 class ImageFrame extends StatelessWidget {
   const ImageFrame({
     Key? key,
