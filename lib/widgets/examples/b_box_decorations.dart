@@ -23,7 +23,9 @@ class BoxDecorations extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
+
                 /// A basic borders and radius example
+
                 Container(
                   padding: const EdgeInsets.all(30),
                   width: 200,
@@ -43,6 +45,7 @@ class BoxDecorations extends StatelessWidget {
                     ),
                   ),
                 ),
+
                 /// Using BorderSides
                 Container(
                   margin: const EdgeInsets.only(top: 30),
@@ -68,6 +71,7 @@ class BoxDecorations extends StatelessWidget {
                     ),
                   ),
                 ),
+
                 /// A basic DecorationImage
                 Container(
                   height: 200,
@@ -78,10 +82,13 @@ class BoxDecorations extends StatelessWidget {
                     color: Colors.grey,
                     image: DecorationImage(
                       fit: BoxFit.contain,
-                      image: AssetImage('assets/images/F.png'),
+                      image: AssetImage(
+                        'assets/images/F.png',
+                      ),
                     ),
                   ),
                 ),
+
                 /// Adding a Shadow
                 Container(
                   height: 200,
@@ -104,6 +111,7 @@ class BoxDecorations extends StatelessWidget {
                     ],
                   ),
                 ),
+
                 /// borderRadius of half height and width will get you a circle. This is used there to create a "3D Medallion" look.
                 Container(
                   height: 200,
@@ -131,6 +139,7 @@ class BoxDecorations extends StatelessWidget {
                     ],
                   ),
                 ),
+
                 /// No Container color results in a transparent Container. Here, we're using it to show you what's really happening with a Shadow, and how the Shadow will be cast from the whole object, regardless of opacity.
                 Container(
                   height: 200,
@@ -152,6 +161,7 @@ class BoxDecorations extends StatelessWidget {
                     ],
                   ),
                 ),
+
                 /// A basic LinearGradient, aligned at an angle
                 Container(
                   height: 200,
@@ -174,6 +184,7 @@ class BoxDecorations extends StatelessWidget {
                     ),
                   ),
                 ),
+
                 /// By placing both stops at the same point, the "fade" will take place instantly. By aligning the dark blue to topCenter, but the light blue to bottomRight, we get an angled effect that's not perfectly aligned with the corners.
                 Container(
                   height: 200,
@@ -196,6 +207,7 @@ class BoxDecorations extends StatelessWidget {
                     ),
                   ),
                 ),
+
                 /// A SweepGradient, shown in the "3d Medallion". Note that the first and last colors in the list have to be the same to avoid a hard edge.
                 Container(
                   height: 200,
@@ -228,6 +240,7 @@ class BoxDecorations extends StatelessWidget {
                     ),
                   ),
                 ),
+
                 /// A basic RadialGradient. ***Note that the radius argument is expressed as a percentage of the *shortest side* of your object. Here, the radius has to be 0.5 in order to make the whole circle fill with the gradient. If you make the number smaller, then the last color will create a band that encloses the gradient. Experiment and see...
                 Container(
                   height: 200,
@@ -265,6 +278,7 @@ class BoxDecorations extends StatelessWidget {
                     ),
                   ),
                 ),
+
                 /// By shifting the center, focal and focalRadius of a RadialGradient, we can create a sunrise-type effect for our fake phone screen
                 Container(
                   height: 400,

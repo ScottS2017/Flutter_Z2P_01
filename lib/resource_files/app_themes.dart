@@ -14,7 +14,4 @@ class AppThemes {
     errorColor: Colors.red[400],
     cardColor: const Color(0xFFE0E0E0),
   );
-
-
-
 }
