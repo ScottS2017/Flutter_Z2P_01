@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/resource_files/app_colors.dart';
+import 'package:o1_widgets_you_can_see/0-lib/infrastructure/build_app_bar.dart';
+import '../../../theme.dart';
+import '/resource_files/app_colors.dart';
 
 @immutable
 class Containers extends StatelessWidget {
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
-  final String test = 'test';
-
   const Containers({
     Key? key,
+    required this.onBackPressed,
   }) : super(key: key);
+
+  final VoidCallback onBackPressed;
+
+  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
+      const SizedBox(height: 16);
+  final String test = 'test';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Container Examples'),
-      ),
+      appBar: buildAppBar(onBackPressed: onBackPressed),
       body: SizedBox.expand(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),

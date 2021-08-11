@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/widgets/examples/a_containers.dart';
-import 'package:o1_widgets_you_can_see/widgets/examples/b_box_decorations.dart';
-import 'package:o1_widgets_you_can_see/widgets/examples/c_text_examples.dart';
-import 'package:o1_widgets_you_can_see/widgets/examples/d_image_examples.dart';
-import 'package:o1_widgets_you_can_see/widgets/examples/e_icon_examples.dart';
+import 'package:o1_widgets_you_can_see/0-lib/z2p_01/a_containers/example/a_containers.dart';
+import 'package:o1_widgets_you_can_see/0-lib/z2p_01/b_%20box_decorations/b_box_decorations.dart';
+import 'package:o1_widgets_you_can_see/0-lib/z2p_01/c_text/c_text_examples.dart';
+import 'package:o1_widgets_you_can_see/0-lib/z2p_01/d_images/d_image_examples.dart';
+import 'package:o1_widgets_you_can_see/0-lib/z2p_01/e_icons/e_icon_examples.dart';
 import 'package:o1_widgets_you_can_see/widgets/exercises/a_container_exercises.dart';
 import 'package:o1_widgets_you_can_see/widgets/exercises/b_box_decorations_exercises.dart';
 import 'package:o1_widgets_you_can_see/widgets/exercises/c_text_exercises.dart';
 import 'package:o1_widgets_you_can_see/widgets/exercises/d_image_exercises.dart';
 import 'package:o1_widgets_you_can_see/widgets/exercises/e_icon_exercises.dart';
-import 'package:o1_widgets_you_can_see/widgets/solutions/a_container_solution.dart';
-import 'package:o1_widgets_you_can_see/widgets/solutions/b_box_decorations_solution.dart';
-import 'package:o1_widgets_you_can_see/widgets/solutions/c_text_examples_solution.dart';
-import 'package:o1_widgets_you_can_see/widgets/solutions/d_image_solution.dart';
-import 'package:o1_widgets_you_can_see/widgets/solutions/e_icon_solution.dart';
+import 'package:o1_widgets_you_can_see/0-lib/z2p_01/a_containers/solution/a_container_solution.dart';
+import 'package:o1_widgets_you_can_see/0-lib/z2p_01/b_%20box_decorations/b_box_decorations_solution.dart';
+import 'package:o1_widgets_you_can_see/0-lib/z2p_01/c_text/c_text_examples_solution.dart';
+import 'package:o1_widgets_you_can_see/0-lib/z2p_01/d_images/d_image_solution.dart';
+import 'package:o1_widgets_you_can_see/0-lib/z2p_01/e_icons/e_icon_solution.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/pages/home2.dart';
+import 'package:o1_widgets_you_can_see/0-lib/app_launch/home2.dart';
 
 void main() => runApp(WidgetsYouCanSee());
 
