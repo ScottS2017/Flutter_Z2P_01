@@ -19,7 +19,7 @@ final appTheme = ThemeData(
   cardColor: const Color(0xFFE0E0E0),
   appBarTheme: const AppBarTheme(
     backwardsCompatibility: false,
-    backgroundColor: Colors.transparent,
+    backgroundColor: AppColors.appThemeBlueAccentColor,
     elevation: 0,
     centerTitle: true,
     titleTextStyle: TextStyle(

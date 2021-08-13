@@ -19,7 +19,15 @@ class ContainersExercises extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(onBackPressed: onBackPressed,  title: title),
+      appBar: AppBar(
+        key: ValueKey(title),
+        automaticallyImplyLeading: false,
+        elevation: 4,
+        title: Align(
+          alignment: Alignment.centerLeft,
+          child: buildAppBarTitle(onBackPressed: onBackPressed, title: title),
+        ),
+      ),
       body: SizedBox.expand(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),

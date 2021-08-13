@@ -7,15 +7,15 @@ import 'z2p_01/containers/example/containers.dart';
 import 'z2p_01/containers/exercise/container_exercises.dart';
 import 'z2p_01/containers/solution/container_solution.dart';
 
-class ModeApp extends StatelessWidget {
-  const ModeApp({
+class ZeroToProductiveApp extends StatelessWidget {
+  const ZeroToProductiveApp({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mode',
+      title: 'Zero to Productive',
       theme: appTheme,
       onGenerateInitialRoutes: _onGenerateInitialRoutes,
       onGenerateRoute: _onGenerateRoute,
@@ -55,7 +55,7 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
   late WidgetBuilder builder;
   switch (settings.name) {
     case '/':
-      builder = (BuildContext context) => Welcome(title: 'Zero to Productive');
+      builder = (BuildContext context) => const Welcome(title: 'Zero to Productive');
       break;
     case 'containers-example':
       builder = (BuildContext context) => Containers(

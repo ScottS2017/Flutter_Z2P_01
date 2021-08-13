@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
-import 'package:o1_widgets_you_can_see/app_launch/welcome.dart';
 
+import 'app.dart';
 import 'infrastructure/logging.dart';
 
 void main() {
@@ -12,7 +12,7 @@ void main() {
   runZonedGuarded(() {
     initLoggers(Level.ALL);
 
-    runApp(const Welcome(title: 'Zero to Productive',));
+    runApp(const ZeroToProductiveApp());
   }, (Object error, StackTrace stack) {
     errorLog.shout('Uncaught error: $error');
     errorLog.shout('Stacktrace:');

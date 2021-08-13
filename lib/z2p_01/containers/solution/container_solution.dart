@@ -5,7 +5,8 @@ import '../../../infrastructure/build_app_bar.dart';
 
 @immutable
 class ContainersSolution extends StatelessWidget {
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
+  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
+      const SizedBox(height: 16);
 
   const ContainersSolution({
     Key? key,
@@ -19,7 +20,15 @@ class ContainersSolution extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(onBackPressed: onBackPressed,  title: title),
+      appBar: AppBar(
+        key: ValueKey(title),
+        automaticallyImplyLeading: false,
+        elevation: 4,
+        title: Align(
+          alignment: Alignment.centerLeft,
+          child: buildAppBarTitle(onBackPressed: onBackPressed, title: title),
+        ),
+      ),
       body: SizedBox.expand(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),

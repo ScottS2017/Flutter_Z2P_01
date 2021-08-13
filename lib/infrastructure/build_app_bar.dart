@@ -1,42 +1,32 @@
 import 'package:flutter/material.dart';
 
+import 'app_colors.dart';
+import 'app_textstyles.dart';
 import 'theme.dart';
 
-AppBar buildAppBar({
+Widget buildAppBarTitle({
   required VoidCallback onBackPressed,
   required String title,
 }) {
-  return AppBar(
-    foregroundColor: Colors.transparent,
-    elevation: 0,
-    leadingWidth: 90,
-    leading: TextButton(
+  return TextButton(
       onPressed: onBackPressed,
-      child: Padding(
-        padding: const EdgeInsets.only(top: 7),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            const Icon(
-              Icons.arrow_back,
-              color: appBarBackButtonForegroundColor,
-              size: 15,
-            ),
-            const SizedBox(
-              width: 5,
-            ),
-            Text(
-              title,
-              style: const TextStyle(
-                color: appBarBackButtonForegroundColor,
-                fontSize: 15,
-                height: 1,
-              ),
-            ),
-          ],
-        ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          const Icon(
+            Icons.arrow_back,
+            color: AppColors.whiteTextColor,
+            size: 15,
+          ),
+          const SizedBox(
+            width: 5,
+          ),
+          Text(
+            title,
+            style: AppTextStyles.appBarTextStyle,
+          ),
+        ],
       ),
-    ),
   );
 }

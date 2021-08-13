@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:o1_widgets_you_can_see/infrastructure/app_textstyles.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/button_section.dart';
 
 import '../z2p_01/containers/example/containers.dart';
@@ -18,7 +19,6 @@ import '../z2p_01/icons/exercise/icon_exercises.dart';
 import '../z2p_01/icons/solution/icon_solution.dart';
 
 class Welcome extends StatelessWidget {
-
   const Welcome({
     Key? key,
     required this.title,
@@ -32,7 +32,10 @@ class Welcome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(
+          title,
+          style: AppTextStyles.appBarTextStyle,
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 16),

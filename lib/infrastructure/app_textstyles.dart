@@ -8,13 +8,7 @@ class AppTextStyles {
 
   static TextStyle appBarTextStyle = const TextStyle(
     color: AppColors.whiteTextColor,
-    shadows: [
-      Shadow(
-        color: AppColors.dropShadowColor,
-        offset: Offset(2, 2),
-        blurRadius: 1,
-      ),
-    ],
+    height: 1,
   );
 
   static const TextStyle normal36 =  TextStyle(fontSize: 36.0, fontWeight: FontWeight.normal);

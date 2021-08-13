@@ -12,7 +12,7 @@ class AppColors {
   static const Color appThemeDividerColor = Color(0xFFBDBDBD);
 
   // General Colors
-  static const Color whiteTextColor = Color(0xB3FFFFFF);
+  static const Color whiteTextColor = Color(0xD5FFFFFF);
   static const Color blackTextColor = Color(0xFF111111);
   static const Color dropShadowColor = Color(0x33000000);
   static const Color offWhitePageBackground = Color(0xFFF9F9F9);
