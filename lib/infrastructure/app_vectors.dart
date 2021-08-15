@@ -1,3 +1,3 @@
 class AppVectors {
-  final String mySVG = 'PathToYourSVG/YourImage.svg';
+  // final String sampleSvgString = 'assets/vectors/yourSvg.svg';
 }

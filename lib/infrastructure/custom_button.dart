@@ -24,27 +24,40 @@ class CustomButton extends StatelessWidget {
         alignment: Alignment.center,
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: color,
+          gradient: LinearGradient(
+            colors: [
+              color,
+              const Color(0xFFEEEEEE),
+              color,
+            ],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            stops: [
+              0.05,
+              0.3,
+              .95,
+            ],
+          ),
           borderRadius: BorderRadius.circular(6),
           boxShadow: [
             const BoxShadow(
-              color: AppColors.dropShadowColor,
+              color: Colors.black38,
               blurRadius: 2,
-              offset: Offset(1,1),
+              offset: Offset(2,2),
             ),
           ],
         ),
         child: FittedBox(
-          child: Text(text,
-          style: const TextStyle(
-            shadows: [
+          child: Text(
+            text,
+            style: const TextStyle(shadows: [
               Shadow(
                 color: AppColors.dropShadowColor,
                 blurRadius: 1,
-                offset: Offset(1,1),
+                offset: Offset(1, 1),
               ),
-            ]
-          ),),
+            ]),
+          ),
         ),
       ),
     );

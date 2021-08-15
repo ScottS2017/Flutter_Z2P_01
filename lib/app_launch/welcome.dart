@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/infrastructure/app_textstyles.dart';
+import 'package:o1_widgets_you_can_see/infrastructure/app_colors.dart';
+import 'package:o1_widgets_you_can_see/infrastructure/app_images.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/button_section.dart';
 
 import '../z2p_01/containers/example/containers.dart';
@@ -18,7 +21,7 @@ import '../z2p_01/icons/example/icon_examples.dart';
 import '../z2p_01/icons/exercise/icon_exercises.dart';
 import '../z2p_01/icons/solution/icon_solution.dart';
 
-class Welcome extends StatelessWidget {
+class Welcome extends StatefulWidget {
   const Welcome({
     Key? key,
     required this.title,
@@ -29,139 +32,266 @@ class Welcome extends StatelessWidget {
   static const Widget divider__________________________ = SizedBox(height: 40);
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          title,
-          style: AppTextStyles.appBarTextStyle,
-        ),
+  _WelcomeState createState() => _WelcomeState();
+}
+
+class _WelcomeState extends State<Welcome> {
+  bool _splashScreenIsOnstage = true;
+  bool _startFade = false;
+
+  @override
+  void initState() {
+    super.initState();
+    fadeTimer();
+    offstageTimer();
+  }
+
+  Future<Timer> fadeTimer() async {
+    return Timer(
+      const Duration(milliseconds: 1500),
+      () => setState(
+        () {
+          _startFade = true;
+        },
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 16),
-        child: Column(
-          children: [
-            ButtonSection(
-              label: 'Containers, Alignment, Padding and Margin',
-              callback1: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => Containers(
-                    title: 'Containers Examples',
-                    onBackPressed: () {
-                      Navigator.of(context).pop();
-                    },
+    );
+  }
+
+  Future<Timer> offstageTimer() async {
+    return Timer(
+      const Duration(seconds: 5),
+      () => setState(
+        () {
+          _splashScreenIsOnstage = false;
+        },
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: SafeArea(
+        child: Stack(
+          children: <Widget>[
+            Center(
+              child: SizedBox.expand(
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  margin: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFEFEFE),
+                    border: Border.all(
+                      style: BorderStyle.solid,
+                      width: 2,
+                      color: const Color(0xFF888888),
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black87,
+                        blurRadius: 10,
+                        offset: Offset(1, 1),
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    children: [
+                      const Text(
+                        '\nArranging Widgets\nYou Can See',
+                        semanticsLabel: 'Arranging Widgets You Can See',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 32,
+                          color: Colors.black,
+                        ),
+                      ),
+                      const Spacer(),
+                      ButtonSection(
+                        label: 'Containers, Alignment, Padding and Margin',
+                        color1: Colors.blue,
+                        color2: Colors.red,
+                        color3: Colors.green,
+                        callback1: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Containers(
+                              title: 'Containers Examples',
+                              onBackPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                          ),
+                        ),
+                        callback2: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ContainersExercises(
+                              title: 'Containers Exercises',
+                              onBackPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                          ),
+                        ),
+                        callback3: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ContainersSolution(
+                              title: 'Containers Solutions',
+                              onBackPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                          ),
+                        ),
+                      ),
+                      Welcome.divider__________________________,
+                      ButtonSection(
+                        label: 'Decorations and Gradients',
+                        color1: Colors.pink,
+                        color2: Colors.purple,
+                        color3: Colors.orange,
+                        callback1: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const BoxDecorations(),
+                          ),
+                        ),
+                        callback2: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                const BoxDecorationExercises(),
+                          ),
+                        ),
+                        callback3: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const BoxDecorationSolution(),
+                          ),
+                        ),
+                      ),
+                      Welcome.divider__________________________,
+                      ButtonSection(
+                        label: 'Icons',
+                        color1: Colors.blue,
+                        color2: Colors.red,
+                        color3: Colors.green,
+                        callback1: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const IconExamples(),
+                          ),
+                        ),
+                        callback2: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const IconExercise(),
+                          ),
+                        ),
+                        callback3: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const IconSolution(),
+                          ),
+                        ),
+                      ),
+                      Welcome.divider__________________________,
+                      ButtonSection(
+                        label: 'Image Basics',
+                        color1: Colors.pink,
+                        color2: Colors.purple,
+                        color3: Colors.orange,
+                        callback1: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const Image_Examples(),
+                          ),
+                        ),
+                        callback2: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const ImageExercise(),
+                          ),
+                        ),
+                        callback3: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const ImageSolution(),
+                          ),
+                        ),
+                      ),
+                      Welcome.divider__________________________,
+                      ButtonSection(
+                        label: 'Text and TextStyle',
+                        color1: Colors.blue,
+                        color2: Colors.red,
+                        color3: Colors.green,
+                        callback1: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const TextExamples(),
+                          ),
+                        ),
+                        callback2: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const TextExampleExercises(),
+                          ),
+                        ),
+                        callback3: () => Navigator.push<Route>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const TextExampleSolution(),
+                          ),
+                        ),
+                      ),
+                      const Spacer(
+                        flex: 2,
+                      ),
+                    ],
                   ),
                 ),
               ),
-              callback2: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ContainersExercises(
-                    title: 'Containers Exercises',
-                    onBackPressed: () {
-                      Navigator.of(context).pop();
-                    },
+            ),
+            Positioned(
+              top: _splashScreenIsOnstage == true
+                  ? 0
+                  : MediaQuery.of(context).size.height,
+              child: AnimatedOpacity(
+                opacity: _startFade == true ? 0 : 1.0,
+                curve: Curves.easeInToLinear,
+                duration: const Duration(milliseconds: 2000),
+                child: Container(
+                  height: MediaQuery.of(context).size.height,
+                  width: MediaQuery.of(context).size.width,
+                  color: AppColors.blackTextColor,
+                  child: Column(
+                    children: <Widget>[
+                      const Spacer(
+                        flex: 35,
+                      ),
+                      const Text(
+                        'Z2P',
+                        style: TextStyle(
+                          color: Color(0xDDFFFFFF),
+                          fontSize: 140,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                      const Spacer(
+                        flex: 1,
+                      ),
+                      Image.asset(
+                        AppImages.flutterLogo,
+                        semanticLabel: 'Flutter, zero to productive',
+                      ),
+                      const Spacer(
+                        flex: 64,
+                      ),
+                    ],
                   ),
-                ),
-              ),
-              callback3: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ContainersSolution(
-                    title: 'Containers Solutions',
-                    onBackPressed: () {
-                      Navigator.of(context).pop();
-                    },
-                  ),
-                ),
-              ),
-            ),
-            divider__________________________,
-            ButtonSection(
-              label: 'Decorations and Gradients',
-              callback1: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const BoxDecorations(),
-                ),
-              ),
-              callback2: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const BoxDecorationExercises(),
-                ),
-              ),
-              callback3: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const BoxDecorationSolution(),
-                ),
-              ),
-            ),
-            divider__________________________,
-            ButtonSection(
-              label: 'Icons',
-              callback1: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const IconExamples(),
-                ),
-              ),
-              callback2: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const IconExercise(),
-                ),
-              ),
-              callback3: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const IconSolution(),
-                ),
-              ),
-            ),
-            divider__________________________,
-            ButtonSection(
-              label: 'Image Basics',
-              callback1: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Image_Examples(),
-                ),
-              ),
-              callback2: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ImageExercise(),
-                ),
-              ),
-              callback3: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ImageSolution(),
-                ),
-              ),
-            ),
-            divider__________________________,
-            ButtonSection(
-              label: 'Text and TextStyle',
-              callback1: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const TextExamples(),
-                ),
-              ),
-              callback2: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const TextExampleExercises(),
-                ),
-              ),
-              callback3: () => Navigator.push<Route>(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const TextExampleSolution(),
                 ),
               ),
             ),
