@@ -162,7 +162,7 @@ class IconExamples extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
@@ -199,7 +199,7 @@ class IconExamples extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
+                    boxShadow: const [
                       const BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
@@ -1229,7 +1229,7 @@ class BoxDecorations extends StatelessWidget {
                       fit: BoxFit.contain,
                       image: AssetImage('assets/images/F.png'),
                     ),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         color: Colors.black54,
                         blurRadius: 10,
@@ -1258,7 +1258,7 @@ class BoxDecorations extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
+                    boxShadow: const [
                       const BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
@@ -1280,7 +1280,7 @@ class BoxDecorations extends StatelessWidget {
                       color: AppColors.appThemePrimaryDarkBlue,
                       width: 3,
                     ),
-                    boxShadow: [
+                    boxShadow: const [
                       const BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
@@ -1349,7 +1349,7 @@ class BoxDecorations extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
+                    boxShadow: const [
                       const BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
@@ -1382,7 +1382,7 @@ class BoxDecorations extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
+                    boxShadow: const [
                       const BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
@@ -1419,7 +1419,7 @@ class BoxDecorations extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(50),
-                    boxShadow: [
+                    boxShadow: const [
                       const BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
@@ -2028,7 +2028,7 @@ class BoxDecorationSolution extends StatelessWidget {
                       fit: BoxFit.contain,
                       image: AssetImage('assets/images/F.png'),
                     ),
-                    boxShadow: [
+                    boxShadow: const [
                       const BoxShadow(
                         color: Color(0xFFFF3780),
                         blurRadius: 5,
@@ -2069,7 +2069,7 @@ class BoxDecorationSolution extends StatelessWidget {
                       color: const Color(0xFFDDDDDD),
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
+                    boxShadow: const [
                       const BoxShadow(
                         color: const Color(0xFF009900),
                         blurRadius: 15,
@@ -2095,7 +2095,7 @@ class BoxDecorationSolution extends StatelessWidget {
                       color: const Color(0xFFBBBBBB),
                     ),
                     borderRadius: BorderRadius.circular(70),
-                    boxShadow: [
+                    boxShadow: const [
                       const BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
@@ -2131,7 +2131,7 @@ class BoxDecorationSolution extends StatelessWidget {
                       color: const Color(0xFFBBBBBB),
                     ),
                     borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
+                    boxShadow: const [
                       const BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,

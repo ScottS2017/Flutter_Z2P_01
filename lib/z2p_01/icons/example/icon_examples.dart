@@ -22,7 +22,7 @@ class IconExamples extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                ExampleIconCustomWidget(
+                const ExampleIconCustomWidget(
                   color: Colors.green,
                   icon: Icon(
                     Icons.traffic,
@@ -44,8 +44,8 @@ class IconExamples extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
-                      const BoxShadow(
+                    boxShadow: const [
+                      BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
                         offset: Offset(4, 6),
@@ -62,7 +62,7 @@ class IconExamples extends StatelessWidget {
                       stops: [0.0, 0.25, 0.5, 0.75, 1],
                     ),
                   ),
-                  child: Icon(
+                  child:const Icon(
                     Icons.audiotrack,
                     size: 132,
                     color: Colors.white24,
@@ -81,8 +81,8 @@ class IconExamples extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
-                      const BoxShadow(
+                    boxShadow: const [
+                      BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
                         offset: Offset(4, 6),
@@ -109,7 +109,7 @@ class IconExamples extends StatelessWidget {
                   child: Icon(Icons.audiotrack, size: 132, color: Colors.black38),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                ExampleIconCustomWidget(
+                const ExampleIconCustomWidget(
                   color: Colors.teal,
                   icon: Icon(
                     Icons.tv,
@@ -151,8 +151,8 @@ class ExampleIconCustomWidget extends StatelessWidget {
           width: 3,
         ),
         borderRadius: BorderRadius.circular(100),
-        boxShadow: [
-          const BoxShadow(
+        boxShadow: const [
+          BoxShadow(
             color: Colors.black87,
             blurRadius: 12,
             offset: Offset(4, 6),

@@ -34,7 +34,7 @@ class BoxDecorationSolution extends StatelessWidget {
                   child: Container(
                     height: double.infinity,
                     width: double.infinity,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       border: Border(
                         top: BorderSide(
                           style: BorderStyle.solid,
@@ -57,19 +57,19 @@ class BoxDecorationSolution extends StatelessWidget {
                   height: 200,
                   width: 200,
                   padding: const EdgeInsets.all(30),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.grey,
-                    image: const DecorationImage(
+                    image: DecorationImage(
                       fit: BoxFit.contain,
                       image: AssetImage('assets/images/F.png'),
                     ),
                     boxShadow: [
-                      const BoxShadow(
+                      BoxShadow(
                         color: Color(0xFFFF3780),
                         blurRadius: 5,
                         offset: Offset(-8, 8),
                       ),
-                      const BoxShadow(
+                      BoxShadow(
                         color: Color(0xFF0185D0),
                         blurRadius: 5,
                         offset: Offset(8, -8),
@@ -87,7 +87,7 @@ class BoxDecorationSolution extends StatelessWidget {
                       fit: BoxFit.contain,
                       image: AssetImage('assets/images/F.png'),
                     ),
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       colors: [
                         Color(0xFFFB7EE4),
                         Color(0xFFB7459C),
@@ -104,14 +104,14 @@ class BoxDecorationSolution extends StatelessWidget {
                       color: const Color(0xFFDDDDDD),
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
-                      const BoxShadow(
-                        color: const Color(0xFF009900),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color(0xFF009900),
                         blurRadius: 15,
                         offset: Offset(4.0, 6.0),
                       ),
-                      const BoxShadow(
-                        color: const Color(0xFF990000),
+                      BoxShadow(
+                        color: Color(0xFF990000),
                         blurRadius: 15,
                         offset: Offset(-4.0, -6.0),
                       ),
@@ -130,8 +130,8 @@ class BoxDecorationSolution extends StatelessWidget {
                       color: const Color(0xFFBBBBBB),
                     ),
                     borderRadius: BorderRadius.circular(70),
-                    boxShadow: [
-                      const BoxShadow(
+                    boxShadow: const [
+                      BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
                         offset: Offset(4.0, 6.0),
@@ -143,12 +143,12 @@ class BoxDecorationSolution extends StatelessWidget {
                         Colors.orange,
                         Colors.blue[300]!,
                       ],
-                      stops: [
+                      stops: const [
                         0.3,
                         0.6,
                         0.8,
                       ],
-                      center: Alignment(0.8, -0.8),
+                      center: const Alignment(0.8, -0.8),
                     ),
                   ),
                 ),
@@ -166,8 +166,8 @@ class BoxDecorationSolution extends StatelessWidget {
                       color: const Color(0xFFBBBBBB),
                     ),
                     borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      const BoxShadow(
+                    boxShadow: const [
+                      BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
                         offset: Offset(4, 6),
@@ -175,9 +175,9 @@ class BoxDecorationSolution extends StatelessWidget {
                     ],
                     gradient: const SweepGradient(
                         colors: [
-                          const Color(0xFF0185D0),
-                          const Color(0xFFB7459c),
-                          const Color(0xFFFF3780),
+                          Color(0xFF0185D0),
+                          Color(0xFFB7459c),
+                          Color(0xFFFF3780),
                         ],
                         stops: [
                           0.5,

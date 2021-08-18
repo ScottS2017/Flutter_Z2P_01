@@ -131,8 +131,8 @@ class BoxDecorations extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
-                      const BoxShadow(
+                    boxShadow: const [
+                      BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
                         offset: Offset(4, 6),
@@ -153,8 +153,8 @@ class BoxDecorations extends StatelessWidget {
                       color: AppColors.appThemePrimaryDarkBlue,
                       width: 3,
                     ),
-                    boxShadow: [
-                      const BoxShadow(
+                    boxShadow: const [
+                      BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
                         offset: Offset(16, 16),
@@ -169,15 +169,15 @@ class BoxDecorations extends StatelessWidget {
                   width: 200,
                   margin: const EdgeInsets.only(top: 30),
                   padding: const EdgeInsets.all(30),
-                  decoration: BoxDecoration(
-                    image: const DecorationImage(
+                  decoration: const BoxDecoration(
+                    image:  DecorationImage(
                       fit: BoxFit.contain,
                       image: AssetImage('assets/images/F.png'),
                     ),
                     gradient: LinearGradient(
                       colors: [
                         AppColors.appThemePrimaryDarkBlue,
-                        const Color(0xFF0185D0),
+                        Color(0xFF0185D0),
                       ],
                       stops: [0.0, 1.0],
                       begin: Alignment.topLeft,
@@ -192,17 +192,17 @@ class BoxDecorations extends StatelessWidget {
                   width: 200,
                   margin: const EdgeInsets.only(top: 30),
                   padding: const EdgeInsets.all(30),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
                         AppColors.appThemePrimaryDarkBlue,
-                        const Color(0xFF0185D0),
+                        Color(0xFF0185D0),
                       ],
                       begin: Alignment.topCenter,
                       end: Alignment.bottomRight,
                       stops: [0.50, 0.50],
                     ),
-                    image: const DecorationImage(
+                    image: DecorationImage(
                       fit: BoxFit.contain,
                       image: AssetImage('assets/images/F.png'),
                     ),
@@ -222,8 +222,8 @@ class BoxDecorations extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
-                      const BoxShadow(
+                    boxShadow: const [
+                      BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
                         offset: Offset(4, 6),
@@ -255,8 +255,8 @@ class BoxDecorations extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(100),
-                    boxShadow: [
-                      const BoxShadow(
+                    boxShadow: const [
+                      BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
                         offset: Offset(4, 6),
@@ -292,8 +292,8 @@ class BoxDecorations extends StatelessWidget {
                       width: 3,
                     ),
                     borderRadius: BorderRadius.circular(50),
-                    boxShadow: [
-                      const BoxShadow(
+                    boxShadow: const [
+                      BoxShadow(
                         color: Colors.black87,
                         blurRadius: 12,
                         offset: Offset(4, 6),
