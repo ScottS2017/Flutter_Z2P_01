@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'app_launch/home.dart';
 import 'app_launch/welcome.dart';
 import 'infrastructure/logging.dart';
 import 'infrastructure/theme.dart';
@@ -55,7 +56,7 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
   late WidgetBuilder builder;
   switch (settings.name) {
     case '/':
-      builder = (BuildContext context) => const Welcome(title: 'Zero to Productive');
+      builder = (BuildContext context) => const Welcome();
       break;
     case 'containers-example':
       builder = (BuildContext context) => Containers(
@@ -64,6 +65,9 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
               Navigator.of(context).pop();
             },
           );
+      break;
+      case 'home':
+      builder = (BuildContext context) => Home();
       break;
     case 'containers-exercises':
       builder = (BuildContext context) => ContainersExercises(

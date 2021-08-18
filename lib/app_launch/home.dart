@@ -20,9 +20,7 @@ import '../z2p_01/icons/solution/icon_solution.dart';
 class Home extends StatelessWidget {
   const Home({
     Key? key,
-    required this.title,
   }) : super(key: key);
-  final String title;
 
   static Widget sizedBox40 = const SizedBox(height: 40);
 
@@ -35,7 +33,7 @@ class Home extends StatelessWidget {
             Center(
               child: Container(
                 decoration: const BoxDecoration(
-                  gradient:  LinearGradient(
+                  gradient: LinearGradient(
                     colors: [
                       Color(0xFF549AFF),
                       Color(0xFF303F9F),
@@ -331,13 +329,15 @@ class Home extends StatelessWidget {
         child: FittedBox(
           child: Text(
             text,
-            style: const TextStyle(shadows: [
-              Shadow(
-                color: AppColors.dropShadowColor,
-                blurRadius: 1,
-                offset: Offset(1, 1),
-              ),
-            ]),
+            style: const TextStyle(
+              shadows: [
+                Shadow(
+                  color: AppColors.dropShadowColor,
+                  blurRadius: 1,
+                  offset: Offset(1, 1),
+                ),
+              ],
+            ),
           ),
         ),
       ),

@@ -5,12 +5,12 @@ import 'package:o1_widgets_you_can_see/infrastructure/app_colors.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/app_images.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/app_textstyles.dart';
 
+import 'home.dart';
+
 class Welcome extends StatefulWidget {
   const Welcome({
     Key? key,
-    required this.title,
   }) : super(key: key);
-  final String title;
 
   @override
   _WelcomeState createState() => _WelcomeState();
@@ -88,8 +88,6 @@ class _WelcomeState extends State<Welcome> {
                                 ),
                                 gradient: const SweepGradient(
                                   colors: [
-
-
                                     Color(0xff7200ca),
                                     Color(0xffaa00ff),
                                     Color(0xFFFB7EE4),
@@ -162,22 +160,58 @@ class _WelcomeState extends State<Welcome> {
                               topLeft: Radius.circular(80),
                             ),
                           ),
-                          child:Column(
+                          child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
-                            children: <Widget>[
-                              Text('Column Top Child'),
-                              Text(' ----- '),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                              Text('Row Left Child'),
-                              Text(' ----- '),
-                                Text('Row Right Child'),
-                              ],
-                            ),
+                            children: [
+                              const Text('Brought to you by Ardan Labs'),
+                              const SizedBox(
+                                height: 16,
+                              ),
+                              Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  GestureDetector(
+                                    onTap: () => Navigator.push<Route>(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => const Home(),
+                                      ),
+                                    ),
+                                    child: Container(
+                                      alignment: Alignment.center,
+                                      padding: const EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
+                                        color: Colors.purple,
+                                        borderRadius: BorderRadius.circular(6),
+                                        boxShadow: const [
+                                          BoxShadow(
+                                            color: Colors.black38,
+                                            blurRadius: 2,
+                                            offset: Offset(2, 2),
+                                          ),
+                                        ],
+                                      ),
+                                      child: Text(
+                                        "Let's Get Started",
+                                        style: AppTextStyles.italic18.copyWith(
+                                          color:
+                                              AppColors.offWhitePageBackground,
+                                          shadows: const [
+                                            Shadow(
+                                              blurRadius: 4,
+                                              color: Colors.black54,
+                                              offset: Offset(1, 1),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ],
-                          )
+                          ),
                         ),
                       ),
                     ],
