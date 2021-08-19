@@ -59,30 +59,21 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
       builder = (BuildContext context) => const Welcome();
       break;
     case 'containers-example':
-      builder = (BuildContext context) => Containers(
+      builder = (BuildContext context) => const Containers(
             title: 'Containers Example',
-            onBackPressed: () {
-              Navigator.of(context).pop();
-            },
           );
       break;
       case 'home':
-      builder = (BuildContext context) => Home();
+      builder = (BuildContext context) => const Home();
       break;
     case 'containers-exercises':
-      builder = (BuildContext context) => ContainersExercises(
+      builder = (BuildContext context) => const ContainersExercises(
             title: 'Containers Exercises',
-            onBackPressed: () {
-              Navigator.of(context).pop();
-            },
           );
       break;
     case 'containers-solution':
-      builder = (BuildContext context) => ContainersSolution(
+      builder = (BuildContext context) => const ContainersSolution(
             title: 'Containers Solution',
-            onBackPressed: () {
-              Navigator.of(context).pop();
-            },
           );
       break;
     default:

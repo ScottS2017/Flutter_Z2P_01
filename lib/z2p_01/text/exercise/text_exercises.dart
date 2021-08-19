@@ -4,8 +4,8 @@ import '../../../../infrastructure/app_strings.dart';
 import '../../../../infrastructure/app_textstyles.dart';
 import '../../../../infrastructure/build_app_bar.dart';
 
-class TextExampleExercises extends StatelessWidget {
-  const TextExampleExercises({
+class TextExercises extends StatelessWidget {
+  const TextExercises({
     Key? key,
   }) : super(key: key);
 

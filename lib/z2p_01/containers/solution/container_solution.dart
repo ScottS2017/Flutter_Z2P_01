@@ -10,11 +10,9 @@ class ContainersSolution extends StatelessWidget {
 
   const ContainersSolution({
     Key? key,
-    required this.onBackPressed,
     required this.title,
   }) : super(key: key);
 
-  final VoidCallback onBackPressed;
   final String title;
 
   @override
@@ -26,7 +24,7 @@ class ContainersSolution extends StatelessWidget {
         elevation: 4,
         title: Align(
           alignment: Alignment.centerLeft,
-          child: buildAppBarTitle(onBackPressed: onBackPressed, title: title),
+          child: buildAppBarTitle(title: title),
         ),
       ),
       body: SizedBox.expand(

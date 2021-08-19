@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/app_colors.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/app_images.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/app_textstyles.dart';
+import 'package:o1_widgets_you_can_see/infrastructure/theme.dart';
 
 import 'home.dart';
 
@@ -59,15 +60,15 @@ class _WelcomeState extends State<Welcome> {
               child: SizedBox.expand(
                 child: Container(
                   alignment: Alignment.bottomCenter,
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        Color(0xFFFB7EE4),
-                        Color(0xff7200ca),
+                        Theme.of(context).accentColor,
+                        Theme.of(context).primaryColorDark,
                       ],
                       begin: Alignment.topLeft,
                       end: Alignment.centerRight,
-                      stops: [0.3, 1],
+                      stops: const [0.3, 1],
                     ),
                   ),
                   child: Column(
@@ -86,24 +87,24 @@ class _WelcomeState extends State<Welcome> {
                                   fit: BoxFit.contain,
                                   image: AssetImage('assets/images/F.png'),
                                 ),
-                                gradient: const SweepGradient(
+                                gradient: SweepGradient(
                                   colors: [
-                                    Color(0xff7200ca),
-                                    Color(0xffaa00ff),
-                                    Color(0xFFFB7EE4),
-                                    Color(0xFFB7459C),
-                                    Color(0xff7200ca),
+                                    Theme.of(context).primaryColorDark,
+                                    Theme.of(context).primaryColor,
+                                    Theme.of(context).accentColor,
+                                    Theme.of(context).primaryColorLight,
+                                    Theme.of(context).primaryColorDark,
                                   ],
-                                  stops: [0.0, 0.25, 0.5, 0.75, 1],
+                                  stops: const [0.0, 0.25, 0.5, 0.75, 1],
                                 ),
                                 border: Border.all(
                                   width: 3,
-                                  color: const Color(0xFFDDDDDD),
+                                  color: Theme.of(context).backgroundColor,
                                 ),
                                 borderRadius: BorderRadius.circular(100),
                                 boxShadow: const [
                                   BoxShadow(
-                                    color: Colors.black54,
+                                    color: darkGrey,
                                     blurRadius: 4,
                                     offset: Offset(1.0, 1.0),
                                   ),
@@ -117,11 +118,11 @@ class _WelcomeState extends State<Welcome> {
                               'Zero\nto\nProductive',
                               textAlign: TextAlign.center,
                               style: AppTextStyles.boldItalic36.copyWith(
-                                color: AppColors.offWhitePageBackground,
+                                color: Theme.of(context).cardColor,
                                 shadows: const [
                                   Shadow(
                                     blurRadius: 4,
-                                    color: Colors.black54,
+                                    color: darkGrey,
                                     offset: Offset(1, 1),
                                   ),
                                 ],
@@ -134,11 +135,11 @@ class _WelcomeState extends State<Welcome> {
                               '"In under a pound of coffee"',
                               textAlign: TextAlign.center,
                               style: AppTextStyles.italic18.copyWith(
-                                color: AppColors.offWhitePageBackground,
+                                color: Theme.of(context).cardColor,
                                 shadows: const [
                                   Shadow(
                                     blurRadius: 4,
-                                    color: Colors.black54,
+                                    color: darkGrey,
                                     offset: Offset(1, 1),
                                   ),
                                 ],
@@ -154,9 +155,9 @@ class _WelcomeState extends State<Welcome> {
                         flex: 2,
                         child: Container(
                           width: double.infinity,
-                          decoration: const BoxDecoration(
-                            color: Color(0xFFFEFEFE),
-                            borderRadius: BorderRadius.only(
+                          decoration: BoxDecoration(
+                            color: Theme.of(context).backgroundColor,
+                            borderRadius: const BorderRadius.only(
                               topLeft: Radius.circular(80),
                             ),
                           ),
@@ -182,12 +183,12 @@ class _WelcomeState extends State<Welcome> {
                                       alignment: Alignment.center,
                                       padding: const EdgeInsets.all(8),
                                       decoration: BoxDecoration(
-                                        color: Colors.purple,
+                                        color: Theme.of(context).primaryColor,
                                         borderRadius: BorderRadius.circular(6),
                                         boxShadow: const [
                                           BoxShadow(
-                                            color: Colors.black38,
-                                            blurRadius: 2,
+                                            color: darkGrey,
+                                            blurRadius: 4,
                                             offset: Offset(2, 2),
                                           ),
                                         ],
@@ -196,11 +197,11 @@ class _WelcomeState extends State<Welcome> {
                                         "Let's Get Started",
                                         style: AppTextStyles.italic18.copyWith(
                                           color:
-                                              AppColors.offWhitePageBackground,
+                                              Theme.of(context).backgroundColor,
                                           shadows: const [
                                             Shadow(
                                               blurRadius: 4,
-                                              color: Colors.black54,
+                                              color: darkGrey,
                                               offset: Offset(1, 1),
                                             ),
                                           ],
@@ -238,18 +239,36 @@ class _WelcomeState extends State<Welcome> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          color: AppColors.blackTextColor,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Theme.of(context).accentColor,
+                Theme.of(context).primaryColorDark,
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.centerRight,
+              stops: const [0.3, 1],
+            ),
+          ),
           child: Column(
             children: <Widget>[
               const Spacer(
                 flex: 35,
               ),
-              const Text(
+              Text(
                 'Z2P',
-                style: TextStyle(
-                  color: Color(0xDDFFFFFF),
+                textAlign: TextAlign.center,
+                style: AppTextStyles.boldItalic36.copyWith(
+                  color: Theme.of(context).backgroundColor,
                   fontSize: 140,
                   fontStyle: FontStyle.italic,
+                  shadows: const [
+                    Shadow(
+                      blurRadius: 8,
+                      color: darkGrey,
+                      offset: Offset(1, 1),
+                    ),
+                  ],
                 ),
               ),
               const Spacer(

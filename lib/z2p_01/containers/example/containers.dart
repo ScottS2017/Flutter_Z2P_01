@@ -7,11 +7,9 @@ import '../../../infrastructure/build_app_bar.dart';
 class Containers extends StatelessWidget {
   const Containers({
     Key? key,
-    required this.onBackPressed,
     required this.title,
   }) : super(key: key);
 
-  final VoidCallback onBackPressed;
   final String title;
 
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
@@ -27,7 +25,7 @@ class Containers extends StatelessWidget {
         elevation: 4,
         title: Align(
           alignment: Alignment.centerLeft,
-          child: buildAppBarTitle(onBackPressed: onBackPressed, title: title),
+          child: buildAppBarTitle(title: title),
         ),
       ),
       body: SizedBox.expand(

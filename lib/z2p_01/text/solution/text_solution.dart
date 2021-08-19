@@ -4,8 +4,8 @@ import '../../../../infrastructure/app_strings.dart';
 import '../../../../infrastructure/app_textstyles.dart';
 import '../../../../infrastructure/build_app_bar.dart';
 
-class TextExampleSolution extends StatelessWidget {
-  const TextExampleSolution({
+class TextSolution extends StatelessWidget {
+  const TextSolution({
     Key? key,
   }) : super(key: key);
 
