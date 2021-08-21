@@ -24,16 +24,16 @@ class ContainersExercises extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                //TODO 1) Create Container, with height 50, width 150, and make the color appThemePrimaryDarkBlue from the app_colors.dart resource file
+                //TODO 1) Create Container, with height 50, width 150, and make the color the theme's primaryColorDark
 
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                // TODO 2 ) Create a Container that is 100 high, max width, and is appThemePrimaryDarkBlue. Then give it a white child Container that is 50 high and 150 wide, that is aligned center right within its parent.
+                // TODO 2 ) Create a Container that is 100 high, max width, and is the theme's primaryColorDark. Then give it a white child Container that is 50 high and 150 wide, that is aligned center right within its parent.
 
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                // TODO 3) Create Containe 300 high x 200 wide, appThemePrimaryBlue, give it 20 padding all around. Then give it a child Container that is 50 x 50, aligned top center and make the color appThemeBlueAccentColor
+                // TODO 3) Create Containe 300 high x 200 wide, appThemePrimaryBlue, give it 20 padding all around. Then give it a child Container that is 50 x 50, aligned top center and make the color the theme's primaryColorDark
 
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                // TODO 4) Create a Container that's appThemePrimaryDarkBlue, 100 high with max width, that aligns its child top right and give it margins of 150 right and 25 left. Then give it a child Container that's 95 high, 100 wide and make the color white54.
+                // TODO 4) Create a Container that's the theme's primaryColorDark, 100 high with max width, that aligns its child top right and give it margins of 150 right and 25 left. Then give it a child Container that's 95 high, 100 wide and make the color white54.
 
               ],
             ),

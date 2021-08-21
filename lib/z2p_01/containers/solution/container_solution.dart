@@ -26,19 +26,19 @@ class ContainersSolution extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                //TODO 1) Create Container, with height 50, width 150, and make the color appThemePrimaryDarkBlue from the app_colors.dart resource file
+                //TODO 1) Create Container, with height 50, width 150, and make the color the theme's primaryColorDark
                 Container(
                   height: 50,
                   width: 150,
-                  color: AppColors.appThemePrimaryDarkBlue,
+                  color: Theme.of(context).primaryColorDark,
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                // TODO 2 ) Create a Container that is 100 high, max width, and is appThemePrimaryDarkBlue. Then give it a white child Container that is 50 high and 150 wide, that is aligned center right within its parent.
+                // TODO 2 ) Create a Container that is 100 high, max width, and is the theme's primaryColorDark. Then give it a white child Container that is 50 high and 150 wide, that is aligned center right within its parent.
                 Container(
                   height: 100,
                   width: double.infinity,
                   alignment: Alignment.centerRight,
-                  color: AppColors.appThemePrimaryDarkBlue,
+                  color: Theme.of(context).primaryColorDark,
                   child: Container(
                     height: 50,
                     width: 150,
@@ -46,26 +46,26 @@ class ContainersSolution extends StatelessWidget {
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                // TODO 3) Create Containe 300 high x 200 wide, appThemePrimaryBlue, give it 20 padding all around. Then give it a child Container that is 50 x 50, aligned top center and make the color appThemeBlueAccentColor
+                // TODO 3) Create Containe 300 high x 200 wide, appThemePrimaryBlue, give it 20 padding all around. Then give it a child Container that is 50 x 50, aligned top center and make the color the theme's primaryColorDark
                 Container(
                   height: 300,
                   width: 200,
-                  color: AppColors.appThemePrimaryBlue,
+                  color: Theme.of(context).primaryColorDark,
                   padding: const EdgeInsets.all(20),
                   alignment: Alignment.topCenter,
                   child: Container(
                     height: 50,
                     width: 50,
-                    color: AppColors.appThemeBlueAccentColor,
+                    color: Theme.of(context).accentColor,
                   ),
                 ),
 
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                // TODO 4) Create a Container that's appThemePrimaryDarkBlue, 100 high with max width, that aligns its child top right and give it margins of 150 right and 25 left. Then give it a child Container that's 95 high, 100 wide and make the color white54.
+                // TODO 4) Create a Container that's the theme's primaryColorDark, 100 high with max width, that aligns its child top right and give it margins of 150 right and 25 left. Then give it a child Container that's 95 high, 100 wide and make the color white54.
                 Container(
                   height: 100,
                   width: double.infinity,
-                  color: AppColors.appThemePrimaryDarkBlue,
+                  color: Theme.of(context).primaryColorDark,
                   alignment: Alignment.topRight,
                   margin: const EdgeInsets.only(right: 150, left: 25),
                   child: Container(

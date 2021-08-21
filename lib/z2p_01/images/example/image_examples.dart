@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:o1_widgets_you_can_see/infrastructure/theme.dart';
 import '/infrastructure/app_colors.dart';
 import '/infrastructure/app_images.dart';
 import '/infrastructure/build_app_bar.dart';
@@ -30,8 +31,7 @@ class Image_Examples extends StatelessWidget {
                 ///
                 /// Raw images without any fit
                 ///
-
-                TextLabel(
+                const TextLabel(
                   text: 'These are the Raw Images',
                 ),
 
@@ -45,22 +45,21 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.owl,
+                    AppImages.owlUrl,
                   ),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.invertedJenny,
+                    AppImages.invertedJennyUrl,
                   ),
                 ),
 
                 ///
                 /// BoxFit.fill
                 ///
-
-                TextLabel(
+                const TextLabel(
                   text: 'BoxFit.fill\n(Aspect Ratio Not Maintained)',
                 ),
 
@@ -75,7 +74,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.owl,
+                    AppImages.owlUrl,
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -83,7 +82,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.invertedJenny,
+                    AppImages.invertedJennyUrl,
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -91,7 +90,7 @@ class Image_Examples extends StatelessWidget {
                 ///
                 /// BoxFit.contain
                 ///
-                TextLabel(
+                const TextLabel(
                   text: 'BoxFit.contain\n(Aspect Ratio Is Maintained)',
                 ),
 
@@ -106,7 +105,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.owl,
+                    AppImages.owlUrl,
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -114,7 +113,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.invertedJenny,
+                    AppImages.invertedJennyUrl,
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -123,7 +122,7 @@ class Image_Examples extends StatelessWidget {
                 /// BoxFit.cover
                 ///
                 ///
-                TextLabel(
+                const TextLabel(
                   text: 'BoxFit.cover',
                 ),
 
@@ -138,7 +137,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.owl,
+                    AppImages.owlUrl,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -146,7 +145,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.invertedJenny,
+                    AppImages.invertedJennyUrl,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -154,7 +153,8 @@ class Image_Examples extends StatelessWidget {
                 ///
                 /// BoxFit.fitHeight
                 ///
-                TextLabel(text: 'BoxFit.fitHeight\n(It could crop the width)'),
+                const TextLabel(
+                    text: 'BoxFit.fitHeight\n(It could crop the width)'),
 
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
@@ -168,7 +168,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.owl,
+                    AppImages.owlUrl,
                     fit: BoxFit.fitHeight,
                   ),
                 ),
@@ -176,7 +176,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.invertedJenny,
+                    AppImages.invertedJennyUrl,
                     fit: BoxFit.fitHeight,
                   ),
                 ),
@@ -184,7 +184,8 @@ class Image_Examples extends StatelessWidget {
                 ///
                 /// BoxFit.fitWidth
                 ///
-                TextLabel(text: 'BoxFit.fitWidth\n( It could crop the height)'),
+                const TextLabel(
+                    text: 'BoxFit.fitWidth\n( It could crop the height)'),
 
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
@@ -197,7 +198,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.owl,
+                    AppImages.owlUrl,
                     fit: BoxFit.fitWidth,
                   ),
                 ),
@@ -205,7 +206,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.invertedJenny,
+                    AppImages.invertedJennyUrl,
                     fit: BoxFit.fitWidth,
                   ),
                 ),
@@ -214,7 +215,7 @@ class Image_Examples extends StatelessWidget {
                 /// BoxFit.none
                 ///
 
-                TextLabel(text: 'BoxFit.none\n(Let It Overflow)'),
+                const TextLabel(text: 'BoxFit.none\n(Let It Overflow)'),
 
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
@@ -227,7 +228,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.owl,
+                    AppImages.owlUrl,
                     fit: BoxFit.none,
                   ),
                 ),
@@ -235,7 +236,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.invertedJenny,
+                    AppImages.invertedJennyUrl,
                     fit: BoxFit.none,
                   ),
                 ),
@@ -244,7 +245,7 @@ class Image_Examples extends StatelessWidget {
                 /// BoxFit.scaleDown
                 ///
 
-                TextLabel(
+                const TextLabel(
                   text:
                       'BoxFit.scaleDown\n(Shrink if too big, else do nothing)',
                 ),
@@ -260,7 +261,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.owl,
+                    AppImages.owlUrl,
                     fit: BoxFit.scaleDown,
                   ),
                 ),
@@ -268,7 +269,7 @@ class Image_Examples extends StatelessWidget {
                 ImageFrame(
                   heightAndWidth: heightAndWidth,
                   image: Image.network(
-                    AppImages.invertedJenny,
+                    AppImages.invertedJennyUrl,
                     fit: BoxFit.scaleDown,
                   ),
                 ),
@@ -296,16 +297,16 @@ class TextLabel extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
       decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.secondary,
+          color: Theme.of(context).primaryColor,
           border: Border.all(
             width: 2,
-            color: AppColors.appThemeDividerColor,
+            color: const Color(0x1F000000),
           ),
           borderRadius: BorderRadius.circular(12),
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               color: AppColors.dropShadowColor,
-              offset: const Offset(1, 1),
+              offset: Offset(1, 1),
               blurRadius: 1,
             )
           ]),
@@ -313,13 +314,13 @@ class TextLabel extends StatelessWidget {
         child: Text(
           text,
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 24,
             shadows: [
               Shadow(
                 color: AppColors.dropShadowColor,
-                offset: const Offset(1, 1),
+                offset: Offset(1, 1),
                 blurRadius: 1,
               ),
             ],
@@ -345,7 +346,7 @@ class ImageFrame extends StatelessWidget {
     return Container(
         height: heightAndWidth,
         width: heightAndWidth,
-        color: AppColors.primaryRed,
+        color: Theme.of(context).primaryColorDark,
         child: image);
   }
 }

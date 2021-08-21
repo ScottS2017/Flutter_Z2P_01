@@ -26,12 +26,12 @@ class ImageExercise extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              // TODO Recreate the examples file using the custom ImageFrame Widget provided
+              // TODO Recreate the examples file using the custom ImageFrame Widget provided.
               //
               // The images to use are:
               //        AppImages.jumping,     (It uses Image.asset)
-              //        AppImages.owl,     (It uses Image.network)
-              //        AppImages.invertedJenny,     (It uses Image.network)
+              //        AppImages.owlUrl,     (It uses Image.network)
+              //        AppImages.invertedJennyUrl,     (It uses Image.network)
               //
               // Be sure to check if you're dealing with an asset or network image
               //
@@ -140,7 +140,7 @@ class ImageFrame extends StatelessWidget {
     return Container(
         height: heightAndWidth,
         width: heightAndWidth,
-        color: AppColors.primaryRed,
+        color: Theme.of(context).primaryColorDark,
         child: image);
   }
 }

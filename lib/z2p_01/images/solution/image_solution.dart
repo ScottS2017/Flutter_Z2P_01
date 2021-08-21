@@ -57,7 +57,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.owl,
+                  AppImages.owlUrl,
                   fit: BoxFit.fill,
                 ),
               ),
@@ -65,7 +65,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.invertedJenny,
+                  AppImages.invertedJennyUrl,
                   fit: BoxFit.fill,
                 ),
               ),
@@ -85,7 +85,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.owl,
+                  AppImages.owlUrl,
                   fit: BoxFit.contain,
                 ),
               ),
@@ -93,7 +93,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.invertedJenny,
+                  AppImages.invertedJennyUrl,
                   fit: BoxFit.contain,
                 ),
               ),
@@ -113,7 +113,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.owl,
+                  AppImages.owlUrl,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -121,7 +121,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.invertedJenny,
+                  AppImages.invertedJennyUrl,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -141,7 +141,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.owl,
+                  AppImages.owlUrl,
                   fit: BoxFit.fitHeight,
                 ),
               ),
@@ -149,7 +149,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.invertedJenny,
+                  AppImages.invertedJennyUrl,
                   fit: BoxFit.fitHeight,
                 ),
               ),
@@ -169,7 +169,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.owl,
+                  AppImages.owlUrl,
                   fit: BoxFit.fitWidth,
                 ),
               ),
@@ -177,7 +177,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.invertedJenny,
+                  AppImages.invertedJennyUrl,
                   fit: BoxFit.fitWidth,
                 ),
               ),
@@ -197,7 +197,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.owl,
+                  AppImages.owlUrl,
                   fit: BoxFit.none,
                 ),
               ),
@@ -205,7 +205,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.invertedJenny,
+                  AppImages.invertedJennyUrl,
                   fit: BoxFit.none,
                 ),
               ),
@@ -225,7 +225,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.owl,
+                  AppImages.owlUrl,
                   fit: BoxFit.scaleDown,
                 ),
               ),
@@ -233,7 +233,7 @@ class ImageSolution extends StatelessWidget {
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
-                  AppImages.invertedJenny,
+                  AppImages.invertedJennyUrl,
                   fit: BoxFit.scaleDown,
                 ),
               ),
@@ -260,7 +260,7 @@ class ImageFrame extends StatelessWidget {
     return Container(
         height: heightAndWidth,
         width: heightAndWidth,
-        color: AppColors.primaryRed,
+        color: Theme.of(context).primaryColorDark,
         child: image);
   }
 }

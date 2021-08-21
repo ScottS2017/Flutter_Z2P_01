@@ -4,7 +4,6 @@ const skModernist = 'Sk-Modernist';
 const appBarBackButtonForegroundColor = Color.fromARGB(0xFF, 0x28, 0x28, 0x29);
 const lightGrey = Color.fromARGB(0xFF, 0xBD, 0xBD, 0xBD);
 const darkGrey = Color.fromARGB(0xFF, 0x28, 0x28, 0x29);
-const listWheelScrollViewScrim = Color(0x20FEFEFE);
 
 final appTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,
