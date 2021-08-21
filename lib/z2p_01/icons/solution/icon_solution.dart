@@ -1,10 +1,12 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:o1_widgets_you_can_see/infrastructure/build_app_bar.dart';
 class IconSolution extends StatelessWidget {
   const IconSolution({
     Key? key,
+    required this.title,
   }) : super(key: key);
+
+  final String title;
 
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
     height: 32,
@@ -12,9 +14,7 @@ class IconSolution extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Icons Solutions'),
-      ),
+      appBar: buildAppBar(title: title),
       body: SizedBox.expand(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),

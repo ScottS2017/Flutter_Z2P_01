@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:o1_widgets_you_can_see/infrastructure/build_app_bar.dart';
 
 class IconExamples extends StatelessWidget {
   const IconExamples({
     Key? key,
+    required this.title,
   }) : super(key: key);
+
+  final String title;
 
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
     height: 32,
@@ -12,13 +16,11 @@ class IconExamples extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Icon Examples'),
-      ),
-        body: SizedBox.expand(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: SingleChildScrollView(
+      appBar: buildAppBar(title: title),
+      body: SizedBox.expand(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
@@ -62,7 +64,7 @@ class IconExamples extends StatelessWidget {
                       stops: [0.0, 0.25, 0.5, 0.75, 1],
                     ),
                   ),
-                  child:const Icon(
+                  child: const Icon(
                     Icons.audiotrack,
                     size: 132,
                     color: Colors.white24,
@@ -106,7 +108,8 @@ class IconExamples extends StatelessWidget {
                       focalRadius: 2.0,
                     ),
                   ),
-                  child: Icon(Icons.audiotrack, size: 132, color: Colors.black38),
+                  child:
+                      Icon(Icons.audiotrack, size: 132, color: Colors.black38),
                 ),
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 const ExampleIconCustomWidget(
@@ -121,9 +124,9 @@ class IconExamples extends StatelessWidget {
                 divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ],
             ),
-      ),
           ),
         ),
+      ),
     );
   }
 }

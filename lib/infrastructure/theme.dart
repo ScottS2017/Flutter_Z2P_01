@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'app_colors.dart';
-
 const skModernist = 'Sk-Modernist';
 const appBarBackButtonForegroundColor = Color.fromARGB(0xFF, 0x28, 0x28, 0x29);
 const lightGrey = Color.fromARGB(0xFF, 0xBD, 0xBD, 0xBD);
@@ -21,7 +19,7 @@ final appTheme = ThemeData(
   cardColor: const Color(0xFFE0E0E0),
   appBarTheme: const AppBarTheme(
     backwardsCompatibility: false,
-    backgroundColor: AppColors.appThemeBlueAccentColor,
+    backgroundColor: Color(0xffaa00ff),
     elevation: 0,
     centerTitle: true,
     titleTextStyle: TextStyle(

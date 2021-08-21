@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:o1_widgets_you_can_see/infrastructure/build_app_bar.dart';
 
 class BoxDecorationSolution extends StatelessWidget {
   const BoxDecorationSolution({
     Key? key,
+    required this.title,
   }) : super(key: key);
 
+  final String title;
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
     height: 30,
   );
@@ -12,9 +15,7 @@ class BoxDecorationSolution extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Decorations Solutions'),
-      ),
+      appBar: buildAppBar(title: title),
       body: SizedBox.expand(
         child: SingleChildScrollView(
           child: Padding(

@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
-import '../../../../infrastructure/app_colors.dart';
-import '../../../../infrastructure/app_strings.dart';
-import '../../../../infrastructure/app_textstyles.dart';
-import '../../../../infrastructure/build_app_bar.dart';
+import '/infrastructure/app_colors.dart';
+import '/infrastructure/app_strings.dart';
+import '/infrastructure/app_textstyles.dart';
+import '/infrastructure/build_app_bar.dart';
 
 class TextSolution extends StatelessWidget {
   const TextSolution({
     Key? key,
+    required this.title,
   }) : super(key: key);
+
+  final String title;
 
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
 
@@ -16,9 +19,7 @@ class TextSolution extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Text Solutions'),
-      ),
+      appBar: buildAppBar(title: title),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(

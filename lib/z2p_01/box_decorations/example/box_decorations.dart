@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
-import '../../../infrastructure/app_colors.dart';
-import '../../../infrastructure/build_app_bar.dart';
+
+import '/infrastructure/app_colors.dart';
+import '/infrastructure/build_app_bar.dart';
 
 class BoxDecorations extends StatelessWidget {
   const BoxDecorations({
     Key? key,
+    required this.title,
   }) : super(key: key);
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Decorations Example'),
-      ),
+      appBar: buildAppBar(title: title),
       body: SizedBox.expand(
         child: SingleChildScrollView(
           child: Padding(
@@ -170,7 +172,7 @@ class BoxDecorations extends StatelessWidget {
                   margin: const EdgeInsets.only(top: 30),
                   padding: const EdgeInsets.all(30),
                   decoration: const BoxDecoration(
-                    image:  DecorationImage(
+                    image: DecorationImage(
                       fit: BoxFit.contain,
                       image: AssetImage('assets/images/F.png'),
                     ),

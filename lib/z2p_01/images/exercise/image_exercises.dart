@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
-import '../../../../infrastructure/app_colors.dart';
-import '../../../../infrastructure/app_images.dart';
-import '../../../../infrastructure/build_app_bar.dart';
+import '/infrastructure/app_colors.dart';
+import '/infrastructure/app_images.dart';
+import '/infrastructure/build_app_bar.dart';
 
 class ImageExercise extends StatelessWidget {
   const ImageExercise({
     Key? key,
+    required this.title,
   }) : super(key: key);
+
+  final String title;
 
   final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
       const SizedBox(height: 32);
@@ -15,9 +18,7 @@ class ImageExercise extends StatelessWidget {
   Widget build(BuildContext context) {
     final double heightAndWidth = MediaQuery.of(context).size.width - 32;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Image Exercises'),
-      ),
+      appBar: buildAppBar(title: title),
       body: SingleChildScrollView(
         child: Container(
           color: Theme.of(context).cardColor,

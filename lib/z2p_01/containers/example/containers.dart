@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../infrastructure/app_colors.dart';
-import '../../../infrastructure/build_app_bar.dart';
+import '/infrastructure/app_colors.dart';
+import '/infrastructure/build_app_bar.dart';
 
 @immutable
 class Containers extends StatelessWidget {
@@ -19,15 +19,7 @@ class Containers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        key: ValueKey(title),
-        automaticallyImplyLeading: false,
-        elevation: 4,
-        title: Align(
-          alignment: Alignment.centerLeft,
-          child: buildAppBarTitle(title: title),
-        ),
-      ),
+      appBar: buildAppBar(title: title),
       body: SizedBox.expand(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),

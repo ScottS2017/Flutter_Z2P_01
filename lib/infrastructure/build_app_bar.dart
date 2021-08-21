@@ -2,20 +2,28 @@ import 'package:flutter/material.dart';
 
 import 'app_textstyles.dart';
 
-Widget buildAppBarTitle({
+AppBar buildAppBar({
   required String title,
 }) {
-  return Row(
-    mainAxisSize: MainAxisSize.min,
-    crossAxisAlignment: CrossAxisAlignment.end,
-    children: [
-      const SizedBox(
-        width: 5,
+  return AppBar(
+    key: ValueKey(title),
+    automaticallyImplyLeading: true,
+    elevation: 4,
+    title: Align(
+      alignment: Alignment.centerLeft,
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          const SizedBox(
+            width: 5,
+          ),
+          Text(
+            title,
+            style: AppTextStyles.appBarTextStyle,
+          ),
+        ],
       ),
-      Text(
-        title,
-        style: AppTextStyles.appBarTextStyle,
-      ),
-    ],
+    ),
   );
 }

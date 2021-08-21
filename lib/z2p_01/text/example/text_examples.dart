@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import '../../../../infrastructure/app_colors.dart';
-import '../../../../infrastructure/app_strings.dart';
-import '../../../../infrastructure/app_textstyles.dart';
-import '../../../../infrastructure/build_app_bar.dart';
+import '/infrastructure/app_colors.dart';
+import '/infrastructure/app_strings.dart';
+import '/infrastructure/build_app_bar.dart';
 
 class TextExamples extends StatelessWidget {
   const TextExamples({
     Key? key,
+    required this.title,
   }) : super(key: key);
+
+  final String title;
 
   /// Text: "A run of text with a single style."
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Text Basics Example'),
-      ),
+      appBar: buildAppBar(title: title),
       body: SizedBox.expand(
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
