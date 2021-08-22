@@ -9,7 +9,7 @@ class IconExercise extends StatelessWidget {
 
   final String title;
 
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
+  final SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
     height: 32,
   );
 
@@ -23,31 +23,31 @@ class IconExercise extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ExampleIconCustomWidget(
-                color: const Color(0xFF777777),
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              const ExampleIconCustomWidget(
+                color: Color(0xFF777777),
                 // TODO 1) Add the icon parameter: Google Translate icon, size is 80 and color is white 54
                 // Your code here
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ExampleIconCustomWidget(
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              const ExampleIconCustomWidget(
                 color: Colors.purple,
                 // TODO 2) Add the icon parameter: Google Assistant icon, size 120 and color is white 54
                 // Your code here
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ExampleIconCustomWidget(
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              const ExampleIconCustomWidget(
                 color: Colors.white,
                 // TODO 3) Add the icon parameter: Alarm icon, size is 80 and color is red and add a semantics label that says Red Alarm
                 // Your code here
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ExampleIconCustomWidget(
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              const ExampleIconCustomWidget(
                 color: Colors.red,
                 // TODO 4) Add the icon parameter: Power Settings icon, size is 80 and color is white
                 // Your code here
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ],
           ),
         ),
@@ -79,8 +79,8 @@ class ExampleIconCustomWidget extends StatelessWidget {
           width: 3,
         ),
         borderRadius: BorderRadius.circular(100),
-        boxShadow: [
-          const BoxShadow(
+        boxShadow: const [
+          BoxShadow(
             color: Colors.black87,
             blurRadius: 12,
             offset: Offset(4, 6),

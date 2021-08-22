@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '/infrastructure/app_colors.dart';
 import '/infrastructure/build_app_bar.dart';
 
 @immutable
 class ContainersSolution extends StatelessWidget {
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
+  final SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
       const SizedBox(height: 16);
 
   const ContainersSolution({
@@ -25,14 +24,14 @@ class ContainersSolution extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 //TODO 1) Create Container, with height 50, width 150, and make the color the theme's primaryColorDark
                 Container(
                   height: 50,
                   width: 150,
                   color: Theme.of(context).primaryColorDark,
                 ),
-                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 // TODO 2 ) Create a Container that is 100 high, max width, and is the theme's primaryColorDark. Then give it a white child Container that is 50 high and 150 wide, that is aligned center right within its parent.
                 Container(
                   height: 100,
@@ -45,7 +44,7 @@ class ContainersSolution extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 // TODO 3) Create Containe 300 high x 200 wide, appThemePrimaryBlue, give it 20 padding all around. Then give it a child Container that is 50 x 50, aligned top center and make the color the theme's primaryColorDark
                 Container(
                   height: 300,
@@ -60,7 +59,7 @@ class ContainersSolution extends StatelessWidget {
                   ),
                 ),
 
-                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 // TODO 4) Create a Container that's the theme's primaryColorDark, 100 high with max width, that aligns its child top right and give it margins of 150 right and 25 left. Then give it a child Container that's 95 high, 100 wide and make the color white54.
                 Container(
                   height: 100,

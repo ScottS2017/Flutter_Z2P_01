@@ -1,12 +1,24 @@
 import 'package:flutter/material.dart';
 
-import 'app_launch/home.dart';
+import 'z2p_01/box_decorations/example/box_decorations.dart';
+import 'z2p_01/box_decorations/exercise/box_decorations_exercises.dart';
+import 'z2p_01/box_decorations/solution/box_decorations_solution.dart';
+import 'z2p_01/home.dart';
 import 'app_launch/welcome.dart';
 import 'infrastructure/logging.dart';
 import 'infrastructure/theme.dart';
 import 'z2p_01/containers/example/containers.dart';
 import 'z2p_01/containers/exercise/container_exercises.dart';
 import 'z2p_01/containers/solution/container_solution.dart';
+import 'z2p_01/icons/example/icon_examples.dart';
+import 'z2p_01/icons/exercise/icon_exercises.dart';
+import 'z2p_01/icons/solution/icon_solution.dart';
+import 'z2p_01/images/example/image_examples.dart';
+import 'z2p_01/images/exercise/image_exercises.dart';
+import 'z2p_01/images/solution/image_solution.dart';
+import 'z2p_01/text/example/text_examples.dart';
+import 'z2p_01/text/exercise/text_exercises.dart';
+import 'z2p_01/text/solution/text_solution.dart';
 
 class ZeroToProductiveApp extends StatelessWidget {
   const ZeroToProductiveApp({
@@ -58,13 +70,14 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
     case '/':
       builder = (BuildContext context) => const Welcome();
       break;
+    case 'home':
+      builder = (BuildContext context) => const Z2P1Home(
+      );
+      break;
     case 'containers-example':
       builder = (BuildContext context) => const Containers(
             title: 'Containers Example',
           );
-      break;
-      case 'home':
-      builder = (BuildContext context) => const Home();
       break;
     case 'containers-exercises':
       builder = (BuildContext context) => const ContainersExercises(
@@ -74,6 +87,66 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
     case 'containers-solution':
       builder = (BuildContext context) => const ContainersSolution(
             title: 'Containers Solution',
+          );
+      break;
+    case 'boxdecoration-example':
+      builder = (BuildContext context) => const BoxDecorations(
+            title: 'BoxDecoration Examples',
+          );
+      break;
+    case 'boxdecoration-exercise':
+      builder = (BuildContext context) => const BoxDecorationExercises(
+            title: 'BoxDecoration Exercises',
+          );
+      break;
+    case 'boxdecoration-solutions':
+      builder = (BuildContext context) => const BoxDecorationSolution(
+            title: 'BoxDecoration Solutions',
+          );
+      break;
+    case 'icon-example':
+      builder = (BuildContext context) => const IconExamples(
+        title: 'Icon Examples',
+      );
+      break;
+    case 'icon-exercise':
+      builder = (BuildContext context) => const IconExercise(
+        title: 'Icon Exercises',
+      );
+      break;
+    case 'icon-solutions':
+      builder = (BuildContext context) => const IconSolution(
+        title: 'Icon Solutions',
+      );
+      break;
+    case 'image-examples':
+      builder = (BuildContext context) => const ImageExamples(
+            title: 'Image Examples ',
+          );
+      break;
+    case 'image-exercises':
+      builder = (BuildContext context) => const ImageExercise(
+            title: 'Image Exercises',
+          );
+      break;
+    case 'image-solutions':
+      builder = (BuildContext context) => const ImageSolution(
+            title: 'Image Solutions',
+          );
+      break;
+    case 'text-examples':
+      builder = (BuildContext context) => const TextExamples(
+            title: 'Text Examples ',
+          );
+      break;
+    case 'text-exercises':
+      builder = (BuildContext context) => const TextExercises(
+            title: 'Text Exercises',
+          );
+      break;
+    case 'text-solution':
+      builder = (BuildContext context) => const TextSolution(
+            title: 'Text Solutions',
           );
       break;
     default:

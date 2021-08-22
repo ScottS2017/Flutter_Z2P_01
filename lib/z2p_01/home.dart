@@ -3,34 +3,19 @@ import 'package:o1_widgets_you_can_see/infrastructure/app_textstyles.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/custom_scroll_no_overglow.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/theme.dart';
 
-import '../z2p_01/containers/example/containers.dart';
-import '../z2p_01/containers/exercise/container_exercises.dart';
-import '../z2p_01/containers/solution/container_solution.dart';
-import '../z2p_01/box_decorations/example/box_decorations.dart';
-import '../z2p_01/box_decorations/exercise/box_decorations_exercises.dart';
-import '../z2p_01/box_decorations/solution/box_decorations_solution.dart';
-import '../z2p_01/images/example/image_examples.dart';
-import '../z2p_01/images/exercise/image_exercises.dart';
-import '../z2p_01/images/solution/image_solution.dart';
-import '../z2p_01/text/example/text_examples.dart';
-import '../z2p_01/text/exercise/text_exercises.dart';
-import '../z2p_01/text/solution/text_solution.dart';
-import '../z2p_01/icons/example/icon_examples.dart';
-import '../z2p_01/icons/exercise/icon_exercises.dart';
-import '../z2p_01/icons/solution/icon_solution.dart';
 
-class Home extends StatefulWidget {
-  const Home({
+class Z2P1Home extends StatefulWidget {
+  const Z2P1Home({
     Key? key,
   }) : super(key: key);
 
   static Widget sizedBox40 = const SizedBox(height: 40);
 
   @override
-  _HomeState createState() => _HomeState();
+  _Z2P1HomeState createState() => _Z2P1HomeState();
 }
 
-class _HomeState extends State<Home> {
+class _Z2P1HomeState extends State<Z2P1Home> {
   late FixedExtentScrollController _widgetSelectionController;
   late FixedExtentScrollController _exampleExerciseSolutionController;
   int _selectedWidget = 2;
@@ -38,59 +23,29 @@ class _HomeState extends State<Home> {
 
   final routeMatrix = [
     [
-      const Containers(
-        title: 'Containers Examples',
-      ),
-      const ContainersExercises(
-        title: 'Containers Exercises',
-      ),
-      const ContainersSolution(
-        title: 'Containers Solutions',
-      ),
+      'containers-example',
+      'containers-exercises',
+      'containers-solution',
     ],
     [
-      const BoxDecorations(
-        title: 'BoxDecoration Examples',
-      ),
-      const BoxDecorationExercises(
-        title: 'BoxDecoration Exercises',
-      ),
-      const BoxDecorationSolution(
-        title: 'BoxDecoration Solutions',
-      ),
+      'boxdecoration-example',
+      'boxdecoration-exercise',
+      'boxdecoration-solutions',
     ],
     [
-      const IconExamples(
-        title: 'Icon Examples ',
-      ),
-      const IconExercise(
-        title: 'Icon Exercises',
-      ),
-      const IconSolution(
-        title: 'Icon Solutions',
-      ),
+      'icon-example',
+      'icon-exercise',
+      'icon-solutions',
     ],
     [
-      const Image_Examples(
-        title: 'Image Examples ',
-      ),
-      const ImageExercise(
-        title: 'Image Exercises',
-      ),
-      const ImageSolution(
-        title: 'Image Solutions',
-      ),
+      'image-examples',
+      'image-exercises',
+      'image-solutions',
     ],
     [
-      const TextExamples(
-        title: 'Text Examples ',
-      ),
-      const TextExercises(
-        title: 'Text Exercises',
-      ),
-      const TextSolution(
-        title: 'Text Solutions',
-      ),
+      'text-examples',
+      'text-exercises',
+      'text-solution',
     ]
   ];
 
@@ -238,12 +193,9 @@ class _HomeState extends State<Home> {
                     Expanded(
                       flex: 10,
                       child: GestureDetector(
-                        onTap: () => Navigator.push<Route>(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => routeMatrix[_selectedWidget]
-                                [_exampleExerciseOrSolution],
-                          ),
+                        onTap: () => Navigator.of(context).pushNamed(
+                          routeMatrix[_selectedWidget]
+                              [_exampleExerciseOrSolution],
                         ),
                         child: Container(
                           alignment: Alignment.center,

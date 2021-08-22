@@ -9,7 +9,7 @@ class IconExamples extends StatelessWidget {
 
   final String title;
 
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
+  final SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
     height: 32,
   );
 
@@ -23,7 +23,7 @@ class IconExamples extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 const ExampleIconCustomWidget(
                   color: Colors.green,
                   icon: Icon(
@@ -33,7 +33,7 @@ class IconExamples extends StatelessWidget {
                     color: Colors.white54,
                   ),
                 ),
-                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 Container(
                   height: 200,
                   width: 200,
@@ -70,7 +70,7 @@ class IconExamples extends StatelessWidget {
                     color: Colors.white24,
                   ),
                 ),
-                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 Container(
                   height: 200,
                   width: 200,
@@ -109,9 +109,9 @@ class IconExamples extends StatelessWidget {
                     ),
                   ),
                   child:
-                      Icon(Icons.audiotrack, size: 132, color: Colors.black38),
+                      const Icon(Icons.audiotrack, size: 132, color: Colors.black38),
                 ),
-                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 const ExampleIconCustomWidget(
                   color: Colors.teal,
                   icon: Icon(
@@ -121,7 +121,7 @@ class IconExamples extends StatelessWidget {
                     color: Colors.deepOrangeAccent,
                   ),
                 ),
-                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ],
             ),
           ),

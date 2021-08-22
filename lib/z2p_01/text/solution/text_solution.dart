@@ -12,7 +12,7 @@ class TextSolution extends StatelessWidget {
 
   final String title;
 
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
+  final SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(height: 16);
 
   /// Text: "A run of text with a single style."
 
@@ -31,7 +31,7 @@ class TextSolution extends StatelessWidget {
 
               /// Remember the way we're organizing a Flutter App, we're
               /// using an AppStrings class to hold all of our Strings
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
               // TODO 1) Make a Text, the string is AppStrings.mon. Center the text and make it FF3780, w600, size 18 and italic
               const Text(
@@ -45,7 +45,7 @@ class TextSolution extends StatelessWidget {
                   fontStyle: FontStyle.italic,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
               //TODO 2) In a Container that has a color of "AppColors.appThemeSecondaryText", with padding all around of 16, you want text that uses the app string of tu. Make it right aligned, color 0185D0, bold, size 18 and with a letter spacing of 12 and a background color of FB7EE4
               Container(
@@ -64,43 +64,43 @@ class TextSolution extends StatelessWidget {
                   ),
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
               //TODO 3) Make a text, the app string is wed, make it centered, size 24 with a drop shadow color of dropShadowColor, blur radius of 2 and an offset of 3, 3
-              Text(
+              const Text(
                 AppStrings.wed,
                 semanticsLabel: AppStrings.wed,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 24,
-                  shadows: [
+                  shadows:  [
                     Shadow(
                       color: AppColors.dropShadowColor,
                       blurRadius: 2,
-                      offset: const Offset(3, 3),
+                      offset:  Offset(3, 3),
                     ),
                   ],
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
               // TODO 4) Less hand holding here, figure out things that aren't expressly stated... Thurs: color 0185D0, w200, size 48
-              Text(
+              const Text(
                 AppStrings.th,
                 semanticsLabel: AppStrings.th,
                 style: TextStyle(
-                  color: const Color(0xFF0185D0),
+                  color: Color(0xFF0185D0),
                   fontWeight: FontWeight.w200,
                   fontSize: 48,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
               // TODO 5) Even less...AppStrings.fr, bold italic, add a drop shadow with blur 1 and offset 2-2
-              Text(
+              const  Text(
                 AppStrings.fr,
                 semanticsLabel: AppStrings.fr,
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.italic,
                   shadows: [
@@ -112,15 +112,15 @@ class TextSolution extends StatelessWidget {
                   ],
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
               //TODO 6) AppStrings.sat and use AppTextStyles.dart to implement a bold italic 36 font
-              Text(
+              const Text(
                 AppStrings.sat,
                 semanticsLabel: AppStrings.sat,
                 style: AppTextStyles.boldItalic36,
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
               //TODO 7) AppStrings.sun, align the text right and use AppTextStyles.dart and "copyWith" to implement a bold italic 24 font in primaryRed
               Text(
@@ -131,10 +131,10 @@ class TextSolution extends StatelessWidget {
                   color: AppColors.primaryRed,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               //
               // TODO 8) Make examples of fade right, fade bottom and ellipsis overflows using the first line of the Gettysburg address (it's in AppStrings.getAd) and use AppTextStyles to set the font to normal 18
-              Text(
+              const   Text(
                 AppStrings.getAd,
                 semanticsLabel: AppStrings.getAd,
 
@@ -143,8 +143,8 @@ class TextSolution extends StatelessWidget {
                 overflow: TextOverflow.fade,
                 style: AppTextStyles.normal18,
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              Text(
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              const   Text(
                 AppStrings.getAd,
                 semanticsLabel: AppStrings.getAd,
                 style: AppTextStyles.normal18,
@@ -152,8 +152,8 @@ class TextSolution extends StatelessWidget {
                 overflow: TextOverflow.fade,
                 maxLines: 1,
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              Text(
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              const     Text(
                 AppStrings.getAd,
                 semanticsLabel: AppStrings.getAd,
                 softWrap: false,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '/infrastructure/app_colors.dart';
 import '/infrastructure/app_images.dart';
 import '/infrastructure/build_app_bar.dart';
 
@@ -11,7 +10,7 @@ class ImageExercise extends StatelessWidget {
 
   final String title;
 
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
+  final SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
       const SizedBox(height: 32);
 
   @override
@@ -44,7 +43,7 @@ class ImageExercise extends StatelessWidget {
               ///
               /// BoxFit.fill
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // Example:
               ImageFrame(
                 heightAndWidth: heightAndWidth,
@@ -53,69 +52,69 @@ class ImageExercise extends StatelessWidget {
                   fit: BoxFit.fill,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Owl
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jenny
 
               ///
               /// BoxFit.contain
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jumping
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Owl
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jenny
 
               ///
               /// BoxFit.cover
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jumping
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Owl
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jenny
 
               ///
               /// BoxFit.fitHeight
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jumping
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Owl
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jenny
 
               ///
               /// BoxFit.fitWidth
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jumping
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Owl
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jenny
 
               ///
               /// BoxFit.none
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jumping
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Owl
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jenny
 
               ///
               /// BoxFit.scaleDown
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jumping
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Owl
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // TODO Jenny
             ],
           ),
@@ -140,7 +139,7 @@ class ImageFrame extends StatelessWidget {
     return Container(
         height: heightAndWidth,
         width: heightAndWidth,
-        color: Theme.of(context).primaryColorDark,
+        color: Colors.grey,
         child: image);
   }
 }

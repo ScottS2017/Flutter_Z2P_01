@@ -8,7 +8,7 @@ class BoxDecorationSolution extends StatelessWidget {
   }) : super(key: key);
 
   final String title;
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
+  final SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = const SizedBox(
     height: 30,
   );
 
@@ -52,7 +52,7 @@ class BoxDecorationSolution extends StatelessWidget {
                   ),
                 ),
 
-                divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
                 Container(
                   height: 200,

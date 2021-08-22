@@ -1,12 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:o1_widgets_you_can_see/infrastructure/app_colors.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/app_images.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/app_textstyles.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/theme.dart';
 
-import 'home.dart';
+import '../z2p_01/home.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({
@@ -169,45 +168,22 @@ class _WelcomeState extends State<Welcome> {
                               const SizedBox(
                                 height: 16,
                               ),
-                              Row(
-                                mainAxisSize: MainAxisSize.min,
+                              Column(
                                 children: [
-                                  GestureDetector(
-                                    onTap: () => Navigator.push<Route>(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => const Home(),
-                                      ),
-                                    ),
-                                    child: Container(
-                                      alignment: Alignment.center,
-                                      padding: const EdgeInsets.all(8),
-                                      decoration: BoxDecoration(
-                                        color: Theme.of(context).primaryColor,
-                                        borderRadius: BorderRadius.circular(6),
-                                        boxShadow: const [
-                                          BoxShadow(
-                                            color: darkGrey,
-                                            blurRadius: 4,
-                                            offset: Offset(2, 2),
-                                          ),
-                                        ],
-                                      ),
-                                      child: Text(
-                                        "Let's Get Started",
-                                        style: AppTextStyles.italic18.copyWith(
-                                          color:
-                                              Theme.of(context).backgroundColor,
-                                          shadows: const [
-                                            Shadow(
-                                              blurRadius: 4,
-                                              color: darkGrey,
-                                              offset: Offset(1, 1),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      _buildCoursePickerButton(context: context, targetPage: const Z2P1Home(), text: 'Module 1',),
+                                      _buildCoursePickerButton(context: context, targetPage: const Z2P1Home(), text: 'Module 2',),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 24,),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      _buildCoursePickerButton(context: context, targetPage: const Z2P1Home(), text: 'Module 3',),
+                                      _buildCoursePickerButton(context: context, targetPage: const Z2P1Home(), text: 'Module 4',),
+                                    ],
                                   ),
                                 ],
                               ),
@@ -222,6 +198,49 @@ class _WelcomeState extends State<Welcome> {
             ),
             _buildSplashScreen(context),
           ],
+        ),
+      ),
+    );
+  }
+
+  GestureDetector _buildCoursePickerButton({
+    required BuildContext context,
+    required Widget targetPage,
+    required String text,
+  }) {
+    return GestureDetector(
+      onTap: () => Navigator.push<Route>(
+        context,
+        MaterialPageRoute(
+          builder: (context) => targetPage,
+        ),
+      ),
+      child: Container(
+        alignment: Alignment.center,
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          color: Theme.of(context).primaryColor,
+          borderRadius: BorderRadius.circular(6),
+          boxShadow: const [
+            BoxShadow(
+              color: darkGrey,
+              blurRadius: 4,
+              offset: Offset(2, 2),
+            ),
+          ],
+        ),
+        child: Text(
+         text,
+          style: AppTextStyles.italic18.copyWith(
+            color: Theme.of(context).backgroundColor,
+            shadows: const [
+              Shadow(
+                blurRadius: 4,
+                color: darkGrey,
+                offset: Offset(1, 1),
+              ),
+            ],
+          ),
         ),
       ),
     );

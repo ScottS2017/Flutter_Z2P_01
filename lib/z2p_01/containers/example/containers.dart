@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '/infrastructure/app_colors.dart';
 import '/infrastructure/build_app_bar.dart';
 
 @immutable
@@ -12,7 +11,7 @@ class Containers extends StatelessWidget {
 
   final String title;
 
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
+  final SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
       const SizedBox(height: 16);
   final String test = 'test';
 
@@ -25,14 +24,14 @@ class Containers extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             children: <Widget>[
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               Container(
                 key: const ValueKey('simple_blue'),
                 height: 100,
                 width: double.infinity,
                 color:  Theme.of(context).primaryColorDark,
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               Container(
                 height: 100,
                 width: double.infinity,
@@ -44,7 +43,7 @@ class Containers extends StatelessWidget {
                   color: Theme.of(context).accentColor,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               Container(
                 height: 100,
                 width: double.infinity,
@@ -57,7 +56,7 @@ class Containers extends StatelessWidget {
                   color: Theme.of(context).accentColor,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               Container(
                 height: 100,
                 width: double.infinity,
@@ -71,7 +70,7 @@ class Containers extends StatelessWidget {
                   color: Theme.of(context).accentColor,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               Container(
                 height: 100,
                 width: double.infinity,

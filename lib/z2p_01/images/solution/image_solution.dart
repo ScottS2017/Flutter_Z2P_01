@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '/infrastructure/app_colors.dart';
 import '/infrastructure/app_images.dart';
 import '/infrastructure/build_app_bar.dart';
 
@@ -11,8 +10,8 @@ class ImageSolution extends StatelessWidget {
 
   final String title;
 
-  final SizedBox divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
-      const SizedBox(height: 32);
+  static const  SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
+      SizedBox(height: 32);
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +44,7 @@ class ImageSolution extends StatelessWidget {
               /// BoxFit.fill
               ///
               // Example:
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
@@ -53,7 +52,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.fill,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -61,7 +60,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.fill,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -73,7 +72,7 @@ class ImageSolution extends StatelessWidget {
               ///
               /// BoxFit.contain
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
@@ -81,7 +80,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -89,7 +88,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -101,7 +100,7 @@ class ImageSolution extends StatelessWidget {
               ///
               /// BoxFit.cover
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
@@ -109,7 +108,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -117,7 +116,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -129,7 +128,7 @@ class ImageSolution extends StatelessWidget {
               ///
               /// BoxFit.fitHeight
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
@@ -137,7 +136,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.fitHeight,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -145,7 +144,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.fitHeight,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -157,7 +156,7 @@ class ImageSolution extends StatelessWidget {
               ///
               /// BoxFit.fitWidth
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
@@ -165,7 +164,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.fitWidth,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -173,7 +172,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.fitWidth,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -185,7 +184,7 @@ class ImageSolution extends StatelessWidget {
               ///
               /// BoxFit.none
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
@@ -193,7 +192,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.none,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -201,7 +200,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.none,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -213,7 +212,7 @@ class ImageSolution extends StatelessWidget {
               ///
               /// BoxFit.scaleDown
               ///
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.asset(
@@ -221,7 +220,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.scaleDown,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -229,7 +228,7 @@ class ImageSolution extends StatelessWidget {
                   fit: BoxFit.scaleDown,
                 ),
               ),
-              divider_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -260,7 +259,7 @@ class ImageFrame extends StatelessWidget {
     return Container(
         height: heightAndWidth,
         width: heightAndWidth,
-        color: Theme.of(context).primaryColorDark,
+        color: Colors.grey,
         child: image);
   }
 }
