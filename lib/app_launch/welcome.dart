@@ -171,18 +171,38 @@ class _WelcomeState extends State<Welcome> {
                               Column(
                                 children: [
                                   Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      _buildCoursePickerButton(context: context, targetPage: const Z2P1Home(), text: 'Module 1',),
-                                      _buildCoursePickerButton(context: context, targetPage: const Z2P1Home(), text: 'Module 2',),
+                                      _buildCoursePickerButton(
+                                        context: context,
+                                        targetPage: const Z2P1Home(),
+                                        text: 'Module 1',
+                                      ),
+                                      _buildCoursePickerButton(
+                                        context: context,
+                                        targetPage: null,
+                                        text: 'Module 2',
+                                      ),
                                     ],
                                   ),
-                                  const SizedBox(height: 24,),
+                                  const SizedBox(
+                                    height: 24,
+                                  ),
                                   Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      _buildCoursePickerButton(context: context, targetPage: const Z2P1Home(), text: 'Module 3',),
-                                      _buildCoursePickerButton(context: context, targetPage: const Z2P1Home(), text: 'Module 4',),
+                                      _buildCoursePickerButton(
+                                        context: context,
+                                        targetPage: null,
+                                        text: 'Module 3',
+                                      ),
+                                      _buildCoursePickerButton(
+                                        context: context,
+                                        targetPage: null,
+                                        text: 'Module 4',
+                                      ),
                                     ],
                                   ),
                                 ],
@@ -205,21 +225,23 @@ class _WelcomeState extends State<Welcome> {
 
   GestureDetector _buildCoursePickerButton({
     required BuildContext context,
-    required Widget targetPage,
+    Widget? targetPage,
     required String text,
   }) {
     return GestureDetector(
-      onTap: () => Navigator.push<Route>(
-        context,
-        MaterialPageRoute(
-          builder: (context) => targetPage,
-        ),
-      ),
+      onTap: targetPage == null
+          ? null
+          : () => Navigator.push<Route>(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => targetPage,
+                ),
+              ),
       child: Container(
         alignment: Alignment.center,
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: Theme.of(context).primaryColor,
+          color: targetPage == null ? Colors.grey : Theme.of(context).primaryColor,
           borderRadius: BorderRadius.circular(6),
           boxShadow: const [
             BoxShadow(
@@ -230,7 +252,7 @@ class _WelcomeState extends State<Welcome> {
           ],
         ),
         child: Text(
-         text,
+          text,
           style: AppTextStyles.italic18.copyWith(
             color: Theme.of(context).backgroundColor,
             shadows: const [

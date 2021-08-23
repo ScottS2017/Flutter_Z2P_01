@@ -135,8 +135,8 @@ class TextSolution extends StatelessWidget {
               //
               // TODO 8) Make examples of fade right, fade bottom and ellipsis overflows using the first line of the Gettysburg address (it's in AppStrings.getAd) and use AppTextStyles to set the font to normal 18
               const   Text(
-                AppStrings.getAd,
-                semanticsLabel: AppStrings.getAd,
+                AppStrings.wrappingText,
+                semanticsLabel: AppStrings.wrappingText,
 
                 /// TIP: To fade or use ellipsis, softWrap has to be false. After all, you can't have overflow and wrap at the same time (unless you set maxLines)
                 softWrap: false,
@@ -145,8 +145,8 @@ class TextSolution extends StatelessWidget {
               ),
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               const   Text(
-                AppStrings.getAd,
-                semanticsLabel: AppStrings.getAd,
+                AppStrings.wrappingText,
+                semanticsLabel: AppStrings.wrappingText,
                 style: AppTextStyles.normal18,
                 softWrap: true,
                 overflow: TextOverflow.fade,
@@ -154,8 +154,8 @@ class TextSolution extends StatelessWidget {
               ),
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               const     Text(
-                AppStrings.getAd,
-                semanticsLabel: AppStrings.getAd,
+                AppStrings.wrappingText,
+                semanticsLabel: AppStrings.wrappingText,
                 softWrap: false,
                 overflow: TextOverflow.ellipsis,
                 style: AppTextStyles.normal18,

@@ -120,7 +120,7 @@ class TextExamples extends StatelessWidget {
                   height: 16,
                 ),
                 const Text(
-                  AppStrings.overflowElipsisTestText,
+                  AppStrings.overflowEllipsisTestText,
                   overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(
@@ -362,6 +362,19 @@ class TextExamples extends StatelessWidget {
                   AppStrings.fs20,
                   style: TextStyle(
                     fontSize: 20,
+                  ),
+                ),
+                const SizedBox(
+                  height: 32,
+                ),
+
+                ///
+                /// Wrapping Text
+                const Text(
+                  AppStrings.wrappingText,
+                  softWrap: true,
+                  style: TextStyle(
+                    fontSize: 12,
                   ),
                 ),
                 const SizedBox(

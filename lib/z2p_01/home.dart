@@ -3,7 +3,6 @@ import 'package:o1_widgets_you_can_see/infrastructure/app_textstyles.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/custom_scroll_no_overglow.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/theme.dart';
 
-
 class Z2P1Home extends StatefulWidget {
   const Z2P1Home({
     Key? key,
@@ -20,6 +19,13 @@ class _Z2P1HomeState extends State<Z2P1Home> {
   late FixedExtentScrollController _exampleExerciseSolutionController;
   int _selectedWidget = 2;
   int _exampleExerciseOrSolution = 1;
+
+  final aboveWhiteSpacerFlex = 4;
+  final whiteExpandedFlex = 25;
+  final listWheelScrollViewExpandedFlex = 50;
+  final aboveGoButtonSpacerFlex = 8;
+  final goButtonExpandedFlex = 8;
+  final belowGoButtonSpacerFlex = 5;
 
   final routeMatrix = [
     [
@@ -84,7 +90,7 @@ class _Z2P1HomeState extends State<Z2P1Home> {
                 gradient: const LinearGradient(
                   colors: [
                     Color(0xFFfbc2f1),
-                    Color(0xff9653ca),
+                    Color(0xffad87ca),
                   ],
                   begin: Alignment.topLeft,
                   end: Alignment.centerRight,
@@ -111,14 +117,48 @@ class _Z2P1HomeState extends State<Z2P1Home> {
                 behavior: CustomScrollNoOverglow(),
                 child: Column(
                   children: [
+                    Spacer(
+                      flex: aboveWhiteSpacerFlex,
+                    ),
                     Expanded(
-                      flex: 90,
+                      flex: whiteExpandedFlex,
+                      child: Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(16),
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(
+                            width: 2,
+                            color: Colors.grey,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: darkGrey,
+                              blurRadius: 4,
+                              offset: Offset(1, 1),
+                            ),
+                          ],
+                        ),
+                        child: const Text(
+                          'Spin the wheels to select your destination',
+                          textAlign: TextAlign.center,
+                          style:  TextStyle(
+                            fontSize: 32,
+                            color: Colors.black87,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: listWheelScrollViewExpandedFlex,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Expanded(
                             child: FractionallySizedBox(
-                              heightFactor: 0.3,
+                              heightFactor: 0.5,
                               child: Row(
                                 children: [
                                   Expanded(
@@ -160,7 +200,7 @@ class _Z2P1HomeState extends State<Z2P1Home> {
                           ),
                           Expanded(
                             child: FractionallySizedBox(
-                              heightFactor: 0.3,
+                              heightFactor: 0.5,
                               child: Row(
                                 children: [
                                   Expanded(
@@ -190,8 +230,11 @@ class _Z2P1HomeState extends State<Z2P1Home> {
                         ],
                       ),
                     ),
+                    Spacer(
+                      flex: aboveGoButtonSpacerFlex,
+                    ),
                     Expanded(
-                      flex: 10,
+                      flex: goButtonExpandedFlex,
                       child: GestureDetector(
                         onTap: () => Navigator.of(context).pushNamed(
                           routeMatrix[_selectedWidget]
@@ -201,13 +244,27 @@ class _Z2P1HomeState extends State<Z2P1Home> {
                           alignment: Alignment.center,
                           padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [
+                                Theme.of(context).primaryColor,
+                                const Color(0xFFfbc2f1),
+                                Theme.of(context).primaryColor,
+                              ],
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              stops: const [
+                                0.00,
+                                0.35,
+                                0.9,
+                              ],
+                            ),
                             color: Theme.of(context).primaryColor,
                             borderRadius: BorderRadius.circular(6),
                             boxShadow: const [
                               BoxShadow(
                                 color: darkGrey,
                                 blurRadius: 4,
-                                offset: Offset(2, 2),
+                                offset: Offset(1, 1),
                               ),
                             ],
                           ),
@@ -227,7 +284,9 @@ class _Z2P1HomeState extends State<Z2P1Home> {
                         ),
                       ),
                     ),
-                    const Spacer(flex: 10),
+                    Spacer(
+                      flex: belowGoButtonSpacerFlex,
+                    ),
                   ],
                 ),
               ),
