@@ -45,7 +45,7 @@ class ContainersSolution extends StatelessWidget {
                   ),
                 ),
                 dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                // TODO 3) Create Containe 300 high x 200 wide, appThemePrimaryBlue, give it 20 padding all around. Then give it a child Container that is 50 x 50, aligned top center and make the color the theme's primaryColorDark
+                // TODO 3) Create Containe 300 high x 200 wide, accentColor, give it 20 padding all around. Then give it a child Container that is 50 x 50, aligned top center and make the color the theme's primaryColorDark
                 Container(
                   height: 300,
                   width: 200,

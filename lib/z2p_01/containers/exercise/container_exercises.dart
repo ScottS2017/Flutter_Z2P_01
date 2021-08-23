@@ -26,14 +26,18 @@ class ContainersExercises extends StatelessWidget {
                 dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 //TODO 1) Create Container, with height 50, width 150, and make the color the theme's primaryColorDark
 
+
                 dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 // TODO 2 ) Create a Container that is 100 high, max width, and is the theme's primaryColorDark. Then give it a white child Container that is 50 high and 150 wide, that is aligned center right within its parent.
 
+
                 dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                // TODO 3) Create Containe 300 high x 200 wide, appThemePrimaryBlue, give it 20 padding all around. Then give it a child Container that is 50 x 50, aligned top center and make the color the theme's primaryColorDark
+                // TODO 3) Create Container 300 high x 200 wide, accentColor, give it 20 padding all around. Then give it a child Container that is 50 x 50, aligned top center and make the color the theme's primaryColorDark
+
 
                 dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                 // TODO 4) Create a Container that's the theme's primaryColorDark, 100 high with max width, that aligns its child top right and give it margins of 150 right and 25 left. Then give it a child Container that's 95 high, 100 wide and make the color white54.
+
 
               ],
             ),
