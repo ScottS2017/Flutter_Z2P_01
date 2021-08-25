@@ -25,7 +25,7 @@ class ImageExercise extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              // TODO Recreate the examples file using the custom ImageFrame Widget provided.
+              // TODO Recreate the examples file using the custom ImageFrame Widget provided. Yes, you're supposed to look at the example source code, don't beat your head on the desk trying to figure this out.
               //
               // The images to use are:
               //        AppImages.jumping,     (It uses Image.asset)
@@ -53,68 +53,128 @@ class ImageExercise extends StatelessWidget {
                 ),
               ),
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Owl
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jenny
 
               ///
               /// BoxFit.contain
               ///
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jumping
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Owl
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jenny
 
               ///
               /// BoxFit.cover
               ///
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jumping
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Owl
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jenny
 
               ///
               /// BoxFit.fitHeight
               ///
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jumping
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Owl
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jenny
 
               ///
               /// BoxFit.fitWidth
               ///
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jumping
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Owl
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jenny
 
               ///
               /// BoxFit.none
               ///
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jumping
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Owl
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jenny
 
               ///
               /// BoxFit.scaleDown
               ///
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jumping
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Owl
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
+
               // TODO Jenny
             ],
           ),

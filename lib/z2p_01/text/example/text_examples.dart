@@ -371,7 +371,7 @@ class TextExamples extends StatelessWidget {
                 ///
                 /// Wrapping Text
                 const Text(
-                  AppStrings.wrappingText,
+                  AppStrings.adoptOlderDogs,
                   softWrap: true,
                   style: TextStyle(
                     fontSize: 12,

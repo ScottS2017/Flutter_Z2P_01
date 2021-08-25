@@ -26,24 +26,36 @@ class IconExercise extends StatelessWidget {
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               const ExampleIconCustomWidget(
                 color: Color(0xFF777777),
+
+                // Your code here
+
                 // TODO 1) Add the icon parameter: Google Translate icon, size is 80 and color is white 54
                 // Your code here
               ),
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               const ExampleIconCustomWidget(
                 color: Colors.purple,
+
+                // Your code here
+
                 // TODO 2) Add the icon parameter: Google Assistant icon, size 120 and color is white 54
                 // Your code here
               ),
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               const ExampleIconCustomWidget(
                 color: Colors.white,
+
+                // Your code here
+
                 // TODO 3) Add the icon parameter: Alarm icon, size is 80 and color is red and add a semantics label that says Red Alarm
                 // Your code here
               ),
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               const ExampleIconCustomWidget(
                 color: Colors.red,
+
+                // Your code here
+
                 // TODO 4) Add the icon parameter: Power Settings icon, size is 80 and color is white
                 // Your code here
               ),

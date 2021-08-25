@@ -11,17 +11,8 @@ class AppStrings {
   static const fs14 = 'fontSize: 14,';
   static const fs18 = 'fontSize: 18,';
   static const fs20 = 'fontSize: 20,';
-  static const wrappingText =
-'''Adopt older dogs. It\'s not a lifelong commitment
-for you, but it gives them a home for the rest of 
-their life. They\'ve always been faithful and don\'t 
-understand what they did wrong to be abandoned
-by their family. At first they\'re excited to see people,
-but everyone keeps walking by without even looking 
-at them. Soon, they give up hope and barely look up when
-someone walks by. Adopt one now, because it\'s only a
-few years to you, but it\'s the rest of thier life to them...
-and they don\'t deserve to die alone in a cage.''' ;
+  static const adoptOlderDogs =
+'Adopt older dogs. It\'s not a lifelong commitment for you, but it gives them a home for the rest of their life. They\'ve always been faithful and don\'t understand what they did wrong to be abandoned by their family. At first they\'re excited to see people, but everyone keeps walking by without even looking  at them. Soon, they give up hope and barely look up when someone walks by. Adopt one now, because it\'s only a few years to you, but it\'s the rest of their life to them... and they don\'t deserve to die alone in a cage.';
   static const ifSoftwrapIsNotSpecified =
       'If softWrap is not specified then the text will honor the default TextStyle setting. You can set your own default TextStyle, but if you do not specify anything then it will default to true. For the overflow examples below, we turned softWrap off (false).';
   static const italic = 'fontStyle: FontStyle.italic';
