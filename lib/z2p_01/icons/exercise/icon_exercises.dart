@@ -30,7 +30,6 @@ class IconExercise extends StatelessWidget {
                 // Your code here
 
                 // TODO 1) Add the icon parameter: Google Translate icon, size is 80 and color is white 54
-                // Your code here
               ),
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               const ExampleIconCustomWidget(
@@ -56,7 +55,7 @@ class IconExercise extends StatelessWidget {
 
                 // Your code here
 
-                // TODO 4) Add the icon parameter: Power Settings icon, size is 80 and color is white
+                // TODO 4) Add the icon parameter: Power Settings (new) icon, size is 80 and color is white
                 // Your code here
               ),
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,

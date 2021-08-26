@@ -10,8 +10,7 @@ class ImageExercise extends StatelessWidget {
 
   final String title;
 
-  final SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
-      const SizedBox(height: 32);
+  static const dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = SizedBox(height: 32);
 
   @override
   Widget build(BuildContext context) {
@@ -26,156 +25,70 @@ class ImageExercise extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               // TODO Recreate the examples file using the custom ImageFrame Widget provided. Yes, you're supposed to look at the example source code, don't beat your head on the desk trying to figure this out.
-              //
-              // The images to use are:
-              //        AppImages.jumping,     (It uses Image.asset)
-              //        AppImages.owlUrl,     (It uses Image.network)
-              //        AppImages.invertedJennyUrl,     (It uses Image.network)
-              //
-              // Be sure to check if you're dealing with an asset or network image
-              //
-              // Sample:
-              //                ImageFrame(
-              //                  heightAndWidth: heightAndWidth,
-              //                  image: <YOUR CODE HERE>
-              //                ),
+              ///
+              /// The images to use are:
+              ///        AppImages.jumping,     (It uses Image.asset)
+              ///        AppImages.owlUrl,     (It uses Image.network)
+              ///        AppImages.invertedJennyUrl,     (It uses Image.network)
+              ///
+              /// ** If you are unable to reach the internet then use Jumping
+              /// for all of these exercises.
+              ///
+              /// Be sure to check if you're dealing with an asset or network image
+              ///
+              /// Sample:
+              ///                ImageFrame(
+              ///                  heightAndWidth: heightAndWidth,
+              ///                  image: <YOUR CODE HERE>
+              ///                ),
 
-              ///
-              /// BoxFit.fill
-              ///
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              // Example:
+              // Example 1, Jumping with fit fill:
               ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.asset(
-                  AppImages.jumping,
-                  fit: BoxFit.fill,
-                ),
-              ),
+                  image: Image.asset(
+                    AppImages.jumping,
+                    fit: BoxFit.fill,
+                  ),
+                  heightAndWidth: heightAndWidth),
+
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Example 2, Owl with fit fill:
+              ImageFrame(
+                  image: Image.network(
+                    AppImages.owlUrl,
+                    fit: BoxFit.fill,
+                  ),
+                  heightAndWidth: heightAndWidth),
+
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
               // Your code here
 
-              // TODO Owl
+              // TODO Jenny fit contain
+
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
               // Your code here
 
-              // TODO Jenny
-
-              ///
-              /// BoxFit.contain
-              ///
+              // TODO Jumping fit cover
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
               // Your code here
 
-              // TODO Jumping
+              // TODO Owl fit height
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
               // Your code here
 
-              // TODO Owl
+              // TODO Jenny fit width
+
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 
               // Your code here
 
-              // TODO Jenny
-
-              ///
-              /// BoxFit.cover
-              ///
+              // TODO Jumping fit none
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Jumping
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Owl
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Jenny
-
-              ///
-              /// BoxFit.fitHeight
-              ///
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Jumping
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Owl
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Jenny
-
-              ///
-              /// BoxFit.fitWidth
-              ///
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Jumping
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Owl
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Jenny
-
-              ///
-              /// BoxFit.none
-              ///
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Jumping
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Owl
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Jenny
-
-              ///
-              /// BoxFit.scaleDown
-              ///
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Jumping
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Owl
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-
-              // Your code here
-
-              // TODO Jenny
             ],
           ),
         ),

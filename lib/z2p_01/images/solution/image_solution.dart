@@ -10,7 +10,7 @@ class ImageSolution extends StatelessWidget {
 
   final String title;
 
-  static const  SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
+  static const SizedBox dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
       SizedBox(height: 32);
 
   @override
@@ -25,70 +25,46 @@ class ImageSolution extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              // TODO Recreate the examples file using the custom ImageFrame Widget provided
-              //
-              // The images to use are:
-              //        AppImages.jumping,     (It uses Image.asset)
-              //        AppImages.owl,     (It uses Image.network)
-              //        AppImages.invertedJenny,     (It uses Image.network)
-              //
-              // Be sure to check if you're dealing with an asset or network image
-              //
-              // Sample:
-              //                ImageFrame(
-              //                  heightAndWidth: heightAndWidth,
-              //                  image: <YOUR CODE HERE>
-              //                ),
+              // TODO Recreate the examples file using the custom ImageFrame Widget provided. Yes, you're supposed to look at the example source code, don't beat your head on the desk trying to figure this out.
+              ///
+              /// The images to use are:
+              ///        AppImages.jumping,     (It uses Image.asset)
+              ///        AppImages.owlUrl,     (It uses Image.network)
+              ///        AppImages.invertedJennyUrl,     (It uses Image.network)
+              ///
+              /// ** If you are unable to reach the internet then use Jumping
+              /// for all of these exercises.
+              ///
+              /// Be sure to check if you're dealing with an asset or network image
+              ///
+              /// Sample:
+              ///                ImageFrame(
+              ///                  heightAndWidth: heightAndWidth,
+              ///                  image: <YOUR CODE HERE>
+              ///                ),
 
-              ///
-              /// BoxFit.fill
-              ///
-              // Example:
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              // Example 1, Jumping with fit fill:
               ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.asset(
-                  AppImages.jumping,
-                  fit: BoxFit.fill,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.owlUrl,
-                  fit: BoxFit.fill,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.invertedJennyUrl,
-                  fit: BoxFit.fill,
-                ),
-              ),
+                  image: Image.asset(
+                    AppImages.jumping,
+                    fit: BoxFit.fill,
+                  ),
+                  heightAndWidth: heightAndWidth),
 
-              ///
-              /// BoxFit.contain
-              ///
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Example 2, Owl with fit fill:
               ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.asset(
-                  AppImages.jumping,
-                  fit: BoxFit.contain,
-                ),
-              ),
+                  image: Image.network(
+                    AppImages.owlUrl,
+                    fit: BoxFit.fill,
+                  ),
+                  heightAndWidth: heightAndWidth),
+
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.owlUrl,
-                  fit: BoxFit.contain,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
               ImageFrame(
                 heightAndWidth: heightAndWidth,
                 image: Image.network(
@@ -97,145 +73,52 @@ class ImageSolution extends StatelessWidget {
                 ),
               ),
 
-              ///
-              /// BoxFit.cover
-              ///
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.asset(
-                  AppImages.jumping,
-                  fit: BoxFit.cover,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.owlUrl,
-                  fit: BoxFit.cover,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.invertedJennyUrl,
-                  fit: BoxFit.cover,
-                ),
-              ),
+              // TODO Jenny fit contain
 
-              ///
-              /// BoxFit.fitHeight
-              ///
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.asset(
-                  AppImages.jumping,
-                  fit: BoxFit.fitHeight,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.owlUrl,
-                  fit: BoxFit.fitHeight,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.invertedJennyUrl,
-                  fit: BoxFit.fitHeight,
-                ),
-              ),
 
-              ///
-              /// BoxFit.fitWidth
-              ///
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              // Your code here
               ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.asset(
-                  AppImages.jumping,
-                  fit: BoxFit.fitWidth,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.owlUrl,
-                  fit: BoxFit.fitWidth,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.invertedJennyUrl,
-                  fit: BoxFit.fitWidth,
-                ),
-              ),
+                  image: Image.asset(
+                    AppImages.jumping,
+                    fit: BoxFit.cover,
+                  ),
+                  heightAndWidth: heightAndWidth),
 
-              ///
-              /// BoxFit.none
-              ///
+              // TODO Jumping fit cover
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.asset(
-                  AppImages.jumping,
-                  fit: BoxFit.none,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.owlUrl,
-                  fit: BoxFit.none,
-                ),
-              ),
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-              ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.invertedJennyUrl,
-                  fit: BoxFit.none,
-                ),
-              ),
 
-              ///
-              /// BoxFit.scaleDown
-              ///
-              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+              // Your code here
               ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.asset(
-                  AppImages.jumping,
-                  fit: BoxFit.scaleDown,
-                ),
-              ),
+                  image: Image.network(
+                    AppImages.owlUrl,
+                    fit: BoxFit.fitHeight,
+                  ),
+                  heightAndWidth: heightAndWidth),
+
+              // TODO Owl fit height
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
               ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.owlUrl,
-                  fit: BoxFit.scaleDown,
-                ),
-              ),
+                  image: Image.network(AppImages.invertedJennyUrl,
+                      fit: BoxFit.fitWidth),
+                  heightAndWidth: heightAndWidth),
+
+              // TODO Jenny fit width
+
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+
+              // Your code here
               ImageFrame(
-                heightAndWidth: heightAndWidth,
-                image: Image.network(
-                  AppImages.invertedJennyUrl,
-                  fit: BoxFit.scaleDown,
-                ),
-              ),
+                  image: Image.asset(
+                    AppImages.jumping,
+                    fit: BoxFit.none,
+                  ),
+                  heightAndWidth: heightAndWidth),
+
+              // TODO Jumping fit none
+              dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
             ],
           ),
         ),
