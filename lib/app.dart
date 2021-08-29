@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:o1_widgets_you_can_see/infrastructure/scratchpad.dart';
 
 import 'z2p_01/box_decorations/example/box_decorations.dart';
 import 'z2p_01/box_decorations/exercise/box_decorations_exercises.dart';
@@ -74,6 +75,21 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
       builder = (BuildContext context) => const Z2P1Home(
       );
       break;
+    case 'boxdecoration-example':
+      builder = (BuildContext context) => const BoxDecorations(
+        title: 'BoxDecoration Examples',
+      );
+      break;
+    case 'boxdecoration-exercise':
+      builder = (BuildContext context) => const BoxDecorationExercises(
+        title: 'BoxDecoration Exercises',
+      );
+      break;
+    case 'boxdecoration-solutions':
+      builder = (BuildContext context) => const BoxDecorationSolution(
+        title: 'BoxDecoration Solutions',
+      );
+      break;
     case 'containers-example':
       builder = (BuildContext context) => const Containers(
             title: 'Containers Example',
@@ -87,21 +103,6 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
     case 'containers-solution':
       builder = (BuildContext context) => const ContainersSolution(
             title: 'Containers Solution',
-          );
-      break;
-    case 'boxdecoration-example':
-      builder = (BuildContext context) => const BoxDecorations(
-            title: 'BoxDecoration Examples',
-          );
-      break;
-    case 'boxdecoration-exercise':
-      builder = (BuildContext context) => const BoxDecorationExercises(
-            title: 'BoxDecoration Exercises',
-          );
-      break;
-    case 'boxdecoration-solutions':
-      builder = (BuildContext context) => const BoxDecorationSolution(
-            title: 'BoxDecoration Solutions',
           );
       break;
     case 'icon-example':
@@ -133,6 +134,9 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
       builder = (BuildContext context) => const ImageSolution(
             title: 'Image Solutions',
           );
+      break;
+    case 'scratchpad':
+      builder =(BuildContext context) => ScratchPad();
       break;
     case 'text-examples':
       builder = (BuildContext context) => const TextExamples(

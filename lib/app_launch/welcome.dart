@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/app_images.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/app_textstyles.dart';
+import 'package:o1_widgets_you_can_see/infrastructure/scratchpad.dart';
 import 'package:o1_widgets_you_can_see/infrastructure/theme.dart';
 
 import '../z2p_01/home.dart';
@@ -76,38 +77,46 @@ class _WelcomeState extends State<Welcome> {
                         flex: 5,
                         child: Column(
                           children: [
-                            Container(
-                              height: 200,
-                              width: 200,
-                              margin: const EdgeInsets.only(top: 30),
-                              padding: const EdgeInsets.all(30),
-                              decoration: BoxDecoration(
-                                image: const DecorationImage(
-                                  fit: BoxFit.contain,
-                                  image: AssetImage('assets/images/F.png'),
+                            GestureDetector(
+                              onTap: () => Navigator.push<Route>(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ScratchPad(),
                                 ),
-                                gradient: SweepGradient(
-                                  colors: [
-                                    Theme.of(context).primaryColorDark,
-                                    Theme.of(context).primaryColor,
-                                    Theme.of(context).accentColor,
-                                    Theme.of(context).primaryColorLight,
-                                    Theme.of(context).primaryColorDark,
-                                  ],
-                                  stops: const [0.0, 0.25, 0.5, 0.75, 1],
-                                ),
-                                border: Border.all(
-                                  width: 3,
-                                  color: Theme.of(context).backgroundColor,
-                                ),
-                                borderRadius: BorderRadius.circular(100),
-                                boxShadow: const [
-                                  BoxShadow(
-                                    color: darkGrey,
-                                    blurRadius: 4,
-                                    offset: Offset(1.0, 1.0),
+                              ),
+                              child: Container(
+                                height: 200,
+                                width: 200,
+                                margin: const EdgeInsets.only(top: 30),
+                                padding: const EdgeInsets.all(30),
+                                decoration: BoxDecoration(
+                                  image: const DecorationImage(
+                                    fit: BoxFit.contain,
+                                    image: AssetImage('assets/images/F.png'),
                                   ),
-                                ],
+                                  gradient: SweepGradient(
+                                    colors: [
+                                      Theme.of(context).primaryColorDark,
+                                      Theme.of(context).primaryColor,
+                                      Theme.of(context).accentColor,
+                                      Theme.of(context).primaryColorLight,
+                                      Theme.of(context).primaryColorDark,
+                                    ],
+                                    stops: const [0.0, 0.25, 0.5, 0.75, 1],
+                                  ),
+                                  border: Border.all(
+                                    width: 3,
+                                    color: Theme.of(context).backgroundColor,
+                                  ),
+                                  borderRadius: BorderRadius.circular(100),
+                                  boxShadow: const [
+                                    BoxShadow(
+                                      color: darkGrey,
+                                      blurRadius: 4,
+                                      offset: Offset(1.0, 1.0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                             const Spacer(
@@ -164,7 +173,14 @@ class _WelcomeState extends State<Welcome> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              const Text('Brought to you by Ardan Labs'),
+                              const Spacer(
+                                flex: 5,
+                              ),
+                              Expanded(
+                                flex: 20,
+                                child: Image.asset(AppImages.ardanLogo,
+                                ),
+                              ),
                               const SizedBox(
                                 height: 16,
                               ),
@@ -206,6 +222,9 @@ class _WelcomeState extends State<Welcome> {
                                     ],
                                   ),
                                 ],
+                              ),
+                              const Spacer(
+                                flex: 10,
                               ),
                             ],
                           ),

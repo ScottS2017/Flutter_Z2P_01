@@ -26,22 +26,22 @@ class ImageSolution extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               // TODO Recreate the examples file using the custom ImageFrame Widget provided. Yes, you're supposed to look at the example source code, don't beat your head on the desk trying to figure this out.
-              ///
-              /// The images to use are:
-              ///        AppImages.jumping,     (It uses Image.asset)
-              ///        AppImages.owlUrl,     (It uses Image.network)
-              ///        AppImages.invertedJennyUrl,     (It uses Image.network)
-              ///
-              /// ** If you are unable to reach the internet then use Jumping
-              /// for all of these exercises.
-              ///
-              /// Be sure to check if you're dealing with an asset or network image
-              ///
-              /// Sample:
-              ///                ImageFrame(
-              ///                  heightAndWidth: heightAndWidth,
-              ///                  image: <YOUR CODE HERE>
-              ///                ),
+              //
+              // The images to use are:
+              //        AppImages.jumping,     (It uses Image.asset)
+              //        AppImages.owlUrl,     (It uses Image.network)
+              //        AppImages.invertedJennyUrl,     (It uses Image.network)
+              //
+              // ** If you are unable to reach the internet then use Jumping
+              // for all of these exercises.
+              //
+              // Be sure to check if you're dealing with an asset or network image
+              //
+              // Sample:
+              //                ImageFrame(
+              //                  heightAndWidth: heightAndWidth,
+              //                  image: <YOUR CODE HERE>
+              //                ),
 
               dividerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
               // Example 1, Jumping with fit fill:

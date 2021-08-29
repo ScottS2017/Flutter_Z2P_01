@@ -122,7 +122,7 @@ class ImageExamples extends StatelessWidget {
                 ///
                 ///
                 const TextLabel(
-                  text: 'BoxFit.cover',
+                  text: 'BoxFit.cover\n(Zoom to fit height or width,\nwhichever is smaller.\nThen crop the other axis.)',
                 ),
 
                 ImageFrame(
