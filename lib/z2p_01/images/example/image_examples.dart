@@ -3,6 +3,8 @@ import '/infrastructure/app_colors.dart';
 import '/infrastructure/app_images.dart';
 import '/infrastructure/build_app_bar.dart';
 
+/// A widget that displays examples of common ways to use
+/// an Image.
 class ImageExamples extends StatelessWidget {
   const ImageExamples({
     Key? key,
@@ -282,6 +284,7 @@ class ImageExamples extends StatelessWidget {
   }
 }
 
+/// A colored text label used as a heading
 class TextLabel extends StatelessWidget {
   const TextLabel({
     Key? key,
@@ -330,6 +333,7 @@ class TextLabel extends StatelessWidget {
   }
 }
 
+/// A widget that displays an image inside of a grey background
 class ImageFrame extends StatelessWidget {
   const ImageFrame({
     Key? key,
@@ -337,7 +341,9 @@ class ImageFrame extends StatelessWidget {
     required this.heightAndWidth,
   }) : super(key: key);
 
+  /// The image to display
   final Image image;
+  /// The dimensions of the square background
   final double heightAndWidth;
 
   @override
